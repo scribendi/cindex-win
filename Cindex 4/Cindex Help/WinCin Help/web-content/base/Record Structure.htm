@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Structure of Records</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<p><object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<param name="Keyword" value="Record(s), changing size and structure" />
+				<param name="Keyword" value="Size, records" />
+				<param name="Keyword" value="Structure of records" />
+				<param name="Keyword" value="Fields, number in record" />
+				<param name="Keyword" value="Fields, required" />
+				<param name="Keyword" value="Characters, maximum in record" />
+				<PARAM NAME="Keyword" VALUE="*" />
+				<param name="Keyword" value="*, denoting special last subheading" />
+			</object></p>
+		<h2>Setting record structure</h2>
+		<P>To examine or modify the structure of index records (their sizes, the number and names of fields, and any restrictions on what fields may contain) choose <B>Record Structure...</B> from the Document menu.</P>
+		<ul>
+			<li type="disc">To specify the maximum number of characters a record may contain (&lt; 2000), enter the number at <b>Maximum Characters in Record</b>. If the index already contains records, the smallest number you can set is shown in the box immediately to the right.
+			</li><li type="disc">To specify the minimum number of fields a record may contain (&gt;= 2), choose from the <b>Min</b> drop-down list.</li><li type="disc">To specify the maximum number of fields a record may contain (&lt;= 16), choose from the <b>Max</b> drop-down list.
+			</li><li type="disc">To make every record have a special text field that immediately precedes the locator (regardless of how many normal subheadings the record contains), check <b>Subhead Preceding Locator is Required</b>. This field might be used for notes, or for storing URLs. If you wish, this field can be suppressed in formatted output, and ignored in sorting entries. If displayed, the special last subheading is formatted as the lowest level subheading permitted in the index. To enable this special field you must have set the minimum number of fields to be at least 3. When you have designated the last subheading as a required field, Cindex indicates this with an asterisk (*) in the tab for that field.</li><li type="disc">To specify the name and properties of an individual field of a record, click the tab corresponding to the field (<b>First</b> corresponds to the Main heading, etc.; the locator field is always last). Enter at <b>Name</b> the name Cindex will use to identify the field. Cindex displays this name to identify a field to you in all any operation the deals with fields.
+			</li><li type="disc">Enter at <b>Minimum Chars</b> and <b>Maximum Chars</b> the minimum and maximum number of characters that the field may contain. To impose no minimum or maximum, set the corresponding number to 0. If the index contains records, Cindex displays (in the box on the right) that largest number of characters in that field in any record.</li><li type="disc">Enter at <b>Match</b> a template that describes the permissible content of the field. The template should be a <a href="Patterns_defining.htm">pattern</a> that the contents of the field must match before Cindex will accept the record in the index. Leave <b>Match</b> blank to impose no restriction on the contents of the field. If you specify a template, how Cindex uses it depends on settings you make by choosing <b>Preferences...</b> from the <b>Edit</b> menu.
+		</li></ul>
+		<P>If an index already contains records there are restrictions on what you can change:</P>
+		<ul>
+			<li type="disc">You cannot set the maximum number of characters in a record to be fewer than are contained in the longest record.
+			
+			</li><li type="disc">You cannot set the maximum number of fields to be fewer than are contained in the record with most fields.
+			
+			</li><li type="disc">You cannot set the minimum length of a field.</li><li type="disc">You cannot set the maximum length of a field to be less than the largest number of characters in that field in any record.
+		
+		</li></ul>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>If you make settings when no index is open for work, these  become the default ones that Cindex uses for new indexes when you create them.</p>
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<b>
+		
+		See also</b><br />
+		<a href="Pageref_structure.htm">Specifying the structure of page references</a><br />
+		<a href="Crossref_structure.htm">Specifying the structure of cross-references</a><br />
+		<a href="../_Starting An Index/_Template.htm">Making and using index templates<br />
+		</a><a href="../Support/Trouble_lastsubhead.htm">Using the special last subheading</a>
+	</BODY>
+</HTML>

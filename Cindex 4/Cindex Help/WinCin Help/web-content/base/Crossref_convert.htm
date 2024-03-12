@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Converting cross-references</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<h2><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Converting cross-references" />
+				<PARAM NAME="Keyword" VALUE="Cross-references, converting to full entries" />
+				<PARAM NAME="Keyword" VALUE="Double posting, converting cross-references" />
+			</OBJECT></h2>
+		<h2>Converting cross-references</h2>
+		<p>Cindex can automatically convert <i>See</i> cross-references to fully qualified entries.</p>
+		<p>Choose <b>Manage Cross-References…</b> from the Tools menu. Choose Convert to <b>Fully-Qualified Entries</b>, then set <b>For fewer targets than</b> to the number of target entries below which you want Cindex to convert the cross-reference into a set of full entries. For example, to convert any cross-reference to a single target entry into a fully qualified entry, set For fewer targets to 2. Cindex examines all the records accessible in the current view, and where it finds a cross-reference to fewer than the minimum number of target entries generates new records that contain full entries.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<ul>
+					  <li>Cindex converts only records that contain cross-references in the locator field. It does not convert records that contain cross-references entered as subheadings.</li>
+					  <li>Cindex marks as deleted, but does not otherwise alter, the record making the original cross-reference.</li>
+					  <li>If for some reason Cindex cannot create new records, it leaves the original one intact.</li>
+					  <li>To view the new records that Cindex creates, use Find, and search for Generated Records. (If you modify the contents of a generated record, Cindex no longer considers it to have been generated automatically.)</li>
+				  </ul>
+				</td>
+			</tr>
+		</table>
+<hr />
+		<b>See also<br />
+		</b><a href="Crossref_structure.htm">Identifying cross-references<br />
+		</a><a href="Crossref_generate.htm">Generating cross-references<br />
+		</a><a href="../_Find & Replace/Usingfind.htm">Using the Find panel</a><b><br />
+        </b><a href="Tools_Compress.htm">Removing generated records</a><a href="Crossref_generate.htm">
+		</a>
+</BODY>
+</HTML>

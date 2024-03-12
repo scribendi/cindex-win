@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Working with groups</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Groups, viewing" />
+</OBJECT>
+		<h2>Working with groups</h2>
+		<P>To view the records that belong to a group you have saved, choose the group by name from the <B>Group</B> sub-menu in the View menu. (This item is dimmed if the index contains no saved groups).</P>
+		<p>When Cindex displays a group, it generally behaves as though the records in that group were the only ones in the index. For example, when Cindex searches for text in entries, it searches only among records in the group.</p>
+		<p>There are a few restrictions on what you can do with groups:</p>
+		<ul>
+			<li type="disc">You cannot switch between sorted and unsorted views of a group: Cindex displays records in the order in which they appeared when the group was formed. You can, however, change the sorted order of a group by choosing Sort… from the Tools menu to resort the group. This sort need not use the sort rules employed in the main index.
+			</li><li type="disc">When you modify records that belong to a group (for example, by editing a record), Cindex will display the changes but will not rearrange the records in the group, which might no longer be correctly sorted. You can re-sort the group explicitly, if you wish. Records are always correctly sorted when you restore the view to show All Records.
+			</li><li type="disc">If you add a record to the index while you are viewing a group, the record does not become a member of the group, and Cindex therefore does not display it until you change the view to show All Records.
+			</li><li type="disc">Some Cindex commands cannot be used on groups. You cannot use the commands Expand, Compress, or Reconcile Headings. These items in the Tools menu are dimmed when a group is displayed in the main document window.
+		</li></ul>
+		<P>A group can become invalid if you use either of the tools <B>Compress</B> or <B>Expand</B>. If a group is invalid its name will be dimmed in the <B>Group</B> sub-menu in the View menu. Cindex can rebuild a group after it has become invalid.</P>
+		<hr />
+		<b>See also </b><br />
+		<a href="Groups.htm">
+		Making groups</a><br />
+		<a href="Groups_manage.htm">
+		Managing groups
+	</a>
+	</BODY>
+</HTML>

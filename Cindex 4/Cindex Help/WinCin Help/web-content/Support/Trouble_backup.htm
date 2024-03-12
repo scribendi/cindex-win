@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Problems with backing up indexes</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="FAQ, backup index" />
+</OBJECT>
+		<h2>Backing up and transferring indexes</h2>
+		<p>Here are answers to some frequently-asked questions about backing-up and moving files. </p>
+		<table width="100%" border="0" cellspacing="0" cellpadding="7" bgcolor="#eeeeee">
+			<tr valign="top" bgcolor="#eeeeee">
+				<td bgcolor="#eeeeee" width="98%">
+					<p><b>How can I back-up my index?</b> There are several ways to make a backup copy of the index you are working on:</p>
+					<blockquote>
+						<p>• From within Cindex, choose Save Backup Copy from the File menu.<br />
+							• To save an  archival copy of an index (from which you can later reconstruct a working index), save XML records. Choose Save As... from the File menu, then in the panel that Cindex displays, choose XML Records as the file type.<br />• With Windows Explorer you can duplicate any index document.</p>
+					</blockquote>
+					<p>Whichever method you use, you should save the backup copy on some disk other than the one that contains the original.</p>
+					<p><b>I received an index as an email attachment and Cindex could not open it. Why?</b> There are a several possible causes:</p>
+					<blockquote>
+						<p>&#x2022; Check that the email attachment has not had its name changed. Cindex recognizes files it can open by the presence of a filename extension as the last part of the name (for example '.ucdx' or or '.ixml' or '.arc'). If the extension has been changed or removed, or has had additional text appended to it, Cindex will not be able to identify and open the file.<br />
+&#x2022; Check that the file is in a format that Cindex can open directly. Cindex 4 can open index files (those with the filename extension '.ucdx', or '.cdx'), and archive files. Cindex for Windows can read archive files made by any version of Cindex for Mac, but cannot read  index files made by  Cindex for Mac version 2 or lower.  For more information on moving files between platforms see the answer to the next question.<br />
+&#x2022; If you received a file with the filename extension '.dat' (an obsolete format used by Cindex for DOS) you must first create a new index, then import the contents of the file by choosing Import... from the File menu.</p>
+		      </blockquote>
+					<p><b>I'll be collaborating with another indexer, and we will need to exchange indexes for incorporation into a master index. What kind of files should we send each other?</b> If your colleague uses Cindex version 3 or higher, you and she  should share index files (those with the filename extension '.ucdx') or XML Records ('.ixml'). To save XML records choose Save As... from the File menu, then in the panel that Cindex displays, choose XML Records as the file type. The file types 'ucdx' and '.ixml' are interchangeable between Cindex for Windows version 3 and higher and  Cindex for Mac version 3 and higher.</p>
+				</td>
+			</tr>
+		</table>
+<hr />
+		<p><b>See also<br />
+			</b><a href="tech_contactinfo.htm">Customer Support</a></p>
+	</BODY>
+</HTML>

@@ -1,0 +1,560 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Window Styles" value="0x800025">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="What's new in Cindex 4">
+		<param name="Local" value="WinCin Help\web-content\Whatsnew\IntroducingC4.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adding and entering records">
+			<param name="Local" value="WinCin Help\web-content\Whatsnew\New_addedit.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Checking and searching among entries">
+			<param name="Local" value="WinCin Help\web-content\Whatsnew\New_checking.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Exporting formatted indexes">
+			<param name="Local" value="WinCin Help\web-content\Whatsnew\New_export.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Viewing the index">
+			<param name="Local" value="WinCin Help\web-content\Whatsnew\New_view.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sorting entries">
+			<param name="Local" value="WinCin Help\web-content\Whatsnew\New_sorting.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Compatibility with earlier versions">
+			<param name="Local" value="WinCin Help\web-content\Whatsnew\Compatibility.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cindex Guide">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="About Cindex Guide">
+			<param name="Local" value="WinCin Help\web-content\base\Cindexguide.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Starting an index">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Elements of an index">
+				<param name="Local" value="WinCin Help\web-content\_Starting An Index\Index elements.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Starting an Index">
+				<param name="Local" value="WinCin Help\web-content\_Starting An Index\Starting Index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Saving changes">
+				<param name="Local" value="WinCin Help\web-content\_Starting An Index\Saving index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Identifying the indexer">
+				<param name="Local" value="WinCin Help\web-content\_Starting An Index\_Identifyinguser.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Setting attributes of new indexes">
+				<param name="Local" value="WinCin Help\web-content\_Starting An Index\_Newindexattributes.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using index templates">
+				<param name="Local" value="WinCin Help\web-content\_Starting An Index\_Template.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adding and editing entries">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="About records">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_aboutrecords.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Making a new record">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_newrecord.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Editing an existing record">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_editingentries.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Saving or discarding changes">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_savingdiscarding.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Checking records">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_checkingrecords.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Page references and cross-references">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_enterlocators.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Accented letters and symbols">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_accentsymbol.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Special characters">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_specialcharacters.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Fonts and styles">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_enterfontsandstyles.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Rearranging text">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_rearranging.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Manipulating record fields">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_manipulatingfields.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using hot keys">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_hotkeys.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using abbreviations">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_usingabbreviations.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Completing headings automatically">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_autocomplete.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Propagating changes to related records">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_propagating.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Demoting headings">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_demoteheadings.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Duplicating records">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_duplicatingrecords.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Copying records">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_copyingrecords.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Deleting and restoring records">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_deletingrestoring.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Labeling records">
+				<param name="Local" value="WinCin Help\web-content\_Adding and Editing\Add_labeling.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Viewing the index">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="About views">
+				<param name="Local" value="WinCin Help\web-content\_Views\Views.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Viewing fully formatted entries">
+				<param name="Local" value="WinCin Help\web-content\_Views\Formattedview.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Viewing a draft index">
+				<param name="Local" value="WinCin Help\web-content\_Views\Draftview.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Viewing a summary of entries">
+				<param name="Local" value="WinCin Help\web-content\_Views\Summaryview.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Viewing unformatted entries">
+				<param name="Local" value="WinCin Help\web-content\_Views\Unformattedview.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Sorted and unsorted views">
+				<param name="Local" value="WinCin Help\web-content\_Views\Sortedviews.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Navigating in views">
+				<param name="Local" value="WinCin Help\web-content\_Views\Navigating.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Selecting records">
+				<param name="Local" value="WinCin Help\web-content\_Views\Selectingrecords.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Viewing a subset of records">
+				<param name="Local" value="WinCin Help\web-content\_Views\Viewsubsets.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Finding and replacing">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Searching the index">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Searching.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Quickly finding entries">
+				<param name="Local" value="WinCin Help\web-content\_Views\Navigating.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Finding entries by printed page number">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Find_locateentries.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Finding entries that contain specified text">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Usingfind.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Searching for text styles and fonts">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Find_stylesandfonts.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Controlling the scope of a search">
+				<param name="Local" value="WinCin Help\web-content\base\Scope.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Searching among records with particular attributes">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Find_attributes.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Finding locators">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Find_locators.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Conditional (Boolean) searches">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Find_conditional.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using patterns">
+				<param name="Local" value="WinCin Help\web-content\base\Patterns_defining.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Replacing text">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Usingreplace.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Replacing styles and fonts">
+				<param name="Local" value="WinCin Help\web-content\_Find & Replace\Replace_styleandfont.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Checking spelling">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using the Spelling panel">
+				<param name="Local" value="WinCin Help\web-content\_Spelling\Usingspelling.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Languages and dictionaries">
+				<param name="Local" value="WinCin Help\web-content\_Spelling\Spellingdictionaries.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Spelling options">
+				<param name="Local" value="WinCin Help\web-content\_Spelling\Spellingoptions.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Page references and cross-references">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="How Cindex identifies page references">
+				<param name="Local" value="WinCin Help\web-content\base\Pageref_structure.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Components of page references">
+				<param name="Local" value="WinCin Help\web-content\base\Pageref_components.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Evaluating and sorting page references">
+				<param name="Local" value="WinCin Help\web-content\_Sorting\Sorting_locators.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Adjusting and removing page references">
+				<param name="Local" value="WinCin Help\web-content\base\Pageref_alter.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Counting page references">
+				<param name="Local" value="WinCin Help\web-content\base\Pageref_count.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Formatting page references">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_pagereferences.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="How Cindex identifies cross-references">
+				<param name="Local" value="WinCin Help\web-content\base\Crossref_structure.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Verifying cross-references">
+				<param name="Local" value="WinCin Help\web-content\base\Crossref_verify.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Placing and ordering cross-references">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_crossreferences.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Formatting cross-references">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_crossreferences.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sorting entries">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="About sorting entries">
+				<param name="Local" value="WinCin Help\web-content\_Sorting\Sorting_entries.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Alphabetical sorting rules">
+				<param name="Local" value="WinCin Help\web-content\_Sorting\Sorting_alphabetizing.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Variations on alphabetical rules">
+				<param name="Local" value="WinCin Help\web-content\_Sorting\Sorting_modalphabetizing.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Overriding automatic sorting">
+				<param name="Local" value="WinCin Help\web-content\_Sorting\Sorting_override.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Sorting numbers and symbols">
+				<param name="Local" value="WinCin Help\web-content\_Sorting\Sorting_override1.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Controlling sorting of headings">
+				<param name="Local" value="WinCin Help\web-content\_Sorting\Sorting_fields.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Sorting by page reference">
+				<param name="Local" value="WinCin Help\web-content\_Sorting\Sorting_fields.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Index style and layout">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Indented and run-in styles">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_styleandlayout.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Controlling indentation">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\_Format_indentation.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Grouping entries">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_groupingentries.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Typography and punctuation of headings">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_headings.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Formatting page references">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_pagereferences.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Formatting cross-references">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_crossreferences.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Page layout">
+				<param name="Local" value="WinCin Help\web-content\_Style and Layout\Format_marginsandcolumns.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using style sheets">
+				<param name="Local" value="WinCin Help\web-content\base\StyleSheet.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Working with index documents">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Specifying the structure of records">
+				<param name="Local" value="WinCin Help\web-content\base\Record Structure.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Getting information about indexes">
+				<param name="Local" value="WinCin Help\web-content\base\Index Information.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Checking the index">
+				<param name="Local" value="WinCin Help\web-content\base\Check_index.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Reconciling headings">
+				<param name="Local" value="WinCin Help\web-content\base\Tools_Reconciling.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Splitting Headings">
+				<param name="Local" value="WinCin Help\web-content\base\Tools_Splitheadings.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Managing cross-references">
+				<param name="Local" value="WinCin Help\web-content\base\Crossref_manage.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Expanding index entries">
+				<param name="Local" value="WinCin Help\web-content\base\Tools_Expand.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Compressing an index">
+				<param name="Local" value="WinCin Help\web-content\base\Tools_Compress.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Managing fonts">
+				<param name="Local" value="WinCin Help\web-content\base\Fonts.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Managing groups of entries">
+				<param name="Local" value="WinCin Help\web-content\base\Groups_manage.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Cumulating and combining indexes">
+				<param name="Local" value="WinCin Help\web-content\base\Tools_Cumcombine.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Splitting an index into parts">
+				<param name="Local" value="WinCin Help\web-content\base\Tools_Splitting0.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Importing and exporting entries">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Importing records">
+				<param name="Local" value="WinCin Help\web-content\base\Import_records.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Working with XML records">
+				<param name="Local" value="WinCin Help\web-content\base\Import_xml.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Working with archives">
+				<param name="Local" value="WinCin Help\web-content\base\Import_archive.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Importing records from delimited text">
+				<param name="Local" value="WinCin Help\web-content\base\Import_delimited.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Importing records from Sky Index">
+				<param name="Local" value="WinCin Help\web-content\base\Import_Sky.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Importing records from Macrex">
+				<param name="Local" value="WinCin Help\web-content\base\Import_Macrex.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Embedding index entries in other documents">
+				<param name="Local" value="WinCin Help\web-content\base\Export_embedding.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Saving formatted indexes">
+				<param name="Local" value="WinCin Help\web-content\base\Export_formatted.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Exporting index recrods">
+				<param name="Local" value="WinCin Help\web-content\base\Export_records.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Tagged text documents">
+				<param name="Local" value="WinCin Help\web-content\base\Export_taggedtext.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="XML markup tags">
+				<param name="Local" value="WinCin Help\web-content\base\Markup_XML.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SGML markup tags">
+				<param name="Local" value="WinCin Help\web-content\base\Markup.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Shortcuts">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Keyboard shortcuts">
+			<param name="Local" value="WinCin Help\web-content\base\Shortcuts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Navigating in views">
+			<param name="Local" value="WinCin Help\web-content\base\Key_navigation.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adding and editing records">
+			<param name="Local" value="WinCin Help\web-content\base\Key_shortcuts.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Accented letters">
+			<param name="Local" value="WinCin Help\web-content\base\Key_accentedletter.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Troubleshooting and support">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Solving problems">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_solvingproblems.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Repairing a damaged index">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_damage.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Sorting entries">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_sorting.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Page references">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_pagerefs.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Formatting entries">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_formatting.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Adding a head note">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_headnote.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Preparing files for publishers">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_publish.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Backing up indexes">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_backup.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Using the special last subheading">
+			<param name="Local" value="WinCin Help\web-content\Support\Trouble_lastsubhead.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

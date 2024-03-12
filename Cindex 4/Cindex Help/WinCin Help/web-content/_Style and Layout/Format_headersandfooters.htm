@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Headers and Footers</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<PARAM NAME="Keyword" VALUE="@" />
+			<PARAM NAME="Keyword" VALUE="%" />
+			<PARAM NAME="Keyword" VALUE="Headers" />
+			<PARAM NAME="Keyword" VALUE="Footers" />
+			<PARAM NAME="Keyword" VALUE="Date" />
+			<PARAM NAME="Keyword" VALUE="Date, in headers and footers" />
+			<PARAM NAME="Keyword" VALUE="Time" />
+			<PARAM NAME="Keyword" VALUE="Time, in headers and footers" />
+			<PARAM NAME="Keyword" VALUE="Page numbering" />
+			<PARAM NAME="Keyword" VALUE="Numbering index pages" />
+			<PARAM NAME="Keyword" VALUE="Regional Settings" />
+			<PARAM NAME="Keyword" VALUE="Facing pages, headers and footers" />
+			<PARAM NAME="Keyword" VALUE="@, in headers and footers" />
+			<PARAM NAME="Keyword" VALUE="#, in headers and footers" />
+			<PARAM NAME="Keyword" VALUE="%, in headers and footers" />
+			<PARAM NAME="Keyword" VALUE="Fonts, in headers and footers" />
+			<PARAM NAME="Keyword" VALUE="Text styles, in headers and footers" />
+			<PARAM NAME="Keyword" VALUE="Style (text), in headers and footers" />
+		</OBJECT>
+		<h2>Headers and footers</h2>
+		<P>To set headers and footers for your index, choose <B>Headers and Footers...</B> from the Document menu.</P>
+		<P>If you have chosen to format the index with facing pages (<B>Margins and Columns</B>, above) Cindex provides separate headers and footers for left (even) and right (odd) pages. Otherwise it uses the same headers and footers for odd- and even-numbered pages. Click the tab for the header or footer settings you want to inspect or set.</P>
+		<P>Each header or footer can contain three text segments, <B>Left</B>, <B>Centered</B> and <B>Right</B>. Enter the text you want to appear in each of these positions. In any text segment the following characters stand for special items, and are replaced by the appropriate item when Cindex prints the header or footer:</P>
+		<ul>
+			<li type="disc">@ denotes the current date and time.
+			</li><li type="disc"># denotes the current page number.
+			
+			
+			</li><li type="disc">% denotes the name of the index.
+			
+			
+		</li></ul>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>To use @, # or % as a literal character in a header or footer field, place a \ immediately before the character (as in \@). </p>
+				</td>
+			</tr>
+		</table>
+		<p>Cindex prints each header or footer in the font chosen from the <B>Font</B> drop-down list in the size specified in the <B>Size</B> box, and in the style set through <B>Style...</B> The first item in the <B>Font</B> menu <I><B>&lt;</B>default<B>&gt;</B></I> represents the standard font in which the index is displayed. You can choose a size from the <B>Size</B> drop-down list, or type in a size of your choice. To make Cindex use characters of the size used in index entries, set the size to 0.</p>
+		<P>If Cindex displays a page number in a header or footer (i.e., you have included #), <B>First Page</B> specifies the number printed on the first page. Choose from <B>Number Format</B> how you want the number formatted—in Arabic or roman numerals.</P>
+
+<P>If Cindex displays a date in a header or footer (i.e., you have included @), the date appears in the format chosen in <B>Date Format</B>. The <B>Short</B> and <B>Long</B> formats are those specified through the <B>Date</B> tab of the <B>Regional Settings</B> Control Panel. Cindex will add the time to the printed date if you check <B>Add Time</B>. The time format is that specified through the <B>Time</B> tab of the <B>Regional Settings</B> Control Panel.</P>
+		<P>If you are using facing pages, and want left and right pages to have identical headers and footers, set the header and footer for one page, then click <B>Copy</B>. This is dimmed if left and right settings are identical.</P>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>If you set Headers and Footers when no index is open for work, the settings become the default ones that Cindex uses for new indexes when you create them.</p>
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<b>
+		See also
+	</b><br />
+		<a href="Format_marginsandcolumns.htm">Setting margins and columns</a><br />
+		<a href="../base/StyleSheet.htm">Style sheets</a>
+	</BODY>
+</HTML>

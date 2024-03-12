@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Locator components</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<PARAM NAME="Keyword" VALUE="Page references, components of" />
+			<PARAM NAME="Keyword" VALUE="Locators, multi-part" />
+			<PARAM NAME="Keyword" VALUE="Page references, multi-part" />
+		</OBJECT>
+		<h2>Locator components</h2>
+		<p>Any text in the locator field of a record, not specifically identified as a cross-reference, Cindex treats as a locator (generally a page reference). All of the following are legitimate locators:</p>
+		<blockquote>
+			<p>Frontispiece, 89, 106–108n., 202f<br />
+				vi, xiv, 9-15, illus. 45<br />
+				13:10:19-21, 20:46:5, 21:3:15<br />
+				mcmlxv, mcmlxx<br />
+				53(vii)A, 53(vii)B, 53(ix)A<br />
+				Jan. 6, 1975; May 2, 1977</p>
+		</blockquote>
+		<p>After identifying an individual reference, Cindex parses it into segments. There are two kinds of segments, those comprised of Arabic numerals, and those comprised of letters.</p>
+		<p>A simple locator consists of a single segment; a compound (multi-part) reference of the kind shown above can contain several. A digit or series of digits followed immediately by a letter or series of letters (e.g., 55f) is considered to be two segments; a reference of the form 67a2 would be treated as having three segments. Segments can also be separated by one or more spaces, symbols or punctuation marks. These separators are all treated as equivalent. A reference such as 10:xix 67 therefore has three segments.</p>
+		<p>After Cindex has identified segments of a reference it classifies them. A segment consisting of digits (e.g., 345) is always evaluated as a number. A segment comprised of letters can be evaluated as a number in Roman numerals (e.g., xiv), as the spelled-out name of a month (e.g., May) or as plain text (e.g., Plate), depending on settings you make.</p>
+		<p>When Cindex is first installed, it is set to recognize Arabic numerals, and to treat any letter sequence as a plain text segment (it does not recognize Roman numerals or names of months). When Cindex compares reference segments of different types, it assigns higher precedence to Arabic numerals, and lower precedence to segments made of letters.</p>
+		<hr />
+		<b>See also<br />
+		</b><a href="Pageref_structure.htm">Specifying the structure of page references</a><b><br />
+		</b><a href="../_Sorting/Sorting_locators.htm">Evaluating and sorting page references</a><br />
+		<a href="Pageref_alter.htm">Adjusting page references</a>
+	</BODY>
+</HTML>

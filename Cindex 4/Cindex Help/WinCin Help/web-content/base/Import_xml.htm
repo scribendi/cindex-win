@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Working with XML records</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<sup><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="{ }, in exported XML records" />
+				<PARAM NAME="Keyword" VALUE="< >, in exported XML records" />
+				<PARAM NAME="Keyword" VALUE="XML records" />
+				<PARAM NAME="Keyword" VALUE="Errors, saving XML records" />
+				<PARAM NAME="Keyword" VALUE="XML records, saving" />
+				<PARAM NAME="Keyword" VALUE="XML records, importing" />
+				<PARAM NAME="Keyword" VALUE="Third party software" />
+				<PARAM NAME="Keyword" VALUE="Third party software, exchanging index with" />
+			</OBJECT></sup>
+		<h2>Working with XML records</h2>
+		<p>For interchange with other indexing software, Cindex can export and import index records  as tagged elements in XML documents.  These documents identify key elements of records, such as required last text fields, and locator fields, and include complete information about fonts and text styles used in records. </p>
+        <p>To save an index as XML records, choose Save As&#x2026; from the File menu then from the File Format drop-down list choose XML Records. Cindex automatically provides the appropriate filename extension (.ixml) when it saves the document.</p>
+        <table border="0" cellpadding="4" cellspacing="0">
+          <tr valign="top">
+            <td><p>Before saving XML Records, Cindex checks the index for records that contain mismatched &lt;&nbsp;&gt; or mismatched {&nbsp;} within a  field. If any records contain mismatched &lt;&nbsp;&gt; or {&nbsp;}, Cindex will warn you and will display the records in a group. You will need to correct the mismatches before you can export the records.</p></td>
+          </tr>
+        </table>
+<p>Cindex provides two ways to use records in XML format: you can create a new index directly from the XML Records file, or you can import the  records into an existing index.</p>
+<p>To add the contents of the XML Records file to an existing index, choose Import&#x2026; from the File menu, then select the document you want.</p>
+<p>To create a new index from XML Records, choose Open&#x2026; from the File menu, then select the document by name from the displayed list. You can also do this through the Windows Explorer by double-clicking the document’s icon. If no index with the name of the XML document exists in the folder that document Cindex will automatically create a new one with the name of the document and will import the records. If an index with the name of the document already exists, Cindex will present a panel through which you should choose the name and location of the index to be created.</p>
+<hr />
+		<b>See also </b><br />
+<a href="Export_optionsxml.htm">Options for saving XML records</a><br />
+		<a href="Import_errors.htm">Import errors</a>
+	</BODY>
+</HTML>

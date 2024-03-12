@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Index style and layout</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+	<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Style (index)" />
+	<PARAM NAME="Keyword" VALUE="Style (index), entry layout" />
+	<PARAM NAME="Keyword" VALUE="Layout of entries" />
+	<PARAM NAME="Keyword" VALUE="Index, format" />
+	<PARAM NAME="Keyword" VALUE="Format, index" />
+	<param name="Keyword" value="Run-in style, setting" />
+	<param name="Keyword" value="Paragraph (run-in) style, setting" />
+	<param name="Keyword" value="Indented style, setting" />
+	<param name="Keyword" value="Run-back subheadings" />
+	<param name="Keyword" value="Collapsing headings" />
+	<param name="Keyword" value="Vertical bar |" />
+	<param name="Keyword" value="Vertical bar |, forcing run-on subheading" />
+	<param name="Keyword" value="Bar |" />
+	<param name="Keyword" value="Bar |, forcing run-on subheading" />
+	<param name="Keyword" value="|" />
+	<param name="Keyword" value="|, forcing run-on subheading" />
+	<PARAM NAME="Keyword" VALUE="Units" />
+	<PARAM NAME="Keyword" VALUE="Units, entry layout" />
+	<PARAM NAME="Keyword" VALUE="Document format" />
+	<PARAM NAME="Keyword" VALUE="Document format, entry layout" />
+</OBJECT>
+		<h2>Style and layout of entries</h2>
+		<P>To set the style and layout of index entries, choose <B>Style &amp; Layout...</B> from the Document menu.</P>
+		<P>Click <B>Indented</B> or <B>Run-in</B> to specify <A HREF="../definitions/def_indentedstyle.htm">indented</A> or <A HREF="../definitions/def_runinstyle.htm">run-in</A> (paragraph) as the basic index style.  If you click <B>Run-in</B>, you can choose from the adjacent drop-down list the level of heading below which Cindex will run-in headings (the default setting is to run-in all levels below the main heading). The choice you make takes effect only when the index is displayed in a fully formatted view. Cindex always uses a standard indented style for display in a draft view.</P>
+		<p>For each major style, Cindex provides variants you can select through the <b>Variant</b> drop-down list.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td bgcolor="white" width="116">
+					<p>Standard Layout</p>
+				</td>
+				<td bgcolor="white">
+					<p>Entries are formatted in the standard way, either indented or run-in.</p>
+					<p>If you choose an indented style, you can force individual entries to be formatted in run-in style. To force run-on subheadings below a particular level, type a vertical bar (|) as the <i>last</i> character in the heading from which you want lower levels to run-on. Cindex will automatically substitute the correct punctuation for the | when it formats the entry.</p>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td bgcolor="white" width="116">
+					<p>Indent Major Subheadings</p>
+				</td>
+				<td bgcolor="white">
+					<p>If the index contains sub-subheadings as well as subheadings Cindex can format entries so that subheadings are run-in from headings, except when any subheading has a sub-subheading beneath it, in which case all the subheadings under the relevant heading are indented and sub-subheadings are run-in.</p>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td bgcolor="white" width="116">
+					<p>Run-back Subheadings</p>
+				</td>
+				<td bgcolor="white">
+					<p>Cindex will modify the layout of any entry in which a subheading (or sub-subheading) falls under a heading (or subheading) that contains no immediately following page reference. Cindex converts the subheading (or sub-subheading) to a phrase that modifies the main heading (or subheading).</p>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td bgcolor="white" width="116">
+					<p>Show Repeated Headings</p>
+				</td>
+				<td bgcolor="white">
+					<p>Cindex displays every level of heading for each entry, (i.e., it does not suppress repeated headings).</p>
+				</td>
+			</tr>
+		</table>
+		<p>If your entries contain multiple levels of heading, you can collapse heading levels in the formatted index, so that, for example, all subheadings are hidden, and the page references and cross-references that belong to them are merged with those from the main heading. You can collapse headings from any level by checking <B>Collapse Headings</B> <B>below</B> and choosing from the menu the level of heading below which headings will be collapsed.</p>
+		<P>When you collapse entries, Cindex automatically suppresses &quot;See&quot; (but not &quot;See also&quot;) references that originate from a heading level that is collapsed.</P>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>If you set Style and Layout when no index is open for work, the settings become the default ones that Cindex uses for new indexes when you create them.</p>
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<b>
+		See also
+
+	
+		</b><br />
+		<a href="Format_groupingentries.htm">Grouping entries</a><br />
+		<a href="_Format_indentation.htm">Indentation</a><br />
+		<a href="_Format_entryspacing.htm">Entry spacing</a><br />
+		<a href="_Format_adjustingpunctuation.htm">Adjusting punctuation</a><br />
+		<a href="Format_headings.htm">Heading typography and layout</a><br />
+		<a href="../base/StyleSheet.htm">	Style sheets</a>
+	</BODY>
+</HTML>

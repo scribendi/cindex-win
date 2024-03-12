@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Splitting an index into parts</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Index, dividing into parts" />
+	<PARAM NAME="Keyword" VALUE="Splitting indexes" />
+	<PARAM NAME="Keyword" VALUE="Dividing indexes" />
+</OBJECT>
+		<h2>Splitting an index into part indexes</h2>
+		<p>Single volume works are sometimes broken into multiple (spinoff) volumes, each with its own index. In such cases one wants to extract from the index to the single volume the entries that will belong to the separate volumes (adjusting page references if the text pages have been renumbered).</p>
+		<p>Follow these steps to break out the appropriate records into separate indexes:</p>
+		<ol>
+			<li type="1">Ensure that each record contains a single locator. If any records contain more than one page reference, choose <b>Expand</b> from the Tools menu.</li><li type="1">Find page references that belong to each spinoff volume. With the view set to show all records, choose <b>Find</b> from the Edit menu. In the Find window set the pop-up menu under the search text to confine the search to the locator field (usually named Page field), and check Evaluate References. Enter as search text the range of page numbers that are to be included in the spinoff volume. Click Find All to locate all records that refer to these pages. Cindex will make a temporary group that holds the results of the search.</li><li type="1">Choose <b>Save Group…</b> from the Edit menu to create a permanent group from the results of the search. Use a name that helps you identify the spinoff volume.</li><li type="1">Choose <b>Groups…</b> from the Tools menu, then in the panel click Link Cross-References (ensure that the list shows the name of the group you have just made). When you click OK Cindex will examine all records in the index, and will add to the group any record that contains a cross-reference to a record already in the group.</li><li type="1">Repeat steps 2 through 4 for each set of pages that will constitute a different spinoff volume.
+		</li></ol>
+		<p>The pages in a spinoff volume are usually numbered differently from their counterparts in the original volume (each spinoff volume is likely to have its first page numbered 1). You will therefore probably need to adjust the page references in the group of records that represent each component index.</p>
+		<p>If you are confident that no records in the parent index appear in more than one of the groups (a record might appear in more than one group if the spinoff volumes have some content in common), you can make the required page number adjustments on each group of records separately. However, it is generally advisable to <a href="Tools_Splitting1.htm">make a completely new index</a> for the records in each group.</p>
+		<hr />
+		<b>See also </b><br />
+		<a href="Tools_Splitting1.htm">
+		Creating a spinoff index from a group</a><br />
+		<a href="Tools_Cumcombine.htm">
+		Cumulating and combining indexes
+	</a>
+	</BODY>
+</HTML>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Import errors</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<sup><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Errors, importing records" />
+				<PARAM NAME="Keyword" VALUE="Importing records, errors" />
+			</OBJECT></sup>
+		<h2>Import errors</h2>
+		<p>Before importing records, Cindex examines the document to check the following:</p>
+		<ul>
+			<li type="disc">Will new records fit within the current record size?
+			</li><li type="disc">Does any record have more fields than Cindex can accommodate?
+			</li><li type="disc">Does any new record contain unacceptable characters?
+			</li><li type="disc">Is any record badly-formed (for example, does it lack a delimiter)?
+		</li></ul>
+		<p>If Cindex detects that some new records are longer than the current record size, it will ask if you want to increase the record size.</p>
+		<p>If Cindex detects that some new records require more levels of headings than are permitted in the index, it will ask if you want to increase the maximum number of heading levels.</p>
+		<p>If Cindex finds any other problem it will warn you that the document contains bad records, and will provide you the option to read the document anyway, ignoring any bad records it contains. If you click Cancel, Cindex will stop the operation and display a window that provides information about what was wrong with the records it was trying to import. Each line in the window identifies an error, and shows the line number in the document being read and the type of problem.</p>
+		<p>Cindex accumulates information on up to 200 errors. If the document being read contains more than this number of errors, the most likely cause is that the document does not contain records, or that records are not in the format Cindex expects.</p>
+		<p>If  Cindex encounters a character it cannot represent, it substitutes the Unicode unknown character &#xfffd;. Cindex marks any records that contain unknown characters; you can find these by choosing Find from the Edit menu.</p>
+<hr />
+		<b>See also </b><br />
+<a href="Import_records.htm">Importing records<br>
+</a><a href="Import_xml.htm">Working with XML records<br>
+Working with index archives</a><br />
+<a href="Import_Sky.htm">Importing records from Sky Index</a><br>
+<a href="Import_Macrex.htm">Importing records from Macrex</a><br />
+		<a href="Import_delimited.htm">
+		Importing records from delimited text</a><br />
+	</BODY>
+</HTML>

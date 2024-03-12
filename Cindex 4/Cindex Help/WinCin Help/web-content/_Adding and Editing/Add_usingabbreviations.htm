@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Using abbreviations</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Abbreviations" />
+				<PARAM NAME="Keyword" VALUE="Abbreviations, defining" />
+				<PARAM NAME="Keyword" VALUE="Abbreviations, using in records" />
+</OBJECT>
+		<h2>Using abbreviations</h2>
+		<p>You can use abbreviations to represent long words or phrases; when you type the abbreviations in records Cindex automatically expands them to the phrases they represent. For example, you might define <i>ards</i> to represent <i>Adult respiratory distress syndrome</i>.</p>
+		<p>As you are adding or editing a record, you can define an abbreviation for any word or phrase that you have typed. Select the text for which you want to define the abbreviation, then choose <b>New Abbreviation</b> from the Edit menu or the contextual menu. Cindex will display a window through which you can complete your definition of the abbreviation.</p>
+		<p>You can also create an abbreviation via the <a href="../base/Abbreviations.htm">Abbreviations panel</a> directly by choosing <strong>Edit&hellip;</strong> from the <b>Abbreviations</b> submenu in the Tools menu.</p>
+<p>To insert the expanded form of an abbreviation anywhere in a record that you are adding or editing, simply type the abbreviation. If there is enough room in the record Cindex will expand an abbreviation that is preceded by a <SMALL>SPACE</SMALL> or any of these characters:</p>
+		<blockquote>
+			<p>( [ &quot; “ ' ‘</p>
+		</blockquote>
+		<p>and succeeded by a <SMALL>SPACE</SMALL> or any of these characters:</p>
+		<blockquote>
+			<p>) ] , . ; : &quot; ” ' ’</p>
+		</blockquote>
+		<p>Cindex will not accept any of the above characters in an abbreviation, though they may appear in the expanded phrase. If there is not enough room to accommodate the expanded phrase, Cindex will beep.</p>
+		<p>If you type the abbreviation at the end of a field, Cindex will expand it if you it <SMALL>RETURN</SMALL> or <SMALL>TAB</SMALL> to move to the next field.</p>
+		<p>If you find that you must use an abbreviation literally, you can insert it in a record with the following procedure: append some spurious character to it, followed by the character that would normally trigger its expansion, then move the entry point back to the spurious character and delete it. Because Cindex checks abbreviations only when you type one of the special terminating characters that triggers expansion, it will not expand the abbreviation that results from deleting the spurious character.</p>
+		<p>To prevent conflict between acronyms you want to use literally and acronyms you want to use as abbreviations, begin your abbreviations with a character or symbol that you are unlikely to use in the index. For example, if you want to use CME both as an abbreviation for “Continuing Medical Education” and as an acronym, you could name the abbreviation !CME, @CME or #CME.</p>
+		<hr />
+		<b>See also </b><br />
+		<a href="../base/Abbreviations.htm">Managing abbreviations</a><br />
+		<a href="Add_autocomplete.htm">Using hot keys<br />
+				Completing headings automatically<br />
+		</a><a href="../base/Macros.htm">Macros</a>
+	</BODY>
+</HTML>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Adding volume numbers to page references</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Alter references, add volume numbers" />
+	<PARAM NAME="Keyword" VALUE="Patterns, adding volume numbers" />
+</OBJECT>
+		<h2>Adding volume numbers to page references</h2>
+		<p>You have indexed a work in a single volume and have used simple page references, and now need to incorporate the index into a larger one in which references have to be tagged with the number of the volume in which they appear. Consider a series of references such as:</p>
+		<blockquote>
+			<p>45, 66, 89-91, 200</p>
+		</blockquote>
+		<p>that you want to convert to</p>
+		<blockquote>
+			<p>2:45, 2:66, 2:89-91, 2:200</p>
+		</blockquote>
+		<p>To convert one set of locators to the other, use <b>Replace</b> (Edit menu) to search for a pattern and then replace the text that matches pattern with a modified version of itself:</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top" bgcolor="white">
+				<td width="86">
+					<p>Find</p>
+				</td>
+				<td>
+					<p>[1-9][0-9]*</p>
+				</td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="86">
+					<p>Change to</p>
+				</td>
+				<td>
+					<p>2:\&amp;</p>
+				</td>
+			</tr>
+		</table>
+		<p>The pattern tells Cindex to find (in the locator field) the longest sequence that contains one or more digits and possibly a hyphen. In other words the pattern describes a simple page reference or a range of references.</p>
+		<p>The characters \&amp; (backslash, ampersand) in the replacement sequence denote the text that matched the pattern. When Cindex makes the substitution it incorporates this text in the replacement sequence. Thus Cindex replaces each reference by itself, preceded by the characters 2:.</p>
+		<hr />
+		<b>See also </b><br />
+		<a href="Patterns_defining.htm">Defining patterns</a><br />
+		<a href="Patterns_sample.htm">
+			Sample patterns
+	</a><br />
+		<a href="Patterns_replacing.htm">Replacing text that matches a pattern<br />
+		</a><a href="Pageref_alter.htm">Adjusting page references</a>
+	</BODY>
+</HTML>

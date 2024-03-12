@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Overriding automatic sorting</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Alphabetizing, spelled out forms">
+	<PARAM NAME="Keyword" VALUE="Abbreviations, sort as spelled out">
+	<PARAM NAME="Keyword" VALUE="Alphabetizing, ignoring text">
+	<PARAM NAME="Keyword" VALUE="Alphabetizing, forcing">
+
+</OBJECT>
+<h2>Alphabetizing text as some other text</h2>
+<p>If you know that you will always want to spell out certain words (e.g., St. as Saint), or will always want to ignore certain words or phrases, you can set Cindex to do this automatically, without needing to insert <a href="Sorting_override.htm">override text</a> in {…} or &lt;…&gt;. You manage this by specifying a set of text pairs: <em>target</em> text that Cindex looks for in records, and <em>substitute</em> text used in its stead when alphabetizing.</p>
+<p>To manage substitutions  click <b>Substitutions…</b> on the <b>Text</b> tab of the Sort panel. A new panel presents a list of substitution pairs.</p>
+<p data_temp_dwid="1">Double-click a row in the list to open a text box (at bottom left of list) in which you enter or edit the target text (e.g., St.) that should be alphabetized as something else (e.g, Saint). To the right of the target enter or edit the substitute. If  the target text is to be ignored entirely, provide no substitute text. To add a row, click <strong data_temp_dwid="2">Add</strong>. To delete a row, select it, then click <strong data_temp_dwid="3">Delete</strong>.</p>
+<p>There are some restrictions on text you can enter in the list:</p>
+<ul>
+<li>Target text (on the left) must be a complete word or the start of a word (i.e., it must begin with a letter or a number). It may be a prefix to its own substitute (on the right), but it may not match, or be a prefix to, any other text in the list.</li>
+  <li>The substitute text (on the right) may not begin with text that matches any target except its own. It may be empty, which causes Cindex to ignore the target text when  alphabetizing entries.</li> 
+</ul>
+<p>If  you provide an invalid target or substitute, Cindex will beep, and will require you to correct the error before it completes the edit.</p>
+<p>When Cindex alphabetizes records, it  will find a target  only when the target text begins a word, or matches a whole word. Cindex will not find a match if the target text sits within {&hellip;} or &lt;&hellip;&gt;.</p>
+<p>For each target found, Cindex treats its  text as if it were the substitute. For example, with 'Saint' set as the substitute for 'St.' this record field: </p>
+<blockquote>
+  St. George&rsquo;s Cross
+</blockquote>
+<p>would be alphabetized as though its text were</p>
+<blockquote>
+  Saint George’s Cross
+</blockquote>
+<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td><p>Cindex attends to substitutions only in letter-by-letter or word-by-word alphabetizing. Substitutions are ignored in a simple sort.</p></td>
+  </tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="4">
+	<tr valign="top"> </tr>
+		</table>
+<hr>
+		<b>See also </b><br>
+		<a href="Sorting_alphabetizing.htm">
+		Alphabetizing entries</a><br>
+		<a href="Sorting_override1.htm">
+		Filing entries under numbers and symbols</a><br>
+		<a href="Sorting_override2.htm">
+		Case-sensitive alphabetizing</a><br>
+		<a href="Sorting_override3.htm">
+		Sorting reserved characters
+	</a>
+	</BODY>
+</HTML>

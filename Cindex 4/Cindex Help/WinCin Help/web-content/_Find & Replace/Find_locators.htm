@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Searching for locators</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Finding, page references">
+	<PARAM NAME="Keyword" VALUE="Locators, finding">
+	<PARAM NAME="Keyword" VALUE="Search, for locators">
+	<PARAM NAME="Keyword" VALUE="Page references, finding">
+</OBJECT>
+		<h2>Searching for locators</h2>
+		<p>Use the <b>Find</b> panel (Edit menu) to find records that contain references to specified pages or range of pages.</p>
+		<p>To ensure that Cindex confines the search to the locator field, and evaluates locators correctly, do the following:</p>
+		<ul>
+			<li type="disc">Enter the locator or locator range in the box for search text.  The page reference may be a <a href="../base/Pageref_components.htm">multi-part locator</a>. (To find records that contain no locators or badly formed ones, leave the search text empty.)<li type="disc">Choose the name of the locator field (usually <i>Page</i>) from the popup menu under <b>Not</b>.
+			<li type="disc">Check <b>Evaluate References</b>. This ensures that Cindex ignores cross-references, and will correctly evaluate numbers and multi-part locators. (If <b>Evaluate References</b> is unchecked, Cindex treats the contents of the locator field as ordinary text.)
+		</ul>
+		<p>When searching for locators Cindex understands page ranges. If Cindex sees two locators separated by a hyphen (for example: 57-66) it understands that it should search for locators that fall within a range. It will also find a record in which the locator field contains a sequence such as 50–58, or 63-67. If you are using multi-part locators, you may abbreviate the second reference of the range so that it shows only parts that differ from the first reference.</p>
+		<p>You may use a character other than hyphen to denote an inclusive range, but only if you have told Cindex what this character is. See <a href="../base/Pageref_structure.htm">Specifying the structure of page references</a> to change the standard connecting character.</p>
+		<hr>
+		<b>See also </b><br>
+		<a href="../base/Pageref_components.htm">
+		Locator components</a><br>
+		<a href="../_Sorting/Sorting_locators.htm">
+		Evaluating and sorting page references
+	</a>
+	</BODY>
+</HTML>

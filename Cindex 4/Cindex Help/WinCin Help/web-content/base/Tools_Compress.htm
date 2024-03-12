@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Removing unwanted records</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Deleted records, removing from index" />
+	<PARAM NAME="Keyword" VALUE="Empty records, removing from index" />
+	<PARAM NAME="Keyword" VALUE="Record(s), empty" />
+	<PARAM NAME="Keyword" VALUE="Record(s), removing deleted" />
+	<PARAM NAME="Keyword" VALUE="Record(s), removing duplicates" />
+	<PARAM NAME="Keyword" VALUE="Duplicate records" />
+	<PARAM NAME="Keyword" VALUE="Duplicate records, removing" />
+	<PARAM NAME="Keyword" VALUE="Generated records, removing" />
+	<PARAM NAME="Keyword" VALUE="Page references, consolidating" />
+	<PARAM NAME="Keyword" VALUE="Page references, multiple in record" />
+	<PARAM NAME="Keyword" VALUE="Cross-references, consolidating" />
+	<PARAM NAME="Keyword" VALUE="Consolidating references" />
+	<PARAM NAME="Keyword" VALUE="Labeled records, merging" />
+</OBJECT>
+		<h2>Removing unwanted records</h2>
+		<p>Use the <b>Compress</b> panel (Tools menu) to remove unwanted records from the index.</p>
+		<p>To remove records that contain no text check <b>Remove Empty Records</b>.</p>
+		<p>To remove deleted records check <b>Remove Deleted Records</b>.</p>
+		<p>To remove exact duplicates check <b>Remove Duplicated Records</b>.</p>
+		<p>To remove records that contain automatically-generated cross-references check <b>Remove Generated Records</b>.</p>
+		<p>As you build an index you might create several records that are identical except for their page references or cross-references. To simplify the organization of records, Cindex can merge the identical entries, putting all their page references and cross-references into as few records as possible, and deleting any unnecessary records that result. To consolidate references, and to remove records that are no longer needed, check <b>Consolidate References</b>. By default, Cindex does not consolidate references from otherwise identical records that carry different labels. To make Cindex ignore labels, check <b>Ignore Different Labels</b>. When this is checked, a merged record carries the label (if any) of the first of the merged set.</p>
+		<p>You need not consolidate references—Cindex always merges duplicate entries when it displays or prints the formatted index—but you can reduce the size of your index by doing so.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>Cindex cannot consolidate references or remove duplicated records if the index is sorted in page number order, in which case these items are dimmed.</p>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td rowspan="2">
+					<p>When Cindex removes records from an index it renumbers those that remain. You should not rely on a record having the same number before and after you compress an index. Cindex uses a record’s number to keep track of its membership in any <a href="Groups.htm">group</a>. Because record numbers often change when you compress an index, Cindex invalidates all its groups.</p>
+				</td>
+			</tr>
+			<tr valign="top">
+				
+			</tr>
+			<tr valign="top">
+				<td>Before you consolidate references, make sure that Cindex has been set correctly to recognize the character that <A HREF="Pageref_structure.htm">separates successive references</A> when more than one appears in the locator field.</td>
+			</tr>
+		</table>
+		<hr />
+		<b>See also </b><br />
+		<a href="Crossref_generate.htm">
+		Generating cross-references</a><br />
+		<a href="Tools_Expand.htm">
+		Expanding index entries</a><br />
+		<a href="../_Adding and Editing/Add_deletingrestoring.htm">Deleting and restoring records</a><br />
+	</BODY>
+</HTML>

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Problems with page references</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Troubleshooting, page references">
+	<PARAM NAME="Keyword" VALUE="FAQ, page references">
+	<PARAM NAME="Keyword" VALUE="Page references, troubleshooting">
+</OBJECT>
+		<h2>Problems with page references</h2>
+		<p>Here are answers to some frequently-asked questions about page references in entries.</p>
+		<table width="100%" border="0" cellspacing="0" cellpadding="7" bgcolor="#eeeeee">
+			<tr valign="top" bgcolor="#eeeeee">
+				<td bgcolor="#eeeeee" width="98%">
+					<p><b>When I view entries in Fully Formatted View my page numbers are misordered. They are OK in Draft view. What is happening?</b> In a draft or unformatted view of the index, Cindex displays references exactly as you entered them in records. In a formatted view, Cindex normally sorts a series of references so that they appear in ascending order (you control this behavior by choosing Page References from the Document menu). If Cindex does not order references in the way you would wish, one of two things is probably happening:</p>
+					<blockquote>
+						<p>• You might have references whose components are separated by different forms of punctuation. Cindex normally assumes that a comma separates one reference from the next. If you are using a comma to separate parts of a single reference, and some other character such as a semicolon to separate complete references, you must tell Cindex what character you are using. To do this choose Reference Syntax from the Document menu.<br>
+								• If you have compound references containing letters and numbers, or even Roman numerals and month names, you will need to tell Cindex how it should prioritize the different components. To do this choose Sort from the Tools menu, then under Character Priority on the Text tab, drag the items Letters, Numbers and Symbols to the positions that reflect the precedence you want (the one at the top of the list has highest precedence).</p>
+					</blockquote>
+					<p><b>I have to work with folioed, but unpaginated, pages for my next index. I know I can input the temporary pagination with an attached chapter number, using the construct 35%1 (meaning the first page of chapter 35), but how do I handle page spreads and do I need to put the chapter number before every single page number?</b> Enter page spreads with the chapter number and % before the first part only, e.g., 35%3-6. Each reference MUST have the chapter number and % in front of it (e.g., 35%4, 35%7, 35%10). To avoid constant re-keying of the 35%, you can place this sequence on a function key, so that you need use only one keystroke.</p>
+					<p><b>I've just used Alter References (Tools menu) to convert my temporary pagination to final form, and have discovered that entries for chapter 19 were altered twice.</b> You probably entered 9% to denote chapter 9 and 19% to denote chapter 19. When you set up to make adjustments for chapter 9 and specified a Matching Pattern of</p>
+					<blockquote>
+						<p><b>9%</b></p>
+					</blockquote>
+					<p>Cindex would have altered references to pages in chapters 9, 19, 29, 39 etc. because it was looking to match any sequence of characters that contained 9%. You can correct the error by subtracting the offset you unintentionally added to references for chapter 19. Set the Matching Pattern to</p>
+					<blockquote>
+						<p><b>19% </b></p>
+					</blockquote>
+					<p>and set Adjustment to the negative of the number you originally added. To avoid this kind of problem when dealing with temporary pagination of chapter numbers with single and multiple digits, you should always use leading zeros to ensure a uniform number of digits preceding the % (e.g., 009%, 019%, 109%).</p>
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<p><b>See also<br>
+			</b><a href="tech_contactinfo.htm">Customer Support</a></p>
+	</BODY>
+</HTML>

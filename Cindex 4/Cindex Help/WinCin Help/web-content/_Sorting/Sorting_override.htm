@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Overriding automatic sorting</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Alphabetizing, automatically ignore text">
+	<PARAM NAME="Keyword" VALUE="Alphabetizing, forcing">
+	<PARAM NAME="Keyword" VALUE="Special characters, in alphabetizing">
+	<PARAM NAME="Keyword" VALUE="Reserved characters, in alphabetizing">
+	<PARAM NAME="Keyword" VALUE="Angle brackets < >, in alphabetizing">
+	<PARAM NAME="Keyword" VALUE="< >, in alphabetizing">
+	<PARAM NAME="Keyword" VALUE="Braces { }, in alphabetizing">
+	<PARAM NAME="Keyword" VALUE="{ }, in alphabetizing">
+</OBJECT>
+		<h2>Overriding automatic sorting</h2>
+		<p>Cindex provides two ways to override normal alphabetizing. If you know that you will always some text (e.g., St.) to be alphabetized as something else (e.g., Saint) you can set up <a href="Sorting_substitutions.htm">automatic substitutions</a>. To override alphabetizing in particular cases, you  use special characters in records to control how Cindex sorts text.</p>
+		<p>To make Cindex ignore specified characters or words, enclose the characters or words in angle brackets. For example to make Cindex ignore 'Major' in &quot;Hunter, Major William,&quot; you would set the text of the heading as:</p>
+		<blockquote>
+			<p>Hunter, &lt;Major &gt;William</p>
+		</blockquote>
+		<p>Cindex ignores characters in angle brackets during sorting, unless these are the only ones that distinguish entries. In that case the order of entries is determined by the characters in the brackets. The angle brackets themselves do not appear in the fully formatted display, though they do appear in the draft display.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>In word-by-word alphabetizing, Cindex attends to spaces and hyphens between words. When you mark a word or passage of text to be ignored, you should always include within the angle brackets any trailing space or hyphen, as in the example above. If you leave a trailing space outside the brackets you may find that your entry is misplaced.</p>
+				</td>
+			</tr>
+		</table>
+		<p>To make Cindex sort on text that is not a part of a record (e.g., a spelled-out number), enclose the text in braces. For example, to make Cindex sort &quot;1066, The battle of Hastings&quot; under 'ten-sixty-six' you would set the text of the heading as:</p>
+		<blockquote>
+			<p>{ten sixty six}1066, The battle of Hastings</p>
+		</blockquote>
+		<p>Notice that there is no space between the closing brace and 1066. Cindex uses the characters enclosed in braces to determine the alphabetical position of the record, but hides them and the braces when it displays the fully-formatted index (the braces and enclosed characters are visible in the draft view).</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>In the record-entry window Cindex provides toolbar buttons for enclosing selected text in &lt; &gt; or { }.</p>
+					<p>To use any of &lt; &gt; { } as a literal character in an entry, you must place \ immediately before it (e.g., \&lt;).</p>
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<b>See also </b><br>
+		<a href="Sorting_alphabetizing.htm">
+		Alphabetizing entries</a><br>
+		<a href="Sorting_override1.htm">
+		Filing entries under numbers and symbols</a><br>
+		<a href="Sorting_override2.htm">
+		Case-sensitive alphabetizing</a><br>
+		<a href="Sorting_override3.htm">
+		Sorting reserved characters
+	</a>
+	</BODY>
+</HTML>

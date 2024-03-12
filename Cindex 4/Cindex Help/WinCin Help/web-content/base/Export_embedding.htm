@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Embedding entries in other documents</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="RTF (Rich Text Format)" />
+				<PARAM NAME="Keyword" VALUE="Rich Text Format (RTF)" />
+				<PARAM NAME="Keyword" VALUE="Entries, embedding" />
+				<PARAM NAME="Keyword" VALUE="Embedding entries" />
+				<PARAM NAME="Keyword" VALUE="RTF (Rich Text Format), embedding entries" />
+				<PARAM NAME="Keyword" VALUE="Rich Text Format (RTF), embedding entries" />
+				<PARAM NAME="Keyword" VALUE="Microsoft Word, embedding entries" />
+				<PARAM NAME="Keyword" VALUE="Record(s), copying to other documents" />
+				<PARAM NAME="Keyword" VALUE="Copying, records to other documents" />
+			</OBJECT>
+		<h2>Embedding entries in other documents</h2>
+		<p>Cindex can directly embed index entries in Microsoft Word documents or documents from any other word-processor that uses the standard Rich Text Format (RTF) definitions of index entries.</p>
+		<p>To embed entries you should first set the index to <i>draft</i> view. Cindex does not prepare entries for embedding if you are working in a fully formatted view.</p>
+		<p>Drag (or copy) entries into your word processor document at the places referred to by the entries.</p>
+		<p>Cindex formats embedded entries as hidden text. If you want to see the text that has been embedded be sure to set your word-processor to show hidden text.</p>
+		<p>Entries embedded by Cindex have the following properties:</p>
+		<ul>
+			<li type="disc">They carry no page references (which will be supplied by Microsoft Word, or whatever word-processor you are using), but they do carry information about how the page references should be formatted (as boldface or italic, etc.—make these settings by choosing <b>Page References…</b> from the Document menu). For your own purposes you can place page references in the locator fields or records, but Cindex will not transfer them during embedding.</li><li type="disc">If the locator field contains the character you use to define a range of pages, either alone or as part of a real page reference, the embedded index entry will refer to a fictitious bookmark (&quot;$$$&quot;) that you should later replace with a real bookmark to indicate the range of text that should be represented by the page range in the index entry.
+			</li><li type="disc">The embedded index entries carry any cross-references from the locator fields of records. These will be formatted in the style you have previously specified by choosing <b>Cross-References…</b> from the Document menu.</li><li type="disc">Each heading in the index entry normally carries a sort key that is used by Microsoft Word when it arranges the entries in the formatted index. Cindex constructs this sort key (which will not appear in the formatted index) according to the sort rules you have specified for the index. To take maximum advantage of Cindex's powerful alphabetizing capabilities, before you embed entries you should ensure that they are sorted as you would wish them to appear. If you do not want Cindex to embed a sort key along with the entry, you can disable this by choosing <b>Preferences…</b> from the Edit menu. The setting is on the Formatted Export tab.</li></ul>
+		<hr />
+		<b>See also </b><br />
+		<a href="Export_formatted.htm">
+		Saving formatted indexes
+	</a>
+	</BODY>
+</HTML>

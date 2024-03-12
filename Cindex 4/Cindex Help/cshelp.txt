@@ -1,0 +1,901 @@
+.topic HIDC_NEW_OPTIONS
+To change the default properties of index records in a new index, click Options.
+.topic HIDC_SAVEAS_OPTIONS
+When saving certain kinds of documents you can specify what is to be saved. 
+For formatted documents you can specify the entries to be included; for unformatted documents you can specify which records, and their attributes.
+.topic HIDC_FORMWRITE_ALL
+To format all entries visible in the current view, click All.
+.topic HIDC_FORMWRITE_PAGE
+To format entries that would fall on a range of printed pages, click Pages, and enter the range at from and to.
+.topic HIDC_FORMWRITE_SELECT
+To format entries you have selected, click Selection.
+.topic HIDC_FORMWRITE_RECORDS
+To format records falling in a specified range, click records and enter the range of records.
+You may specify records by the leading text from their headings (and subheadings), or by record number.
+.topic HIDC_FORMWRITE_USESTYLE
+To save formatted entries with leading indents to subheadings defined by attributes of paragraph styles, click this item.
+.topic HIDC_FORMWRITE_USETAB
+To save formatted entries with leading indents to subheadings defined by 'tab' characters, click this item. The number of tab characters used to form the lead indent will correspond to the level of subheading.
+.topic HIDC_FORMWRITE_USEOTHER
+To save formatted entries with leading indents to subheadings filled with a character you specify, click this item, then type the character. The number of characters use to form the lead indent will correspond to the level of subheading.
+.topic HIDC_PRINT_RECFROM
+To print records falling in a specified range, click records and enter the range of records.
+You may specify records by the leading text from their headings (and subheadings), or by record number.
+.topic HIDC_PRINT_BULLET
+To print a bullet beside any labeled entry, check this box.
+.topic HIDC_PRINT_ODDEVEN
+Choose from this list the set of pages you want to print.
+.topic HIDC_ARCHIVE_INCLUDE
+To include the archived records in the active index, click this button.
+.topic HIDC_ARCHIVE_NEW
+To create a new index to hold the archived records, click Make a New Index.
+.topic HIDC_CODETRANSG
+To set text in \g…\G styles codes in a distinctive font, choose the font from the list.
+.topic HIDC_CODETRANSH
+To set text in \h…\H styles codes in a distinctive font, choose the font from the list.
+.topic HIDC_WRITE_UNFORMAPPEND
+To append index records to an existing file, check Append to Existing File.
+If the file you have named does not exist, Cindex creates it.
+.topic HIDC_WRITE_UNFORMDEL
+To include deleted records in the file, check Include Deleted Records. 
+If this item is unchecked, Cindex omits deleted records.
+.topic HIDC_WRITE_UNFORMEXTEND
+To include with records information about when, and by whom, they were last modified, and their deleted status, check Add Extended Information.
+.topic HIDC_WRITE_UNFORMNUMORDER
+To place records in the file in record number order, check Write in Record Number Order.
+If this is unchecked, records are written in the order in which they appear in the active view.
+.topic HIDC_WRITE_UNFORMMINFIELD
+To write records so that each has a specified minimum number of fields (up to 16), enter the number here.
+If a record contains fewer than the minimum number, Cindex will write a record with extra blank fields before the locator field. If you enter 0, Cindex will write each record with exactly as many fields as it contains.
+.topic HIDC_WRITEUNFORM_UTF8
+Click to write records with UTF-8 (Unicode) encoded characters.
+.topic HIDC_WRITEUNFORM_ANSI
+Click to write records with ANSI (Windows) encoded characters. 
+.topic HIDC_FIND_ALL
+To permit Cindex to act on all records accessible in the current view, click All Records in View.
+.topic HIDC_FIND_SELECTED
+To confine action to records you have selected, click Selected Records.
+.topic HIDC_FIND_RANGE
+To confine action to a range of records accessible in the current view, click From and enter the range of records to be examined.
+You may specify records by the leading text from their headings, or by record number.
+.topic HIDC_FIND_ALLDATES
+To permit action on records made or modified at any time, check All.
+.topic HIDC_FIND_DATERANGE
+To confine action to records made or modified within a range of dates, check From and specify the starting and ending dates.
+You may enter dates in whatever format is conventional in your country.
+.topic HIDC_FIND_USERID
+To confine the search to records made or modified by a particular user, enter the identifier here.
+.topic HIDC_FIND_ONLYAMONG
+Click this to search only among records that have the attributes checked below.
+.topic HIDC_FIND_NOTAMONG
+Click this to search only among records that do not have the attributes checked below.
+.topic HIDC_FIND_NEWREC
+To confine action to records created during your current session, check New Records.
+.topic HIDC_FIND_MODREC
+To confine action to records modified during your current session, check Modified Records.
+.topic HIDC_FIND_DELREC
+To confine action to deleted records, check Deleted Records.
+.topic HIDC_FIND_MARKREC
+To confine action to marked records (those on which Cindex could not complete some operation), check Marked Records.
+.topic HIDC_FIND_GENREC
+To confine action to automatically generated records, check Generated Records.
+.topic HIDC_FIND_TAGREC
+To confine action to records you have labeled, check Labeled Records.
+.topic HIDC_FIND_TAGRECLEVEL
+Choose which label Cindex should search for.
+.topic HIDC_FIND_FINDSTART
+To start or continue a search, click this button.
+.topic HIDC_FIND_FINDSTOP
+To stop a search that is in progress, or close the box when no search is under way, click this button.
+.topic HIDC_FIND_FINDALL
+To find all records that meet the search specification, click Find All.
+Cindex will place the records in a temporary group and will display that when it has finished the search.
+.topic HIDC_FIND_DOWN
+To search from the top to the bottom of the index, click Down.
+.topic HIDC_FIND_UP
+To search from the bottom to the top of the index, click Up.
+.topic HIDC_FIND_NOT1
+To find any record that does not contain the specified text, check Not.
+.topic HIDC_FIND_TEXT1
+To find a word or phrase, or any sequence of characters, enter it here.
+Cindex maintains a list of the text sequences used in recent searches. To re-use a recent item choose from the list.
+.topic HIDC_FIND_STYLE1
+To search for text in a specified style or font, click Attributes, and specify the font and style(s) required.
+To search for the specified font and style(s), regardless of the text they belong to, provide no search text.
+.topic HIDC_FIND_STYLESHOW1
+This shows any styles (B for boldface, etc.) or font <…> specified in the search.
+.topic HIDC_FIND_ANDOR1
+To search for one segment of text and another or another, choose the and or or condition from this list.
+Cindex will add items to the Find dialog box so that you can specify additional search elements.
+To remove the and or or condition, choose Only from the list.
+.topic HIDC_FIND_FIELDS1
+To confine the search to a specified field or fields in records, chose the field(s) from the list.
+.topic HIDC_FIND_EVALREFS1
+To find records containing a specified locator or range of locators (and make Cindex interpret the search text as a reference rather than plain text), check Evaluate References.
+This item is dimmed unless you have confined the search to the locator field.
+.topic HIDC_FIND_WORD1
+To find only whole words, check Whole Word.
+.topic HIDC_FIND_CASE1
+To make the search case-sensitive, check Case.
+.topic HIDC_FIND_PATTERN1
+To make Cindex interpret the search text as a pattern, check Pattern.
+.topic HIDC_FINDREP_BOLD
+To find text in boldface, check Bold.
+.topic HIDC_FINDREP_ITALIC
+To find text in italics, check Italics.
+.topic HIDC_FINDREP_ULINE
+To find underlined text, check Underline.
+.topic HIDC_FINDREP_SMALL
+To find text in small caps, check Small Caps.
+.topic HIDC_FINDREP_NORMAL
+To find text in the normal line position, check Normal.
+.topic HIDC_FINDREP_SUPER
+To find superscript text, check Superscript.
+.topic HIDC_FINDREP_SUB
+To find subscript text, check Subscript.
+.topic HIDC_FINDREP_FONT
+To find text in a specified font, choose the font from the Font list.
+To find specified text or styles, regardless of the font, choose <Any Font>.
+.topic HIDC_REPLACE_REP
+To replace the found text (or styles or font), click Replace.
+.topic HIDC_REPLACE_REPALL
+To replace all occurrences of the specified text (or styles or font), click Replace All.
+When you click Replace All, Cindex continues its search from the current record; it does not replace text in records it has already passed over.
+.topic HIDC_REPLACE_TEXT
+Enter replacement text at Change To.
+To remove the found text from records, leave Change To blank. 
+.topic HIDC_REPLACE_STYLE
+To replace or change a text style or font, click Attributes, and specify the font and style(s) required.
+You can replace styles and fonts without changing text, as long as you specify no search text and no replacement text.
+.topic HIDC_REPLACE_STYLESHOW
+This shows any replacement styles (B for boldface, etc.) or font <…>.
+.topic HIDC_REPSTYLE_BOLDAP
+To apply this style when making a replacement, click the button in the Apply column.
+.topic HIDC_REPSTYLE_BOLDIG
+To leave this style unchanged when making the replacement, click the button in the Ignore column.
+.topic HIDC_REPSTYLE_BOLDREM
+To remove this style when making the replacement, click the button in the Remove column.
+This button is dimmed if you have not specified the style as a search attribute.
+.topic HIDC_REPSTYLE_FONTIG
+To leave the font unchanged when making the replacement, click Ignore.
+.topic HIDC_REPSTYLE_FONTSET
+To apply a particular font when making the replacement, choose the font from the list.
+Choose <Default Font> to set the text in the default font for the index.
+.topic HIDC_ABBREV_NAME
+Type here the name you want to represent the long phrase.
+The name may contain up to eight characters.
+.topic HIDC_USERID
+Enter up to four characters as a user identifier.
+Index records contain information about the user who made or modified them.
+.topic HIDC_PREFS_PGENCINMAX
+To make Cindex occupy the full screen when it starts up, check this item.
+.topic HIDC_PREFS_PGENDIRECTORY
+To specify the folder that Cindex will use by default, click this button.
+.topic HIDC_PREFS_PGENDOCMAX
+To make indexes occupy the full Cindex window when they are opened, check this item.
+.topic HIDC_PREFS_PGENNOACTION
+Click this to make Cindex take no action when it starts up.
+.topic HIDC_PREFS_PGENOPEN
+Click this to make Cindex automatically open the last index you worked on each time it starts up.
+.topic HIDC_PREFS_PGENOPENPANEL
+Click this to make Cindex display the Open File panel when it starts up.
+.topic HIDC_PREFS_PGENTIME
+To make Cindex save changes to the index you are working on at regular intervals, specify the interval minutes. If you do not want Cindex to save changes automatically, set 0.
+.topic HIDC_PREFS_PGENUID
+If this item is checked, Cindex will prompt you to provide a user identifier when it starts up. The identifier is attached to index entries that you make or modify.
+.topic HIDC_PREFS_PGENUIDTEXT
+Enter here up to four characters that will identify the user who added or modified records.
+.topic HIDC_PREFS_PGENUPDATE
+Check this to make Cindex notify you automatically when an update is available.
+.topic HIDC_PREFS_PGENDIRECTORY
+This shows the path to the directory that Cindex will always use initially.
+.topic HIDC_PREFS_PGENRECENT
+Choose from this list the maximum number of names of recently used indexes Cindex will show in the file menu.
+.topic HIDC_PREFS_PEDIT_NEWWINDOW
+Check this to make Cindex open a separate window when you add or edit records.
+.topic HIDC_PREFS_PEDIT_SWITCHVIEW
+Check this to make Cindex switch to a draft view whenever you add or edit records. If this is unchecked, Cindex will leave the view unchanged. If you add or edit records in a fully-formatted view, Cindex will not necessarily display all records in the main view.
+.topic HIDC_PREFS_PEDITREMOVEDUP
+Check this to make Cindex automatically remove multiple spaces (leaving only one) whenever they are inserted into records.
+.topic HIDC_PREFS_PEDIT_SMARTFLIP
+Check this to make Cindex rearrange text as necessary when it exchanges the contents of two levels of heading.
+.topic HIDC_PREFS_PEDIT_AUTORANGE
+Check this to make Cindex generate the second page number of a range when you type the connecting -.
+.topic HIDC_PREFS_PEDITASAVE
+When this is checked, Cindex will always save changes to records when you close the record-entry window.
+.topic HIDC_PREFS_PEDITASK
+When this is checked, Cindex will ask you if it should save changes to records when you close the record-entry window.
+.topic HIDC_PREFS_PEDITDISCARD
+When this is checked, Cindex will always discard changes to records when you close the record-entry window.
+.topic HIDC_PREFS_PEDITLACCEPT
+When this is checked, Cindex will always save new or changed records, even if they lack locators.
+.topic HIDC_PREFS_PEDITLWARN
+When this is checked, Cindex will warn you on your first attempt to save new or changed records that lack locators. Cindex will always save the record on your second attempt.
+.topic HIDC_PREFS_PEDITLFORBID
+When this is checked, Cindex will refuse to save new or changed records that lack locators.
+.topic HIDC_PREFS_PEDITCACCEPT
+When this is checked, Cindex will always save new or changed records, even if they contain cross-references to missing targets.
+.topic HIDC_PREFS_PEDITCWARN
+When this is checked, Cindex will warn you on your first attempt to save new or changed records that contain cross-references to missing targets. Cindex will always save the record on your second attempt.
+.topic HIDC_PREFS_PEDITCFORBID
+When this is checked, Cindex will refuse to save new or changed records that contain cross-references to missing targets.
+.topic HIDC_PREFS_PEDITMACCEPT
+When this is checked, Cindex will always save a new or changed record, even if fields contain text that does not conform to any templates you have specified.
+.topic HIDC_PREFS_PEDITMWARN
+When this is checked, Cindex will warn you on your first attempt to save a new or changed record in which any field fails to conform to a template you have specified. Cindex will always save the record on your second attempt.
+.topic HIDC_PREFS_PEDITMFORBID
+When this is checked, Cindex will refuse to save a new or changed record in which any field fails to conform to a template you have specified for it.
+.topic HIDC_PREFS_PEDITTRACK
+When this is checked, each new record you add is displayed immediately in its properly sorted position in the index. When this is unchecked, each new record is displayed in its order of entry at the end of the index.
+.topic HIDC_PREFS_PEDITCARRY
+When this is checked Cindex carries forward to each new record the locator (page reference) from the previously-entered record.
+.topic HIDC_PREFS_PEDITPASTEALL
+When record text is copied or dragged from an external source, retain style and font information.
+.topic HIDC_PREFS_PEDITPASTESTYLE
+When record text is copied or dragged from an external source, retain style but not font information.
+.topic HIDC_PREFS_PEDITPASTEPLAIN
+When record text is copied or dragged from an external source, discard style and font information.
+.topic HIDC_PREFS_PEDITAUTOTYPE
+When this is checked Cindex will automatically supply the remainder of the first heading in the index whose beginning matches what you have typed when you are adding a new record. The added text is highlighted.
+.topic HIDC_PREFS_PEDITIGNORESTYLE
+When Cindex is set to complete headings automatically, check this to make it complete headings that match regardless of letter case or type style. When this is unchecked, Cindex completes headings only if they match exactly what you have typed.
+.topic HIDC_PREFS_PEDITTRACKSOURCE
+When Cindex is set to complete headings automatically, check this to make it display (in the main view of the index) the entry from which the completed heading is taken.
+.topic HIDC_PREFS_PEDITPROPAGATE
+If this item is checked, and you change a heading in a record, Cindex will automatically make the same change to any succeeding records that shared the same original heading. When this item is unchecked, any change you make to a record affects only that record. You can change this behavior on a record-by-record basis when you edit records.
+.topic HIDC_PREFS_PEDITRETURN
+This item controls how Cindex displays records after you have finished editing. If the item is checked, Cindex displays the entries that were in view before you started editing. If the item is unchecked, Cindex displays the records you last worked on.
+.topic HIDC_PREFS_PEDIT_LABELCHANGESDATE
+If the item is checked, adding or changing a label sets the date stamp and the user identifier on a record. If the item is unchecked, changing the label does not set the date stamp or user identifier.
+.topic HIDC_PREFS_PTEXTLABELC1
+To choose the color Cindex will use when displaying records with this label, double-click the color well.
+.topic HIDC_PREFS_PTEXTFONT
+Choose from this list the font that Cindex will use to display entries in a new index. You can change the font at any later time by choosing from the toolbar.
+.topic HIDC_PREFS_PTEXTSIZE
+Enter here (or choose from the list) the size, in points, of the text Cindex will use to display entries in a new index. You can change the size at any later time by choosing from toolbar.
+.topic HIDC_PREFS_PRTEXTSIZE
+Enter here (or choose from the list) the size, in points, of the text Cindex will use to display entries in the record-entry window. Choose 0 to use the size used in the main display.
+.topic HIDC_PREFS_PTEXTSAMPLE
+This shows sample text in the font and size you have selected.
+.topic HIDC_PREFS_PTEXTFSHOWFORM
+Check this to make Cindex show labeled records in their distinctive colors when it displays the index in formatted view.
+.topic HIDC_PREFS_PFORMSTYLE
+Click this button to make Cindex use style definitions to specify the indentation of subheadings in formatted index documents.
+.topic HIDC_PREFS_PFORMTAB
+Click this button to make Cindex use 'tab' characters to define the leading indents to subheadings in formatted index documents.
+.topic HIDC_PREFS_PFORMOTHER
+Click this button to make Cindex use a specified character to build the leading indents to subheadings in formatted index documents.
+.topic HIDC_PREFS_PFORMOTHERTEXT
+Enter here the character you want Cindex to use in building the leading indents to subheadings in formatted index documents.
+.topic HIDC_PREFS_PFORMEMBED
+Check this to add sorting information to formatted index entries that will be embedded in other documents.
+.topic HIDC_PREFS_PFORM_UTF8
+Use UTF-8 (Unicode) to encode characters.
+.topic HIDC_PREFS_PFORM_NATIVE
+Use the Windows ANSI character set to encode characters.
+.topic HIDC_PPREFS_FILE_SHOWCDX
+Shows the folder to which Cindex will take the user when opening or saving files of the specified type.
+.topic HIDC_PPREFS_FILE_SETCDX
+Sets the folder to which Cindex will take the user when opening or saving files of the specified type.
+.topic HIDC_PPREFS_ADM_PWD1
+Enter here the password required to provide access to administrator settings.
+.topic HIDC_PPREFS_ADM_REQID
+Check to make Cindex require the user to enter an identifier before being allowed to use Cindex.
+.topic HIDC_PPREFS_ADM_VALID
+Check to make Cindex validate a user's identifier against a list contained in the ID file.
+.topic HIDC_PPREFS_ADM_IDFILE
+Specify the file that contains information about authorized users.
+.topic HIDC_PPREFS_ADM_OPENDEF
+Check to make Cindex take the user to the default folder when opening or saving a file.
+.topic HIDC_PPREFS_ADM_CHANGEDEF
+Check to allow the user to change the folder in which a file is saved.
+.topic HIDC_PPREFS_ADM_SETDEF
+Check to allow the user to set the default folder used when opening or saving a file.
+.topic HIDC_PPREFS_ADM_READONLY
+Check to permit the user only read access to an index that has already been opened for work.
+.topic HIDC_PPREFS_ADM_PERMITWRITE
+Check to allow user to make and modify indexes. When this is unchecked the user has only read access.
+.topic HIDC_PPREFS_ADM_MULTIPLE
+Check to permit multiple copies of Cindex to run concurrently on the same computer.
+.topic HIDC_SORT_LANGUAGE
+Choose from this list the language-specific collation rules Cindex will use.
+.topic HIDC_SORT_TEXTSIMPLE
+Choose from this list the rule Cindex will use uses to alphabetize entries. The Simple rule does not ignore symbols or hidden text, nor does it ignore specified leading words in subheadings.
+.topic HIDC_SORT_TEXTCHARPRI
+The positions of items in this list identify the priorities Cindex assigns to different classes of characters when sorting them. Drag an item to the position that corresponds to the priority you want assigned to the class it represents.
+.topic HIDC_SORT_TEXTIGNH
+Check this to make Cindex ignore / and - when using word-by-word alphabetizing. If this item is unchecked Cindex treats / and - as spaces.
+.topic HIDC_SORT_TEXTIGNP
+Check this to make Cindex ignore .,: and ; when using letter-by-letter alphabetizing. If this item is unchecked Cindex treats these punctuation marks as spaces.
+.topic HIDC_SORT_TEXTEVALN
+Check this to make Cindex evaluate Arabic numbers when sorting. If this is unchecked, Cindex ignores numbers.
+.topic HIDC_SORT_TEXTPAREN
+Check this to make Cindex ignore text parenthetical endings to words when sorting.
+.topic HIDC_SORT_TEXTPARENPHRASE
+Check this to make Cindex ignore parenthetical phrases when sorting.
+.topic HIDC_SORT_TEXTPREFIX
+In letter-by-letter or word-by-word alphabetizing Cindex ignores words in this list if they appear at the beginnings of subheadings. Words in the list need not be in alphabetical order.
+.topic HIDC_SORT_SCRIPTFIRST
+If the language script is not Latin, check to give characters in that script precedence over characters in other scripts. If unchecked, character precedence follows the Unicode standard.
+.topic HIDC_SORT_SUBSTITUTE
+In letter-by-letter or word-by-word alphabetizing, specify words, or prefixes to words, that will be sorted as though they were some other words or phrases. No substitutions are made during simple alphabetizing.
+.topic HIDC_SORT_SUB_LIST
+Click to select a substitution pair. Double-click to open for editing.
+.topic HIDC_SORT_SUB_ADD
+Click to add a new substitution pair.
+.topic HIDC_SORT_SUB_REMOVE
+Click to remove the selected substitution pair.
+.topic HIDC_SORT_SUB_SOURCE
+Enter the source text here. Must be a word or prefix to a word, and may not match any other entry in the table.
+.topic HIDC_SORT_SUB_REP
+Enter the sort substitution here. May be empty, but may not match any source item.
+.topic HIDC_SORT_FIELDLIST
+The order of checked items in this list determines the order in which Cindex evaluates record fields when sorting. Fields represented by unchecked items are ignored. Drag an item to change the evaluation order of the field it represents. Double-click an item to check or uncheck it.
+.topic HIDC_SORT_FIELDSIGNLOWEST
+Check this item to make Cindex ignore the contents of the lowest-level subheading, at whatever level it occurs.
+.topic HIDC_SORT_REFPRI
+The order of checked items in this list determines the precedence Cindex assigns to different kinds of components of references. Components represented by unchecked items are ignored. Drag an item to change the precedence of the component it represents. Double-click an item to check or uncheck it.
+.topic HIDC_SORT_REFSTYLEPRI
+The order of items in this list determines the precedence Cindex assigns to locators that differ only in the style of text in which they are displayed.
+.topic HIDC_SORT_REFSASCEND
+Check this to make Cindex sort multiple references in ascending order. When this is unchecked references are sorted in descending order.
+.topic HIDC_SORT_REFSALL
+Check this to make Cindex attend to all references in the locator field when sorting. If this is unchecked, Cindex attends only to the first reference.
+.topic HIDC_SORT_REFSEGORDER
+The order of checked items in this list determines the order in which Cindex evaluates the segments of a multi-part reference. Segments represented by unchecked items are ignored. Drag an item to change the evaluation order of the segment it represents. Double-click an item to check or uncheck it.
+.topic HIDC_SORT_LEFT_RIGHT
+References are ordered left to right, regardless of language reading order.
+.topic HIDC_TAG_STRUCTBEG
+This tag is placed at the head of the document, before any entries.
+.topic HIDC_TAG_STRUCTEND
+This tag is appended to the end of the document, after all entries.
+.topic HIDC_TAG_STRUCTGROUP
+This tag is placed before any text that introduces an alphabetical group of formatted entries.
+.topic HIDC_TAG_STRUCTGROUPEND
+This tag is placed immediately after the end of an alphabetical group of formatted entries.
+.topic HIDC_TAG_L1S
+This tag identifies the start of a heading at the specified level.
+.topic HIDC_TAG_L1E
+This tag identifies the end of a heading at the specified level.
+.topic HIDC_TAG_PAGEREF
+This tag is placed immediately before the page references for an entry.
+.topic HIDC_TAG_PAGEREFEND
+This tag is placed immediately after the page references for an entry.
+.topic HIDC_TAG_CROSSREF
+This tag is placed immediately before the cross-references from an entry.
+.topic HIDC_TAG_CROSSREFEND
+This tag is placed immediately after the cross-references from an entry.
+.topic HIDC_TAG_BOLDON
+This tag identifies the start of text in the specified style.
+.topic HIDC_TAG_BOLDOFF
+This tag identifies the end of text in the specified style.
+.topic HIDC_TAG_BION
+This tag identifies the start of text that has both boldface and italic attributes.
+.topic HIDC_TAG_BIOFF
+This tag identifies the end of text that has both boldface and italic attributes.
+.topic HIDC_FC1
+This tag identifies the start of text set in the default font. It is inserted in the document only when there is a change out of some other font.
+.topic HIDC_FCE1
+This tag identifies the end of text set in the default font.
+.topic HIDC_FC3
+This style identifies the start of text in the specified font.
+.topic HIDC_FCE3
+This tag identifies the end of text set in the specified font.
+.topic HIDC_ASCIIP1
+Enter here a single character from the ASCII character set that Cindex should represent with a tag in the marked-up document.
+.topic HIDC_ASCIIC1
+This tag represents the single ASCII character shown to its left.
+.topic HIDC_TAG_ENDPARA
+This tag is inserted immediately before the end of each entry in the index.
+.topic HIDC_TAG_TAB
+This tag is inserted immediately before page references that are right-justified.
+.topic HIDC_TAGS_EXTENSION
+Enter here up to three characters (without any leading .) to identify the file type that Cindex will assign to the tagged document.
+.topic HIDC_TAGS_LEVELATTRIBUTE
+Check to identify entry level with a numerical attribute.
+.topic HIDC_TAGS_NESTHEADINGS
+Check to have each level of subheading is nested in the level above.
+.topic HIDC_TAGS_INDIVIDUALREFS
+Check to have each each page reference or cross-reference tagged separately.
+.topic HIDC_TAGS_SUPPRESSREFS
+Check this to make Cindex suppress output of any punctuation it would normally insert before and after the page references and cross-references in the formatted index.
+.topic HIDC_GOTO_TEXT
+To display a particular record, type here the leading text from its heading (and subheadings, if required), or its record number. If you specify leading text, separate heading and subheading fragments with a semicolon.
+To display the record that would fall at the head of a particular printed page, type the page number here, then click Formatted Page.
+.topic HIDC_GOTO_RECORD
+To make Cindex treat the search specification as record text or a record number, click Record.
+.topic HIDC_GOTO_PAGE
+To make Cindex treat the search specification as the number of a formatted page, click Formatted Page.
+.topic HIDC_FILTER_ON
+Check this to to make Cindex hide records that have the attributes checked below.
+.topic HIDC_FILTER_LABEL0
+Check this to make Cindex hide records that are unlabeled.
+.topic HIDC_FILTER_LABEL1
+Check this to make Cindex hide records that carry this label.
+.topic HIDC_RECORDSTRUCT_MAX
+To specify the maximum number of characters a record may contain (< 2000), enter the number here. If the index already contains records, the smallest number you can set is shown to the right.
+.topic HIDC_RECORDSTRUCT_CUR
+This shows the number of characters in the longest record in the index. The record size you set must be at least as great as this.
+.topic HIDC_RECORDSTRUCT_MAXF
+Use this item to set the maximum number of fields that a record may contain. Every record must have at least one heading, and a locator field. A record may contain up to 16 fields.
+.topic HIDC_RECORDSTRUCT_MINF
+Use this item to set the minimum number of fields that a record must contain. Every record must have at least one heading, and a locator field. If the index already contains records, you cannot change the minimum number of fields.
+.topic HIDC_RECORDSTRUCT_REQUIRED
+Check this so that a special last subheading field will be present in every record. This item is available only if you have specified that records contain at least 3 fields.
+.topic HIDC_RECORDSTRUCT_TAB
+To set the properties of a particular field in a record, click the tab for the appropriate field. The locator field is always represented by the last tab.
+.topic HIDC_RECORDSTRUCT_FNAME
+Enter here the name you want to assign to the field identified in the tab. Cindex uses this name to identify the field when you make records or when you undertake operations that can act on particular fields.
+.topic HIDC_RECORDSTRUCT_CMIN
+Enter here the minimum number of characters the field must contain. If you set 0, Cindex will impose no restriction. If the index already contains records, you cannot change the minimum number of characters.
+.topic HIDC_RECORDSTRUCT_CMAX
+Enter here the maximum number of characters the field must contain. If you set 0, Cindex will impose no restriction.
+.topic HIDC_RECORDSTRUCT_CURLEN
+This shows the largest number of characters in this field in any record in the index. The maximum number of characters you set must be at least as great as this.
+.topic HIDC_RECORDSTRUCT_PAT
+This holds a template that describes the permissible content of the field. The template specifies a pattern that the contents of the field must match before Cindex will accept the record in the index. Leave this item blank to impose no restriction on the contents of the field.
+.topic HIDC_REFSYNTAX_CGENERAL
+Enter here the words with which the body of a general cross-reference might begin, for example, a reference of the form See also specific drugs. Cindex will ignore such cross-references when verifying entries in the index.
+.topic HIDC_REFSYNTAX_CLEAD
+Enter here the words that can form the introductory phrase of a cross-reference. To identify a cross-reference Cindex looks for the first of these words, which can be followed by any or all of the others in the list.
+.topic HIDC_REFSYNTAX_CSEP
+Enter here the single character you will use in a record to identify the end of a cross-reference when more than one appears in a field.
+.topic HIDC_REFSYNTAX_CSUBHEAD
+Check this to prevent Cindex recognizing cross-references in subheadings.
+.topic HIDC_REFSYNTAX_MAXRANGE
+Enter here the largest span permitted in an inclusive range of page numbers. To permit a maximum span of 10 pages (e.g., 23-33), you would enter 10. To place no limit on the allowable span, enter 0.
+.topic HIDC_REFSYNTAX_MAXVAL
+Enter here the largest value a locator can take. This can be a simple number or a compound locator. Cindex can warn you if you enter a locator with a larger value. To place no limit on the value of a locator, leave this blank.
+.topic HIDC_REFSYNTAX_PCONN
+Enter here the single character you will use in a record to denote an inclusive range of page numbers, e.g., 55-67. When displaying a fully formatted index Cindex can translate this single character into any other character sequence you wish.
+.topic HIDC_REFSYNTAX_PSEP
+Enter here the single character you will use in a record to identify the end of a page reference, when more than one reference appears in the locator field.
+.topic HIDC_CROSSREF_BSTYLE
+To specify a character style in which the bodies of cross-references will be displayed, click Body Style.
+.topic HIDC_CROSSREF_PSTYLE
+To specify a character style in which the prefixes to cross-references will be displayed, click Prefix Style.
+.topic HIDC_CROSSREF_SUPPRESS
+To suppress the display of all cross-references, check Suppress All References.
+.topic HIDC_CROSSREF_PREFIXSTYLECHECK
+Check to prevent application of a style to the cross reference prefix, if the style matches the body style.
+.topic HIDC_CROSSREF_ORDER
+To display multiple cross-references from the same heading in alphabetical order, check Alphabetize Multiple References. If this is unchecked, Cindex displays multiple cross-references in the order in which they appear in records.
+.topic HIDC_CROSSREF_XPOSITION
+Choose from the list where Cindex will place 'See' references made from this level of heading. The 'See' reference may follow on from the heading, or may be placed as a subheading.
+.topic HIDC_CROSSREF_XAPOSITION
+Choose from the list where Cindex will place 'See also' references made from this level of heading.
+The 'See also' reference may be placed:
+Following on from the heading (after page references, if any).
+Following on from the heading only if there are no page references (otherwise as first subheading).
+As the first of any subheadings.
+As the last of any subheadings.
+.topic HIDC_CROSSREF_TAB
+Click the tab to check or modify settings for cross-references from the main heading, or cross-references from subheadings.
+.topic HIDC_CROSSREF_XLEAD
+Type here any punctuation that should separate the cross-reference from the preceding heading or page reference. Include any spaces you need.
+.topic HIDC_CROSSREF_XTRAIL
+Type here any punctuation that should appear immediately after the last cross-reference from a heading or subheading.
+.topic HIDC_HEADFOOT_TAB
+.topic HIDC_FW_LIST
+Enter here the words that may be moved within and between a heading and subheading when they are flipped. Words preceded by ~ switch fields but not positions.
+To set the text to appear in a header or footer, click the tab for the appropriate header or footer.
+.topic HIDC_HEADFOOT_LEFT
+Enter here any text that should appear left-justified in the header or footer.
+The following symbols denote special entities:
+	@	The current date/time
+	#	The current page number
+	%	The name of the index
+.topic HIDC_HEADFOOT_CENTER
+Enter here any text that should appear centered in the header or footer.
+The following symbols denote special entities:
+	@	The current date/time
+	#	The current page number
+	%	The name of the index
+.topic HIDC_HEADFOOT_RIGHT
+Enter here any text that should appear right-justified in the header or footer.
+The following symbols denote special entities:
+	@	The current date/time
+	#	The current page number
+	%	The name of the index
+.topic HIDC_HEADFOOT_FONT
+To set the header or footer in a particular font, choose from the Font list.
+Choose <Default> to use the font in which entries are printed.
+.topic HIDC_HEADFOOT_SIZE
+To set the header or footer in characters of a particular size, choose from this list, or type the number.
+To use the size in which index entries are printed, set 0.
+.topic HIDC_HEADFOOT_STYLE
+To apply a style to the header or footer text, click Style.
+.topic HIDC_HEADFOOT_LONG
+To display a date in long or short format, click Long or Short.
+The date is printed only if your header/footer specification contains @.
+.topic HIDC_HEADFOOT_TIME
+To append the time to any printed date, check Add Time.
+The date is printed only if your header/footer specification contains @.
+.topic HIDC_HEADFOOT_COPY
+To copy the current header and footer settings to the facing page, click <<Copy>>.
+This button is dimmed if the pages already have identical headers and footers.
+.topic HIDC_HEADFOOT_PAGENUM
+Specify here the number to be printed on the first page.
+The page number is printed only if your header/footer specification contains #.
+.topic HIDC_HEADFOOT_NUMFORMAT
+Choose from the list the format in which page numbers will be printed.
+The page number is printed only if your header/footer specification contains #.
+.topic HIDC_GROUPENTRIES_TITLE
+To display above a group of entries a title that identifies the beginning of a group, enter the text here.
+Use the % symbol to stand for the character that begins headings in the group.
+.topic HIDC_GROUPENTRIES_NUMSYM
+Choose from this list how you want Cindex to group entries that are sorted under numbers an symbols.
+Cindex groups entries whose character classes fall within a single set of square brackets […].
+.topic HIDC_GROUPENTRIES_STYLE
+To apply a style to the title displayed above a group of entries, click Style.
+.topic HIDC_GROUPENTRIES_FONT
+To display the title in a particular font, choose the font from the list.
+Choose <Default> to use the font in which entries are displayed.
+.topic HIDC_GROUPENTRIES_ALLNUMBERS
+The title to a group consisting of numbers.
+.topic HIDC_GROUPENTRIES_ALLSYMBOLS
+The title to a group consisting of symbols.
+.topic HIDC_GROUPENTRIES_NUMBERSANDSYMBOLS
+The title to a group consisting of numbers and symbols.
+.topic HIDC_MARGCOL_TOP
+To specify the sizes of margins, in the unit shown at Unit, enter the appropriate numbers at Top, Bottom, Left and Right.
+If you have checked Facing Pages, you will set Inside and Outside margins, rather than Left and Right margins.
+You can also change margin settings through Page Setup, from the File menu.
+.topic HIDC_MARGCOL_FACING
+To specify inside and outside margins for facing pages, check Facing Pages.
+.topic HIDC_MARGCOL_UNIT
+To change the unit in which you examine or set margins, and column separation, choose from the Unit list.
+.topic HIDC_MARGCOL_COLUMNS
+To set the number of columns in which entries will appear on the printed page, choose from the Columns list.
+Cindex does not show multiple columns on the screen.
+.topic HIDC_MARGCOL_GUTTER
+To set the separation between adjacent columns, in the unit shown at Unit, enter the number at Gutter.
+.topic HIDC_MARGCOL_NEVER
+To inhibit the repetition of a heading from an entry split at a page or column break, click Never.
+.topic HIDC_MARGCOL_NEWPAGE
+To repeat after a break heading(s) from an entry split at a page or column break, click At New Page or At New Column.
+To specify the maximum depth of heading repeated, choose from the To Level list.
+.topic HIDC_MARGCOL_APPEND
+To append a word or phrase, such as (continued), to a heading repeated after a page or column break, enter the text at Append.
+.topic HIDC_MARGCOL_STYLE
+To apply a style to text appended to a heading repeated after a page or column break, click Style.
+.topic HIDC_HEADING_TAB
+Click the tab corresponding to the level of heading for which you want to make settings.
+.topic HIDC_HEADING_FONT
+To set headings in a particular font, choose from the Font list.
+To use the default font for the index, choose <Default>.
+Font settings do not override fonts used explicitly in records.
+.topic HIDC_HEADING_STYLE
+To set headings in a particular style, click Style.
+Styles are added to any styles used explicitly in records.
+.topic HIDC_HEADING_LEADTEXT
+To make Cindex display or print a sequence of characters immediately before the text of the heading, enter the character sequence here.
+.topic HIDC_HEADING_TRAILPUNCT
+To display or print closing punctuation after formatted entries that are followed by no page references or cross-references, enter the text at Trailing Punctuation.
+.topic HIDC_HEADING_SUPPRESS
+To completely suppress the display of headings in the formatted index, check Suppress.
+.topic HIDC_STYLAY_INDENTED
+To display formatted entries in indented (set-out) style, click Indented.
+.topic HIDC_STYLAY_RUNIN
+To display formatted entries in run-in (paragraph) style, click Run-in.
+Choose from the list the level of heading from which you want headings to be run-in.
+.topic HIDC_STYLAY_STYLEMOD
+To modify the standard indented or run-in style, choose from the Variant list.
+For indented indexes:
+Choose Run-back Subheadings to display as a modifier the first subheading that follows a main heading with no references.
+Choose Repeat All Headings to display every entry without suppression of repeated headings.
+For Run-in indexes:
+Choose Indent Major Subheadings to break out into indented format any subheadings under which there are sub-subheadings.
+.topic HIDC_STYLAY_COLLAPSE
+To hide headings below a specified level, and display their page references and cross-references as though belonging to the heading at the specified level, check Collapse Headings, then choose the level from the list.
+.topic HIDC_STYLAY_INDENTTYPE
+To determine how Cindex indents headings and runover lines, choose from the Type list.
+To display entries with no indents, choose None.
+To let indent successive levels of heading progressively, choose Incremental.
+To set explicit indents for each level of heading, choose Fixed.
+To use Incremental indents for all but the lowest-level heading, choose Special Last.
+.topic HIDC_STYLAY_TAB
+Click the tab corresponding to the heading level for which you want to set indents.
+.topic HIDC_STYLAY_INDUNIT
+Choose from the Unit list the unit in which you want to examine or set indents.
+An Em space is the width of the letter 'M' in the font in which the heading is displayed.
+.topic HIDC_STYLAY_LEADINDENT
+Enter at Lead the size (in the unit specified in Unit) of the lead indent for the first line of the heading.
+.topic HIDC_STYLAY_RUNINDENT
+Enter at Runover the size (in the unit specified in Unit) of the runover indent for lines after the first of a heading.
+.topic HIDC_STYLAY_SPACING
+Choose from this list how lines are to be spaced in the formatted index. The size of the line space is determined by other settings in the Line Spacing box.
+.topic HIDC_STYLAY_AUTO
+To let Cindex space lines at an interval appropriate for the font in use, check Auto.
+.topic HIDC_STYLAY_LSPACE
+Use this box to set the line spacing, in the unit displayed to its right.
+If you have checked Auto spacing this box is dimmed, and shows the spacing Cindex has set.
+.topic HIDC_STYLAY_LSPUNIT
+Choose from this list the unit in which you want to set or examine line-spacing.
+.topic HIDC_STYLAY_LSPMAIN
+To provide extra space before each main heading in the formatted index, enter here the number of blank lines Cindex should insert.
+.topic HIDC_STYLAY_LSPGROUP
+To provide extra space before each alphabetical group of entries in the formatted index, enter here the number of blank lines Cindex should insert.
+.topic HIDC_STYLAY_ADJQUOTE
+To make Cindex move trailing punctuation such as a comma inside quotation marks, check Around Quotation Marks.
+.topic HIDC_STYLAY_ADJSTYLE
+To make Cindex apply a closing text style to trailing punctuation, check Around Styled Text.
+.topic HIDC_PAGEREFS_CONNECT
+To specify how Cindex should display a connected range of page references (denoted in records by a single character, usually -) enter the text at Connecting Text.
+.topic HIDC_PAGEREFS_CONFLATE
+To let Cindex conflate into a connected range a series of references to successive pages, choose from the Conflate Beyond List the position in the series of the reference at which Cindex will begin conflating.
+.topic HIDC_PAGEREFS_NOABBREV
+To abbreviate the upper member of a range of page references (e.g., 107-108 as 107-8) choose the abbreviation rule Cindex should use:
+None, to disable abbreviation. 
+Chicago, to make Cindex follow The Chicago Manual of Style.
+Hart, to make Cindex follow Hart's Rules.
+Full, to make Cindex reduce the second number to digits that distinguish it from the first.
+.topic HIDC_PAGEREFS_SINGLE
+Enter at Before Single any characters (including spaces) that should appear immediately after the heading the precedes a single page reference.
+.topic HIDC_PAGEREFS_MULTIPLE
+Enter at Before Multiple any characters (including spaces) that should appear immediately after the heading the precedes multiple page references.
+.topic HIDC_PAGEREFS_AFTER
+Enter at After any text to be displayed after the last page reference from a heading.
+.topic HIDC_PAGEREFS_JUSTIFY
+To display page references right-justified in the formatted index, check Right Justify.
+To make Cindex use a dotted leader for right-justified references, check Dot Leader.
+.topic HIDC_PAGEREFS_SUPPRESS
+To permit Cindex to suppress common leading parts of a series of multi-part page references, check Suppress Repeated Parts.
+You must also provide settings to indicate which parts to suppress, and how Cindex should denote suppressed parts.
+.topic HIDC_PAGEREFS_SUPPRESSTO
+Enter here a marking character or series of characters that Cindex must find in turn among the to-be-suppressed parts of a multi-part reference.
+.topic HIDC_PAGEREFS_CONCAT
+Enter here the sequence of characters that Cindex will display in formatted references where it has suppressed leading parts.
+.topic HIDC_PAGEREFS_SORT
+To display multiple page references from the same heading in sorted order, check Arranged in Sorted Order.
+If this is unchecked, Cindex displays multiple page references in the order in which they appear in records.
+.topic HIDC_PAGEREFS_SUPPRESSALL
+To completely suppress the display of page references in the formatted index, check Suppress All References.
+.topic HIDC_PAGEREFS_HIDEDUPLICATES
+To suppress the display of duplicate references, and merge overlapping ranges, check Merge Redundant References.
+.topic HIDC_PAGEREFS_STYLE
+To display references in a particular text style, click Style.
+.topic HIDC_SS_LIST
+To specify a word or phrase to which Cindex will automatically apply a designated style(s) when formatting entries, click Add.
+To remove a word or phrase from the list, click to select it, then click Delete.
+To change the style(s) to be applied to a word or phrase, click it, then check the appropriate items.
+.topic HIDC_SS_BOLD
+To apply this style to (or remove it from) the selected word or phrase, check or uncheck the item.
+.topic HIDC_SS_NORMAL
+To apply this attribute to the selected word or phrase, click the appropriate button.
+.topic HIDC_SS_ADD
+To add a word or phrase to which Cindex will automatically apply a designated style(s) when formatting entries, click Add.
+.topic HIDC_SS_DELETE
+To remove a word or phrase from the list, click to select it, then click Delete.
+.topic HIDC_TEXTSTYLE_BOLD
+To apply this style (or remove it), check or uncheck the item.
+.topic HIDC_TEXTSTYLE_NCAP
+To apply this attribute, click the appropriate button.
+.topic HIDC_TEXTSTYLE_AUTO
+Click this to make Cindex capitalize according to the punctuation preceding the cross-reference.
+.topic HIDC_LOCATORSTYLE_TAB
+To apply a style to a locator segment, and/or to any immediately preceding punctuation, click the tab corresponding to the segment to which you want to apply attributes.
+A simple page references has only one segment. If you are using simple page references, confine your settings to the first tab.
+.topic HIDC_GENERIC_DONE
+Closes this dialog box.
+.topic HIDC_SPELL_ADD
+To add the unknown word to your personal dictionary, click Add
+.topic HIDC_SPELL_BADWORD
+The word displayed here is not in any dictionary or has questionable punctuation or is duplicated
+.topic HIDC_SPELL_CHANGE
+To change the unknown or misspelled word to the one shown at Change To, or to remove a duplicated word, click this button.
+.topic HIDC_SPELL_CHECKPAGE
+To make Cindex check page references in the locator field, check Check Page References. When this is unchecked, Cindex checks only cross-references in the locator field.
+.topic HIDC_SPELL_DICTIONARY
+Choose from this list the personal dictionary Cindex should use, in addition to its main language dictionary.
+.topic HIDC_SPELL_EDITDICLIST
+To select all words in the personal dictionary, click Select All.
+.topic HIDC_SPELL_FIELD
+To confine spell-checking to a specified field or fields in records, choose from this list.
+.topic HIDC_SPELL_GOODLIST
+This list shows suggested spellings for an unknown word. The most probable word is placed in the Change To box. To choose a word from the list, click it.
+.topic HIDC_SPELL_IGNOREALL
+To make Cindex ignore all occurrences of the unknown word for the remainder of your current session, click Ignore All.
+.topic HIDC_SPELL_LANGUAGE
+Choose from this list the main dictionary Cindex should use for checking spelling.
+.topic HIDC_SPELL_MODREC
+To confine spell-checking to records modified during your current session, check Modified Records.
+.topic HIDC_SPELL_NEWDIC
+Type here the name of your new personal dictionary.
+.topic HIDC_SPELL_NEWREC
+To confine spell-checking to records created during your current session, check New Records.
+.topic HIDC_SPELL_OPTIONS
+To set various options that govern spell-checking, click Options.
+.topic HIDC_SPELL_OPTIONSCAPS
+To make Cindex ignore all words that are in capitals, check Ignore Words in CAPITALS.
+.topic HIDC_SPELL_OPTIONSCLEAR
+To make Cindex forget words you have told it to ignore, check Clear Ignore List.
+.topic HIDC_SPELL_OPTIONSEDITPD
+To edit the contents of the selected personal dictionary, click Edit.
+.topic HIDC_SPELL_OPTIONSPD
+Choose from this list a personal dictionary that you wish to edit.
+.topic HIDC_SPELL_OPTIONSPDNEW
+To create a new personal dictionary click New.
+.topic HIDC_SPELL_OPTIONSSTR
+To make Cindex ignore sequences such as aa99, check Ignore Alphanumeric Strings. If this item is unchecked, Cindex treats alphanumeric sequences as misspellings.
+.topic HIDC_SPELL_OPTIONSSUGG
+To make Cindex always suggest spellings for unknown words, check Always Suggest Alternatives. If this is unchecked, Cindex suggests spellings only when you specifically request them.
+.topic HIDC_SPELL_START
+To start or resume checking spelling, or to ignore an unknown or duplicated word, click this button.
+.topic HIDC_SPELL_STOP
+To stop the examination of entries and reset the spelling checker to its initial state, click Stop.
+.topic HIDC_SPELL_SUGGEST
+To make Cindex suggest spellings for unknown words, click Suggest.
+
+.topic HIDC_CHECK_B_MISUSED
+Finds Cindex special characters ~ \ { } < > that are incorrectly used in records. This check cannot be disabled.
+.topic HIDC_CHECK_B_PUNCTSPACE
+Finds spaces improperly placed before punctuation.
+.topic HIDC_CHECK_B_MISSINGSPACE
+Checks for spaces missing before opening parentheses or brackets.
+.topic HIDC_CHECK_B_UNBALANCEDPAREN
+Finds mismatched opening or closing parentheses.
+.topic HIDC_CHECK_B_UNBALANCEDQUOTE
+Finds mismatched opening or closing quotation marks.
+.topic HIDC_CHECK_B_MIXEDCASE
+Finds words in mixed case lettering (except initial caps).
+.topic HIDC_CHECK_H_INCONSISTENTCAPS
+Finds headings that are identical except for letter case.
+.topic HIDC_CHECK_H_INCONSISTENTSTYLE
+Finds headings that are identical except for text style and/or font.
+.topic HIDC_CHECK_H_INCONSISTENTPUNCT
+Finds headings that are identical except for punctuation.
+.topic HIDC_CHECK_H_INCONSISTENTLEADPREP
+Finds headings that differ only in their leading conjunctions or prepositions.
+.topic HIDC_CHECK_H_INCONSISTENTPLURALS
+Finds headings that differ only in their plural endings.
+.topic HIDC_CHECK_H_INCONSISTENTPREP
+Finds headings that are identical except for an ending conjunction or preposition.
+.topic HIDC_CHECK_H_INCONSISTENTPAREN
+Finds headings that are identical except for an ending phrase in parentheses.
+.topic HIDC_CHECK_H_ORPHANEDSUBHEAD
+Finds subheadings headings that are unique and therefore redundant.
+.topic HIDC_CHECK_R_EMPTYPAGE
+Finds empty locator fields.
+.topic HIDC_CHECK_R_VERIFY
+Finds incorrect or questionable cross-references.
+.topic HIDC_CHECK_R_EXACTMATCH
+Specifies whether Cindex requires an exact match between the text of the cross reference and the target heading, or accepts an abbreviated form of the target heading.
+.topic HIDC_CHECK_R_MINMATCHES
+Specifies the acceptable minimum number of target entries for a cross-reference. Cindex always requires at least 1 match.
+.topic HIDC_CHECK_R_TOOMANYPAGE
+Report entries that contain more than the specified number of unqualified page references.
+.topic HIDC_CHECK_R_PAGEREFLIMIT
+The maximum acceptable number of unqualified page references in an entry.
+.topic HIDC_CHECK_R_OVERLAPPINGPAGE
+Finds duplicate page references or overlapping page ranges.
+.topic HIDC_CHECK_R_HEADINGLEVEL
+Checks whether locators are present only on the lowest level subheadings of entries.
+.topic HIDC_RECONCILE_LEVEL
+Choose level of heading below which Cindex may find orphaned subheadings or reconcile them.
+.topic HIDC_RECONCILE_NOSPLIT
+Check to prevent Cindex splitting modified headings that it might otherwise rearrange as headings with subheadings.
+.topic HIDC_RECONCILE_PROTECT
+Check to prevent Cindex splitting headings before a word beginning with a capital letter.
+.topic HIDC_RECONCILE_SEPARATOR
+Specify the single character (usually a comma) that precedes a modifying phrase.
+.topic HIDC_RECONCILE_CONVERT
+Choose this to make Cindex convert an orphaned subheading to a phrase modifying the heading at the level above.
+.topic HIDC_RECONCILE_REMOVE
+Choose this to make Cindex remove an orphaned subheading (leaving references attached to the heading at the level above).
+.topic HIDC_MANAGECROSS_GENERATE
+Choose this to make Cindex generate cross-references automatically from a special cross-reference file.
+.topic HIDC_MANAGECROSS_CONVERT
+Choose this to make Cindex convert existing cross-references into fully-qualified entries.
+.topic HIDC_MANAGECROSS_CCOUNT
+Enter here the number of target entries below which Cindex will convert the corss-reference into fully-qualified entries.
+.topic HIDC_AUTOGEN_SEE
+To make Cindex generate only 'See' references, without 'See also' references, check this box.
+.topic HIDC_ALTER_ALLREFS
+To make Cindex act on all references, no matter what their values, click All References.
+.topic HIDC_ALTER_RANGEREF
+To confine action to references within a particular range of values, click Range, and enter the low and high limits of the range.
+.topic HIDC_ALTER_ADJONLY
+To make Cindex adjust references by a specified amount, click Adjust Only.
+.topic HIDC_ALTER_REMOVE
+To make Cindex remove references in the specified range, click Remove References.
+.topic HIDC_ALTER_ADJUSTMENT
+To add or subtract a number from the references to be adjusted, enter it at Adjustment.
+.topic HIDC_ALTER_HOLDHIGHER
+To make Cindex leave a gap in references when it removes references within a range, check Hold Higher Values. If this is unchecked Cindex adjusts the values of all references above the range removed, by an amount equal to the range removed.
+.topic HIDC_ALTER_PATTERN
+To guide Cindex to adjust particular components of multi-part references, provide here a pattern to describe the parts of the references that Cindex should skip.
+.topic HIDC_SPLIT_MARKRECORDS
+Mark any records that contain no terms of the kind you seek.
+.topic HIDC_SPLIT_PATTERN
+Choose the kind of terms Cindex should extract from main headings.
+.topic HIDC_SPLIT_PREVIEW
+Preview the results of splitting headings. Cindex will open a window that shows the terms that will be extracted from each main heading.
+.topic HIDC_SPLIT_REMOVESTYLES
+Remove any styles associated with the terms extracted.
+.topic HIDC_SPLIT_USERPATTERN
+Enter here any pattern you want Cindex to use in identifying terms to be extracted from headings.
+.topic HIDC_COMPRESS_CONSOLIDATE
+Check this to pack as many references as possible into otherwise identical records, and remove unnecessary records.
+.topic HIDC_COMPRESS_REMDEL
+Check this to remove records that have been deleted.
+.topic HIDC_COMPRESS_REMDUP
+Check this to remove records that are exact duplicates of others.
+.topic HIDC_COMPRESS_REMEMPTY
+Check this to remove empty records.
+.topic HIDC_COMPRESS_REMGEN
+Check to remove automatically generated records.
+.topic HIDC_COMPRESS_IGNORELABELS
+Check this to combine references from records that are identical except for their labels.
+.topic HIDC_COUNT_PAGEEND
+To confine the count to index records containing references to pages falling in a specified range, enter the range of page numbers at From.. and through:
+.topic HIDC_COUNT_RESULT
+This shows the result of the count among the specified records.
+.topic HIDC_COUNT_START
+To start the count click Count.
+.topic HIDC_STATISTICS_GO
+To start examining entries, click Go.
+.topic HIDC_STATISTICS_RESULT
+This shows the result of examining the specified entries.
+.topic HIDC_FONTSUB_LIST
+This list displays the fonts currently or previously used in the index. The preferred font is used if available on your computer; otherwise the alternate font is used. To change the assignment of a preferred or alternate font, click in the list to select a row.
+.topic HIDC_FONTSUB_PREFERRED
+To specify a preferred font, choose from the Preferred list or type in the name of a font. The preferred font need no exist on the computer you are using.
+.topic HIDC_FONTSUB_SUBS
+To specify an alternate font, used when the preferred font is unavailable, choose from the Alternate list.
+.topic HIDC_FONTSUB_CHECK
+Click to check which fonts are currently used in the index.
+.topic HIDC_HOTKEY1
+To define a hot key or keystroke combination, click this box and hit the keys you want to use. Do not spell out the names of the keys.
+.topic HIDC_HOTKEYTEXT1
+To attach text to the key or key combination shown to the left, type it here. You can drag styled text from another window.
+.topic HIDC_TAGS_MAINDELETE
+To delete the tag set shown in the list, click Delete.
+.topic HIDC_TAGS_MAINDUP
+To duplicate the tag set shown in the list, click Duplicate.
+.topic HIDC_TAGS_MAINEDIT
+To view or edit the tag set shown in the list, click this button. You can view, but cannot modify, the standard tag sets provided with Cindex.
+.topic HIDC_TAGS_MAINMENU
+Choose from this list the tag set on which you want to work.
+.topic HIDC_TAGS_MAINNEW
+To create a new tag set click New.
+.topic HIDC_TAG_SETNAME
+Type here the name you want to give to the new set of tags.
+.topic HIDC_MACRO_SETNAME
+Type here the name you want to give to the event sequence (macro) you have recorded.
+.topic HIDC_MANAGEGROUPS_ALL
+To undertake the chosen action on all groups that belong to the index, click All Groups.
+.topic HIDC_MANAGEGROUPS_GROUP
+To undertake the chosen action on a specified group, click Group and choose the group from the list.
+ .topic HIDC_MANAGEGROUPS_INFO
+To obtain information about how and when a group was formed, and other statistics, click Info.
+ .topic HIDC_MANAGEGROUPS_REBUILD
+To rebuild (if possible) a group or groups using the criteria originally used to form it, click Rebuild.
+.topic HIDC_MANAGEGROUPS_DELETE
+To delete a group or groups, click Delete.
+.topic HIDC_MANAGEGROUPS_LINK
+To attach to a group or groups the records that contain cross-references to records already in the group, click Link Cross-References.
+.topic HIDC_GROUPINFO_ATTRIB
+This identifies the attributes (if any) for which a search was made.
+.topic HIDC_GROUPINFO_CASE
+This is checked if the search was case-sensitive.
+.topic HIDC_GROUPINFO_CHANGES
+This shows what changes have been made to the group (e.g., it has been rebuilt) since it was first made.
+.topic HIDC_GROUPINFO_DATE
+This shows the date on which the group was last modified.
+.topic HIDC_GROUPINFO_EVAL
+This is checked if the search was confined to the locator field, with evaluation of references.
+.topic HIDC_GROUPINFO_FIELD
+This identifies the field(s) in which the search took place.
+.topic HIDC_GROUPINFO_METHOD
+This identifies the procedure used to form the group.
+.topic HIDC_GROUPINFO_NAME
+This is the name of the group.
+.topic HIDC_GROUPINFO_PATTERN
+This is checked if the group was formed by a search for a pattern.
+.topic HIDC_GROUPINFO_RECNUM
+This shows the number of records in the group.
+.topic HIDC_GROUPINFO_TEXT
+This is the text, or pattern, for which the search was made.
+.topic HIDC_GROUPINFO_WORD
+This is checked if the search was for a whole word.

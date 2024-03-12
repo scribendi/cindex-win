@@ -1,0 +1,183 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=Cindex.chm
+Contents file=Table of Contents.hhc
+Default topic=WinCin Help\web-content\base\Cindex Help.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x409 English (United States)
+Title=Cindex 4.2 Help
+
+
+[FILES]
+WinCin Help\web-content\_Adding and Editing\Add_aboutrecords.htm
+WinCin Help\web-content\_Adding and Editing\Add_accentsymbol.htm
+WinCin Help\web-content\_Adding and Editing\Add_autocomplete.htm
+WinCin Help\web-content\_Adding and Editing\Add_checkingrecords.htm
+WinCin Help\web-content\_Adding and Editing\Add_copyingrecords.htm
+WinCin Help\web-content\_Adding and Editing\Add_deletingrestoring.htm
+WinCin Help\web-content\_Adding and Editing\Add_demoteheadings.htm
+WinCin Help\web-content\_Adding and Editing\Add_duplicatingrecords.htm
+WinCin Help\web-content\_Adding and Editing\Add_editingentries.htm
+WinCin Help\web-content\_Adding and Editing\Add_entercrossrefs.htm
+WinCin Help\web-content\_Adding and Editing\Add_enterfontsandstyles.htm
+WinCin Help\web-content\_Adding and Editing\Add_enterlocators.htm
+WinCin Help\web-content\_Adding and Editing\Add_enterpagerefs.htm
+WinCin Help\web-content\_Adding and Editing\Add_hotkeys.htm
+WinCin Help\web-content\_Adding and Editing\Add_labeling.htm
+WinCin Help\web-content\_Adding and Editing\Add_manipulatingfields.htm
+WinCin Help\web-content\_Adding and Editing\Add_newrecord.htm
+WinCin Help\web-content\_Adding and Editing\Add_propagating.htm
+WinCin Help\web-content\_Adding and Editing\Add_savingdiscarding.htm
+WinCin Help\web-content\_Adding and Editing\Add_specialcharacters.htm
+WinCin Help\web-content\_Adding and Editing\Add_usingabbreviations.htm
+WinCin Help\web-content\_Find & Replace\Find_attributes.htm
+WinCin Help\web-content\_Find & Replace\Find_conditional.htm
+WinCin Help\web-content\_Find & Replace\Find_locateentries.htm
+WinCin Help\web-content\_Find & Replace\Find_locators.htm
+WinCin Help\web-content\_Find & Replace\Find_stylesandfonts.htm
+WinCin Help\web-content\_Find & Replace\Replace_styleandfont.htm
+WinCin Help\web-content\_Find & Replace\Searching.htm
+WinCin Help\web-content\_Find & Replace\Usingfind.htm
+WinCin Help\web-content\_Find & Replace\Usingreplace.htm
+WinCin Help\web-content\_Sorting\Sorting_alphabetizing.htm
+WinCin Help\web-content\_Sorting\Sorting_entries.htm
+WinCin Help\web-content\_Sorting\Sorting_fields.htm
+WinCin Help\web-content\_Sorting\Sorting_locators.htm
+WinCin Help\web-content\_Sorting\Sorting_modalphabetizing.htm
+WinCin Help\web-content\_Sorting\Sorting_override.htm
+WinCin Help\web-content\_Sorting\Sorting_override1.htm
+WinCin Help\web-content\_Sorting\Sorting_override2.htm
+WinCin Help\web-content\_Sorting\Sorting_override3.htm
+WinCin Help\web-content\_Sorting\Sorting_override4.htm
+WinCin Help\web-content\_Sorting\Sorting_substitutions.htm
+WinCin Help\web-content\_Spelling\Spellingdictionaries.htm
+WinCin Help\web-content\_Spelling\Spellingoptions.htm
+WinCin Help\web-content\_Spelling\Usingspelling.htm
+WinCin Help\web-content\_Starting An Index\_Identifyinguser.htm
+WinCin Help\web-content\_Starting An Index\_Newindexattributes.htm
+WinCin Help\web-content\_Starting An Index\_Template.htm
+WinCin Help\web-content\_Starting An Index\Index elements.htm
+WinCin Help\web-content\_Starting An Index\Saving index.htm
+WinCin Help\web-content\_Starting An Index\Starting Index.htm
+WinCin Help\web-content\_Style and Layout\_Format_adjustingpunctuation.htm
+WinCin Help\web-content\_Style and Layout\_Format_crossreflacement.htm
+WinCin Help\web-content\_Style and Layout\_Format_crossreftypography.htm
+WinCin Help\web-content\_Style and Layout\_Format_entryspacing.htm
+WinCin Help\web-content\_Style and Layout\_Format_indentation.htm
+WinCin Help\web-content\_Style and Layout\_Format_pagerefmultipart.htm
+WinCin Help\web-content\_Style and Layout\_Format_pagerefpunctuation.htm
+WinCin Help\web-content\_Style and Layout\_Format_pagerefranges.htm
+WinCin Help\web-content\_Style and Layout\_Format_pagereftypography.htm
+WinCin Help\web-content\_Style and Layout\_Format_styledstrings.htm
+WinCin Help\web-content\_Style and Layout\Format_crossreferences.htm
+WinCin Help\web-content\_Style and Layout\Format_groupingentries.htm
+WinCin Help\web-content\_Style and Layout\Format_headersandfooters.htm
+WinCin Help\web-content\_Style and Layout\Format_headings.htm
+WinCin Help\web-content\_Style and Layout\Format_marginsandcolumns.htm
+WinCin Help\web-content\_Style and Layout\Format_pagereferences.htm
+WinCin Help\web-content\_Style and Layout\Format_styleandlayout.htm
+WinCin Help\web-content\_Views\Draftview.htm
+WinCin Help\web-content\_Views\Formattedview.htm
+WinCin Help\web-content\_Views\Navigating.htm
+WinCin Help\web-content\_Views\Selectingrecords.htm
+WinCin Help\web-content\_Views\Sortedviews.htm
+WinCin Help\web-content\_Views\Summaryview.htm
+WinCin Help\web-content\_Views\Unformattedview.htm
+WinCin Help\web-content\_Views\Views.htm
+WinCin Help\web-content\_Views\Viewsubsets.htm
+WinCin Help\web-content\base\Abbreviations.htm
+WinCin Help\web-content\base\Check_basic.htm
+WinCin Help\web-content\base\Check_headings.htm
+WinCin Help\web-content\base\Check_index.htm
+WinCin Help\web-content\base\Check_refs.htm
+WinCin Help\web-content\base\Cindex Help.htm
+WinCin Help\web-content\base\Cindexguide.htm
+WinCin Help\web-content\base\Crossref_convert.htm
+WinCin Help\web-content\base\Crossref_generate.htm
+WinCin Help\web-content\base\Crossref_manage.htm
+WinCin Help\web-content\base\Crossref_structure.htm
+WinCin Help\web-content\base\Crossref_verify.htm
+WinCin Help\web-content\base\Export_embedding.htm
+WinCin Help\web-content\base\Export_formatted.htm
+WinCin Help\web-content\base\Export_optionsarchive.htm
+WinCin Help\web-content\base\Export_optionsdelimited.htm
+WinCin Help\web-content\base\Export_optionsformatted.htm
+WinCin Help\web-content\base\Export_optionstagged.htm
+WinCin Help\web-content\base\Export_records.htm
+WinCin Help\web-content\base\Export_taggedtext.htm
+WinCin Help\web-content\base\Fonts.htm
+WinCin Help\web-content\base\Groups_manage.htm
+WinCin Help\web-content\base\Groups_workwith.htm
+WinCin Help\web-content\base\Groups.htm
+WinCin Help\web-content\base\Import_archive.htm
+WinCin Help\web-content\base\Import_delimited.htm
+WinCin Help\web-content\base\Import_DOS.htm
+WinCin Help\web-content\base\Import_errors.htm
+WinCin Help\web-content\base\Import_Macrex.htm
+WinCin Help\web-content\base\Import_records.htm
+WinCin Help\web-content\base\Import_xml.htm
+WinCin Help\web-content\base\Index Information.htm
+WinCin Help\web-content\base\Index Informationcount.htm
+WinCin Help\web-content\base\Index Informationstatistics.htm
+WinCin Help\web-content\base\Key_accentedletter.htm
+WinCin Help\web-content\base\Key_navigation.htm
+WinCin Help\web-content\base\Key_shortcuts.htm
+WinCin Help\web-content\base\Macros.htm
+WinCin Help\web-content\base\Markup_XML.htm
+WinCin Help\web-content\base\Markup.htm
+WinCin Help\web-content\base\Pageref_alter.htm
+WinCin Help\web-content\base\Pageref_alteroffset.htm
+WinCin Help\web-content\base\Pageref_alterremove.htm
+WinCin Help\web-content\base\Pageref_components.htm
+WinCin Help\web-content\base\Pageref_count.htm
+WinCin Help\web-content\base\Pageref_limits.htm
+WinCin Help\web-content\base\Pageref_structure.htm
+WinCin Help\web-content\base\Patterns_addvolume.htm
+WinCin Help\web-content\base\Patterns_alterref.htm
+WinCin Help\web-content\base\Patterns_defining.htm
+WinCin Help\web-content\base\Patterns_replacing.htm
+WinCin Help\web-content\base\Patterns_sample.htm
+WinCin Help\web-content\base\Prefs_edit.htm
+WinCin Help\web-content\base\Prefs_export.htm
+WinCin Help\web-content\base\Prefs_gen.htm
+WinCin Help\web-content\base\Prefs_view.htm
+WinCin Help\web-content\base\Printing.htm
+WinCin Help\web-content\base\Record Structure.htm
+WinCin Help\web-content\base\Scope.htm
+WinCin Help\web-content\base\Shortcuts.htm
+WinCin Help\web-content\base\StyleSheet.htm
+WinCin Help\web-content\base\Tools_Compress.htm
+WinCin Help\web-content\base\Tools_Cumcombine.htm
+WinCin Help\web-content\base\Tools_Expand.htm
+WinCin Help\web-content\base\Tools_Reconciling.htm
+WinCin Help\web-content\base\Tools_Splitheadings.htm
+WinCin Help\web-content\base\Tools_Splitting0.htm
+WinCin Help\web-content\base\Tools_Splitting1.htm
+WinCin Help\web-content\Support\tech_contactinfo.htm
+WinCin Help\web-content\Support\tech_customersupport.htm
+WinCin Help\web-content\Support\Trouble_backup.htm
+WinCin Help\web-content\Support\Trouble_damage.htm
+WinCin Help\web-content\Support\Trouble_formatting.htm
+WinCin Help\web-content\Support\Trouble_headnote.htm
+WinCin Help\web-content\Support\Trouble_pagerefs.htm
+WinCin Help\web-content\Support\Trouble_publish.htm
+WinCin Help\web-content\Support\Trouble_solvingproblems.htm
+WinCin Help\web-content\Support\Trouble_sorting.htm
+WinCin Help\web-content\Whatsnew\Compatibility.htm
+WinCin Help\web-content\Whatsnew\IntroducingC4.htm
+WinCin Help\web-content\Whatsnew\New_addedit.htm
+WinCin Help\web-content\Whatsnew\New_checking.htm
+WinCin Help\web-content\Whatsnew\New_export.htm
+WinCin Help\web-content\Whatsnew\New_sorting.htm
+WinCin Help\web-content\Whatsnew\New_view.htm
+WinCin Help\web-content\Whatsnew\New_import.htm
+
+[TEXT POPUPS]
+cshelp.txt
+resource.h
+
+[INFOTYPES]
+

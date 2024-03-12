@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Replacing text that matches a pattern</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="&ndash;, in replacement patterns" />
+	<PARAM NAME="Keyword" VALUE="+" />
+	<PARAM NAME="Keyword" VALUE="+, in replacement patterns" />
+	<PARAM NAME="Keyword" VALUE="Plus sign" />
+	<PARAM NAME="Keyword" VALUE="Plus sign, in replacement patterns" />
+	<PARAM NAME="Keyword" VALUE="&amp;" />
+	<PARAM NAME="Keyword" VALUE="&amp;, in replacement patterns" />
+	<PARAM NAME="Keyword" VALUE="Ampersand" />
+	<PARAM NAME="Keyword" VALUE="Ampersand, in replacement patterns" />
+	<PARAM NAME="Keyword" VALUE="\, in replacement patterns" />
+	<PARAM NAME="Keyword" VALUE="Backslash \, in replacement patterns" />
+	<PARAM NAME="Keyword" VALUE="Patterns, in replacement text" />
+	<PARAM NAME="Keyword" VALUE="Replace, with pattern" />
+</OBJECT>
+		<h2>Replacing text that matches a pattern</h2>
+		<p>A special advantage of patterns in search-and-replace operations is that Cindex can include the characters that match the pattern in the replacement text. That is, the text you are looking for can be put back in the record, augmented by other text, or transformed in one of several ways. The following sections provide examples.</p>
+		<p>Cindex uses special characters in the replacement text to refer to what has been matched.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top" bgcolor="white">
+				<td width="64">
+					<p>\&amp;</p>
+				</td>
+				<td>
+					<p>The characters \&amp; (backslash, ampersand) in the replacement sequence denote the text that matched the pattern. When Cindex makes the substitution it incorporates this text in the replacement sequence.</p>
+					<p>The &amp; in the replacement sequence is interpreted specially only if preceded by \.</p>
+					<p>To include the \ (backslash) as a literal character in replacement text, it must be preceded by itself (\\).</p>
+				</td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="64">
+					<p>\&amp;+</p>
+				</td>
+				<td>
+					<p>Use \&amp; together with the + to convert text from lowercase to uppercase.</p>
+					<p>The + has this special effect only if it appears immediately after \&amp;.</p>
+				</td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="64">
+					<p>\&amp;–</p>
+				</td>
+				<td>
+					<p>Use \&amp; together with the – to convert text from uppercase to lowercase.</p>
+					<p>The – has this special effect only if it appears immediately after \&amp;.</p>
+				</td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="64">
+					<p>\1…\9</p>
+				</td>
+				<td>
+					<p>A \ followed by a numeral in the range 1 to 9 (e.g., \1 or \9) in the replacement sequence tells Cindex that the replacement text should include the characters that matched the corresponding <a href="Patterns_defining.htm#subpatterns">subpattern</a> in the search text.</p>
+				</td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="64">
+					<p>\1+…\9+</p>
+				</td>
+				<td>
+					<p>Use \1 … \9 together with the + to convert text that matches the subpattern from lowercase to uppercase.</p>
+				</td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="64">
+					<p>\1-…\9-</p>
+				</td>
+				<td>
+					<p>Use \1 … \9 together with the - to convert text that matches the subpattern from uppercase to lowercase.</p>
+				</td>
+			</tr>
+		</table>
+		<p>Except for the above sequences, all characters in the replacement text are used literally.</p>
+		<hr />
+		<b>See also </b><br />
+		<a href="Patterns_defining.htm">Defining patterns</a><br />
+		<a href="Patterns_sample.htm">
+		Sample patterns</a><br />
+		<a href="Patterns_addvolume.htm">
+		Adding volume numbers to page references
+	</a>
+	</BODY>
+</HTML>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Adding an offset to page references</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<PARAM NAME="Keyword" VALUE="Page references, adding offset" />
+			<PARAM NAME="Keyword" VALUE="Offsetting page references" />
+		</OBJECT>
+		<h2>Adding an offset to page references</h2>
+		<p>Use the <b>Alter References</b> panel (Tools menu) to add an offset (positive or negative) to specified page references in records.</p>
+		<p>Follow these steps:</p>
+		<ol>
+			<li type="1">Under <b>Scope</b> choose whether you want to adjust All References accessible in the current view, or those falling within a specified range. To set a range click Range, and enter the lowest and highest page numbers that should be adjusted. Be sure to enter the numbers as they exist before adjustment. If you specify only an upper limit Cindex assumes the lower limit to be 1. If you specify only a lower limit, Cindex assumes the upper limit to be all higher references.<br />
+				If your locators are compound references, (e.g., 23:14:2 or 34[2]:25–27), Cindex will normally adjust only the first component in Arabic numerals. To make adjustments to other parts of compound references, you can provide at <b>Matching Pattern</b> a <a href="Patterns_defining.htm">pattern</a> to specify leading parts of references that Cindex should skip to reach the single element it should adjust.
+			</li><li type="1">Under Action click <b>Adjust Only</b>.
+			
+			</li>
+			<li type="1">Specify in <b>Adjustment</b> the offset to be added to (or subtracted from) every reference that falls within the range.</li>
+		</ol>
+		<p>References needing adjustment may be intermixed in a record with others that do not need adjustment; Cindex disregards references that fall outside the range you have specified.</p>
+        <p>Cindex ignores references in Roman numerals, cross-references, and any references that contain no Arabic numerals.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+<tr valign="top">
+				<td>
+					<p>If an adjustment would result in a page reference being less than 1, the reference is removed from its record.</p>
+				</td>
+			</tr>
+		</table>
+<hr />
+		<b>See also<br />
+		</b><a href="Pageref_alterremove.htm">Removing Page references</a>
+	</BODY>
+</HTML>

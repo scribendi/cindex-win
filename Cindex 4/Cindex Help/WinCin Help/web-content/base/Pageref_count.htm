@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Checking page references</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<PARAM NAME="Keyword" VALUE="Page references, undifferentiated" />
+			<PARAM NAME="Keyword" VALUE="Page references, too many" />
+			<PARAM NAME="Keyword" VALUE="Page references, overlapping" />
+		</OBJECT>
+		<h2>Checking page references</h2>
+		<p>Checking page references is available as part  of a comprehensive  check via <b>Check Index&hellip;</b> (Tools menu).</p>
+<p> Open the panel, click the References tab, then make settings under <b>Page References</b>.</p>
+<p>Check <strong>Missing</strong> to find  records that lack a cross-reference or a page reference. When checking for a cross-reference, Cindex will accept one in a subheading (as an alternative to the locator field) if you have unchecked <em>Recognize cross-references in locator field only</em> in <strong>Reference Syntax</strong>&hellip;(Document menu).</p>
+<p>At <b>More than <em>n</em> undifferentiated </b> enter the maximum number of locators acceptable in an entry.</p>
+<p>Check <strong>Overlapping ranges</strong> to find cases where a single reference is duplicated, or a single reference or a range of references overlaps another range.  When dealing with references that contain non-numerical suffixes, (e.g., 37t), or are styled (e.g., <em>522</em>), Cindex examines them for potential overlap only if the suffix is the same, or the style is the same. When dealing with compound (multi-part) locators (e.g., 25a:64), Cindex examines them for potential overlap only if all segments but the last are identical.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>When producing a formatted Index, Cindex can automatically suppress the redundant parts of overlapping references (see settings under <b>Page References</b> in the Document menu), so you need not check for them unless you think they need attention as potential errors.</td>
+			</tr>
+		</table>
+<p>Check <strong>On headings above lowest</strong> if you want to identify entries in which any heading level above the lowest subheading has a reference attached to it.</p>
+		<p>If Cindex finds  errors it  displays them in the check results. Each entry in the list identifies the source record and the nature of the error.		</p>
+		<p>Click any item in the list to bring its record into view in the main document window; double-click the item (or hit <small>RETURN</small>) to open a window in which to edit its record.</p>
+		<hr />
+		<b>See also<br /></b>
+			</b><a href="Pageref_structure.htm">Identifying page references</a><br>
+
+	<a href="Pageref_limits.htm">Page reference limits</a><br />
+	<a href="Crossref_verify.htm">Verifying cross-references</a>
+	</BODY>
+</HTML>

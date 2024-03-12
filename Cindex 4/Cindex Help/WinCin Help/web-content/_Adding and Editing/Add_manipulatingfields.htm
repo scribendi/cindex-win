@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+	<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Manipulating record fields</TITLE>
+</HEAD>
+
+	<body bgcolor="#FFFFFF" text="#000000">
+		<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<param name="Keyword" value="Record fields" />
+			<param name="Keyword" value="Record fields, adding/removing" />
+			<PARAM NAME="Keyword" VALUE="Deleting" />
+			<param name="Keyword" value="Deleting, record fields" />
+			<param name="Keyword" value="Editing records, manipulating fields" />
+</object>
+		<h2>Manipulating record fields</h2>
+		<h3>Inserting fields</h3>
+<p>To insert a subheading in a record that has only a main heading and a locator, place the insertion point at the end of the main heading and hit return. Cindex will make a new field between the main heading and the locator. Use the same method to insert a sub-subheading. To demote a heading to a subheading, so that you can insert a new main heading above it, place the insertion point at the beginning of the main heading, and hit return.</p>
+		<p>If you inadvertently add too many blank fields, do not worry about removing them. Cindex automatically removes excess blank fields and any fields that contain only spaces when you save the record. Cindex also removes leading and trailing spaces in any field.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+		  <tr valign="top">
+		    <td><p>Cindex will not insert a field if that would produce more than the maximum number of fields allowed in a record.</p></td>
+	      </tr>
+    </table>
+<h3>Breaking fields</h3>
+		<p>To convert a heading with a modifying phrase into a heading with a subheading, place the insertion point to the right of the comma before the modifying phrase, hit delete to delete the comma, then hit return. Cindex will move the modifying phrase into a new subheading field. You can break any field (except the locator field) by placing the insertion point where you want the break then hitting return.</p>
+		<p>While you are making records, you will often produce them with subheadings (or even sub-subheadings) in the expectation of adding further entries for the same heading. If you do not in fact add other records, you will end up with isolated records that contain a single entry organized as heading and subheading. In such cases, you will normally want the isolated subheading to be removed or brought up as a modifier to the main heading.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+		  <tr valign="top">
+		    <td><p>Cindex will not let you break  the locator field, or the last subheading field if that is a <a href="../base/Record Structure.htm">required field</a>.</p>
+		      <p>Cindex will not break  a field if that would produce more than the maximum number of fields allowed in a record.</p></td>
+	      </tr>
+    </table>
+<h3>Joining fields</h3>
+		<p>To change a subheading to a modifier, place the insertion point the beginning of the subheading then hit delete. Now type a comma, or another character you want to separate the heading from the modifier. You can use the same method to bring up a sub-subheading as a modifier to a subhead.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>Cindex will not let you join the locator field, or the last subheading field if that has been designated a <a href="../base/Record Structure.htm">required field</a>.</p>
+					<p>Cindex  will not remove a field if that would result in fewer than the minimum number of fields.</p>
+				</td>
+			</tr>
+		</table>
+<hr />
+		<b>See also </b><br />
+		<a href="Add_rearranging.htm">Rearranging text</a><br>
+<a href="Add_demoteheadings.htm">Demoting headings</a><br>
+		<a href="../base/Tools_Reconciling.htm">Reconciling headings</a><br>
+<a href="../base/Prefs_edit.htm">Preferences for editing records</a>
+	</body>
+
+</HTML>
