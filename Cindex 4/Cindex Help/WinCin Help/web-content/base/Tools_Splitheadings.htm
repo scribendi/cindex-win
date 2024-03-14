@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Splitting Headings</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Headings, splitting" />
+	<PARAM NAME="Keyword" VALUE="Subheadings, extract names" />
+	<PARAM NAME="Keyword" VALUE="Names, extract from headings" />
+	<PARAM NAME="Keyword" VALUE="Phrases, extract from headings" />
+	<PARAM NAME="Keyword" VALUE="Split headings" />
+</OBJECT>
+		<h2>Splitting headings</h2>
+<p>Use the <strong>Split Headings</strong> panel (Tools menu) to break out multiple names, or multiple phrases of types you specify, into separate records.</p>
+<p>Cindex scans the index looking for main headings that contain specified terms (e.g., author names in the form <em>Surname, Forenames(s)</em>). If a heading contains multiple terms of the specified type, Cindex creates a new record for each except the first. The first term is left in the original record. For every term, including the first, Cindex removes extraneous text around it, leaving the term unadorned.</p>
+<p>Use the <strong>Identify</strong> popup menu to choose the kind of term Cindex should find. The default, <em>Terms Separated by Punctuation</em> finds phrases. If you choose this option, Cindex will find strings of words separated by spaces. A comma in a phrase will be ignored if preceded by ~.</p>
+        <p>When you choose&nbsp;<em>Surname, Forename(s)</em>&nbsp;or&nbsp;<em>Forename(s) Surname</em>, Cindex will correctly identify complex names in a wide variety of forms, as long as they are consistently of the type chosen (Surname first or Surname last). When parsing names, Cindex automatically excludes from consideration any conjunction or preposition that is contained in the list used in making smart flips (Document menu, Smart Flip Words&hellip;)
+</p>
+        <p>Cindex uses patterns to identify terms, and if you are comfortable using patterns you can define your own to find and extract terms that aren&rsquo;t of a standard type. To provide your own pattern, choose&nbsp;<em>User-defined pattern</em>&nbsp;from the popup, and enter the pattern text in the box. Cindex checks the validity of the text you enter.</p>
+<p>Set additional options:</p>
+<ul>
+          <li>
+            <p>Cindex normally preserves the text style(s) associated with extracted terms. To remove any styles, check <strong>Remove Styles</strong>.</p>
+          </li>
+          <li>
+            <p>Cindex normally ignores records that contain no terms of the kind being sought. To make Cindex mark them, check <strong>Mark Records With No Matches</strong>.</p>
+          </li>
+</ul>
+<p>For a preview (recommended) of how Cindex will split entries, click&nbsp;<strong>Preview Splits</strong>. Cindex opens a window that shows the terms found in every record. Each term that would  be in its own record is displayed inside brackets (the first term will be the new heading in the original record). In the preview list, Cindex also identifies records that contain no terms of the kind being sought. Click any row in the list to bring the corresponding record into view in the main index window.</p>
+<p>Click OK when you are ready to split headings. Before proceeding, Cindex will warn you that it will change records. It is wise to save the index (and also have a backup copy) before proceeding, so that you can&nbsp;<strong>Revert To Saved</strong>&nbsp;if you dislike the results of the split.</p>
+</BODY>
+</HTML>

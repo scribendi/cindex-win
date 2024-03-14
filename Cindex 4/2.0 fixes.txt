@@ -1,0 +1,377 @@
+2.0 Fixes/changes
+
+0. Minimum system is XP
+1. Use Richedit2; allows multi-level undo, redo +... [ good shortcut keys for accents, etc]
+2. Full screen scrolling horizontally and vertically
+3. Wheel scrolling enabled
+4. formatted entry buff now 100K for both standard and publisher
+5. Verify/reconcile window: better record num alignment; tool window style
+6. New organization for record entry/display
+7. Rearranged menu items (New Group;Save Group; Spelling; Verify References)
+8. # recent files increased to 10
+9. Find and replace boxes have Reset rather than Done/Close). As before, ESC closes
+10. Find has find by user ID; Find/replace allow exclusive attrbutes set
+11. tagset management displays tagset name as dialog header
+12. Gen prefs options: no action/open file on startup; set user ID
+13. Groups now have structure member that identifies size
+14. Up to 7 labels; find and replace, etc, work on them. Compatible archive format
+	(when read by old Cindex all levels of label are same
+	[!! check/redo simpler way, since we can exclude DOS readers]
+15. Record entry/editing checks for mismatched "" and mismatched curly double
+16. Dealt with bug in record window: change in delete/labeled status of edit record
+	would be permanent, even if edit changes discarded
+17. Uses locator style as sort criterion on least significant segment, other things being equal
+18. location of preferences file is CSIDL_LOCAL_APPDATA/Indexing Research/Cindex2/...
+19. New sort behavior
+	for parens: if preceded by space, then entry up to preceding space evaluated.
+		(new title on parens check box: ignore parenthetical endings
+	standard packaged sort rules for ISO and CMS
+20. Flipping:
+	Half flip (promote)
+	Smart flip [now has clver handling ov 'see also refs'
+	Preferences setting
+21. Shift key extends selection with up and down arrow keys in main view
+22. Errors, warning from record entry now displayed in record window status bar
+23. Better memory for last-used folders for different file types
+24. Auto convert cross-refs to full postings
+25. Can have protected text field as last subheading; * in heading field; changed way
+	of handling page refs if field suppressed (now don't hide page refs); formatted export treats as level 15 heading (formexport_buildentry())
+26. Attributes filter for fully-formatted display
+27. Changes to error/warning icons to be conforming
+28. Count now provides counts about distinct types of labeled records
+	Count now respects filter settings for formatted view
+29. Auto lead caps on cross-refs (sensitive to period, comma, opening paren, or no punct)
+29a. New placement: if position is last subhead, and there ar enone, then immediately follows page ref
+29b. If formatting cross-ref as subhead, then leading punctuation ignored
+30.	conflate() fix to ensure conflation of styled numbers
+31. Styled hot key text no longer sets style for subsequently typed characters
+32. subheading with wholly invisible text now shifts level properly (FO_NEWLEVEL) in
+	indented index
+33. fix doautostyles() in formstuff.c to search styled strings in reverse order
+	- gets longest match because strings sorted
+34. suppressing repeated page ref prefixes now works for styled range. See first call to suppressmatch() in
+	fixpage() in formstuff.c
+35. Run-on after any headings that end with | (or for pub ed possibly beging with ; poss protected by <)
+36. Now allow lead text to subheadings (inserted after heading style codes -- so change for old pub ed)
+37. Registry
+	new sets of keys for 2.0 (independent of 1.5)
+	all keys erased on shift-start
+	reading HKEY_LOCAL_MACHINE now always done while seeking only read access
+38. Statistics now provides count of unique main headings
+39. Fix in str_adjustcodes to do in-place conversion [when formatting entries](faster, escapes buffer limitation & crashes)
+40. If compound refs contain more than 10 segments, all are evaluated serially by ref-match
+41. general changes to writetext() in formstuff.c so that high chars on non-ansi fonts aren't
+	translated. Associated change FILECONTROLX to include INDEX * member
+42. small change in sort_squeeze so that if not removing deleted records they'll be handled properly for consolidation of refs
+43. use new error fnction senderronstatusline() to display format errors on status lines, so that we
+	don't get into cycle of screen updates from displaying error in dialog box
+44. Can specify number of recent files in standard edition
+45. InDesign tagging
+46. Improved Xpress tagging -- deal with extra space before ahead and entries
+47. If user id requires validation, disable box for setting user id (pub ed)
+48 fix longstanding problem with switchfont() in formstuff.c to deal with restoring base font (obvious effect is in adding font to alpha header).
+49. Major changes in openindexfile() [files.c] to repair damaged indexes (using index-checkintegrity() & index_repair()
+50. Hold shift key down during past or drag-drop pastes plain text
+51. RECBUFFNUM for replace/spell, etc buff size raised to 5000
+52 ** crashable bug in reconcile check underrun of matchcount
+53. serious bug: could set index size when viewing a group -- might choose records size smaller than max
+54. Prefs option to control embedding of sort info.
+55. Auto check over web for updates
+56. Provide for backup copy and revert to saved, through file_saveprivatebackup() etc.
+57. Now remembers/restores last size position of view window
+58. headers in text windows; clickable buttons for abbrevs
+59. Reconcile now does more intelligent split checks; won't allow more than maxfields fields.
+60. code (files.c) to handle gracefully an index file that's too *new*
+61. code to handle minor conversioon of header in new index made from template
+62. Save As directory is now last-used (rather than last saved).
+63. New Compress option to ignore labels on records
+64. make index_cleartags() to ensure no tags hang around to screw up expand; adapt tools_join(); sort_squeeze()
+65. in transfrommac() in translate.c, fix so as not to translate characters in Symbol font
+66. in enumfont() in typestuff.c changed acceptable fonts to include DEVICE_FONTTYPE
+
+Mac Transfers
+z. handle overlength records better in imports
+	## look at new version of str_getline
+	## check for bad font base offset (_checkFontBase in Mac vers)
+z. fix entry buffer to protect against addressing before start via fns like transposepunct()
+z. in spell.m use DASH in stripcoy() to prevent false double word detection
+## deal with replacement of FO_AHEAD with head level of -1?
+z. change fixpage() to consume second ref if it matches second segment of first ref
+## new RTF export capabilities
+z. Fixes in search_setupfind() to cope with truncated second part of range in spec for page ref search
+z. (verify)find page refs that exceed max number
+z. (reconcile)managing orphaned subheadings in reconciliation
+z. ESC now closes modify window and discards with no query
+z. sort_jump() now respects hidedelete
+z. new type_maplocal() function to cope with missing font in group or header fonts
+z. use new version of type_setfontids() to do proper font substitution in archives
+z. better performance from sort_squeeze() in dealing with removal of duplicates + consolidation of refs
+z. fixes in sort_squeeze for transferring deleted and labeled flags to generated records
+z. change rtfembedder to call str_skiplist() to ignore subhead prefixes
+z. str_xlen() macro now works with xstrings of unlimited length
+z. conflate() did erroneous suppression for A-10, in 100,A-10
+
+MAC TO DOs
+	Entry errors get flagged on status line at bottom of window
+	checkfield() in modify.c should take unsigned char as string
+	Preferences should be available when record window open?
+	new work on sort_setfilter() and sort_isignored()
+	protected field as last subheading
+	new sort stuff
+	check how recipient of sort_jump() behaves with null return
+	check:  bug in record window: change in delete/labeled status of edit record
+		would be permanent, even if edit changes discarded
+	fix search_count() for filtered records
+	smart flipping
+	see change for truncated match in textcomp() in sort.c (Sampson issue)
+	auto caps on cross-refs
+	conflate() fix to ensure conflation of styled numbers
+	see FO_NEWLEVEL stuff, above
+	absorb fix for adjusting colors in str_adjustcodes()
+	BNA style run-in stuff (rec_uniquelevel(), etc)
+	small fix in stripcopy() in formstuff.c
+	fixes in str_adjustcodes()
+	error checking (rec_getrec() and repair of indexes
+	reconcile stuff
+
+TO DO
+	** REMOVE ancient DOS saving options
+
+	PUB ED (final fix in formstuff.c): switch on labeling per printer bullet pref
+	Export a summary view in some file format [per old DOS version]
+	Spelling window: make 'Stop' a 'Reset'
+	RTF export: enlarge function of type_findfonts() to get the NEWTEXTMETRICEX info
+		into the NFLIST, so that we can do better heading spacing management
+	Formatted view:
+		Should colors of label records be exported into RTF?	
+	Abbrevs in List View ??
+	Cross-refs
+		Contextual menu option for convert eligible selected entry to double-post?
+	RichEdit Small Caps ? [not displayed, but any advantage in using?
+	Headnote?
+	Sorting Page refs
+		sort ascending vs descending sort for *each segment* (Ream)
+	Export formats
+		XML
+	Groups
+		find a way to keep in index file
+	Statistics
+		give more info about the density of page refs (see sky)
+
+	-- when carry page refs, make sure text in page field is selected the first time we hit it
+
+	4. What flipping operations should be permitted on blocks of selected records?
+	6. Check (per Sky) for replace options for 'whole field' and 'preserve case' (p 50)
+		
+	1. Implement undo for global operations
+		reconcile
+		alter
+		generate refs
+		sort
+		compress/expand
+		replace/spell [globally only?]
+		record structure
+		font changes ?
+
+	BUGS
+		Dick Evans on failed autcomplete with case/style insensitivity not restoring original text
+		Journaling under Vista
+			see http://forums.microsoft.com/MSDN/ShowPost.aspx?PostID=221181&SiteID=1
+		check what crashes DARB
+
+PUB/API
+	Check selecting top record in view_allrecords() in ddes project
+	No longer looks for home path (and windows dir if its missing)-- uses local app data
+	lead text to headings is now covered by heading global style
+		
+2.0 Beta bug fixes
+1. Unadorned uppercase U was being taken as accelerator for propagate
+2. rec_strip() didn't properly handle new test for required field; hangs in import, and in general entry
+3. type_findlocal() used instead of type_maplocal in buildentry() -- otherwise local id not built
+4. str_adjustcodes() confusing subscript for color
+5. type_tagfonts() had long-standing silly bug that could cause it to miss fonts if styles preceded
+---
+fix errors after Save As on .cdx -- closed FF->vwind not FF->cwind before reopening copy
+fix mousewheel scroll to use control panel settings properly (does page if appropriate)
+fix in WinMain() to use __argv[0] to get cindex path -- more reliable parsing of command line
+fix command_saveas() in apiservice to deal with silly path corruption if given full path
+fix call to view_setstatus() from cactivate() in containerset.c
+When doing autocaps on cross-ref lead in buildrefs(), failed when writing files because of FO_CROSS
+Tagged text files indexing off because failed to identify InDesign tags in enum in impexp.h
+fix verify
+	error window first line click finds/opens record
+	double-click works naturally
+	checking for page count (if unchecked, could test silly limit value)
+fix drop paste of single line where rtf paste carries spurious newline (EN_SELCHANGE in mnotify())
+when adding records, main status line didn't always correctly show sorted/unsorted
+capacity of RECNUMBUFF increased from 1000 to 20000
+fix crashable bug in reconcile
+transpose punct wasn't working properly
+better exception handling of damaged records
+
+2.0.1 fixes
+1. Spelling
+	0. Editing user dic shows word count
+	1. Add option to delete user dictionary
+	2. in sp_checkword() fix spurious use of prestrip
+	3. better reporting of user dic errors
+	4. New INSO libraries allow up to ~6600 words; fix crashable bugs
+2. Required field handling
+	archived record carries flag (write())
+	imp_checkline() catches flag
+	resolveerors() sets required and minfields attributes of index if empty
+	new rec_strip() and rec_pad() to manage cleaner strip/padding
+		rec_pad() replaces str_xpad() for records
+3. About... new displays minor version numbers
+4. Changes is_setstruct() & associated dialog handler to permit change to min fields in
+		index that contains records
+5. Minor fixes in modify.c to keep better track of overflow from return/delete
+6. Fix to form_buildentry() to suppress completely empty fields in records
+7. Search_verify() now counts prefix tokens -- used to make search_convertcross() more robust
+8. fixes in conflate() to correct handling of styled text -- could crash when styled ref followed by plain one
+9. ** (multiple) fixes in form_buildentry() to prevent f_newlevel marker being inserted at or below runon level
+10. fix use of difflag in canabandon() and enterrecord() in modify.c so that delete/label doesn't set last-edited record
+11. index_checkintegrity() gave spurious failures when indexpars.recsize == MAXREC
+12. variable step scrolling in dragscroll() in viewset.c
+13. labeling a record marks index as changed (dirty)
+14. labeling with ctrl-L toggle touches only records that match first selected
+15. Fixes in findset.c and repset.c to handle resetting of new find after change in userid and label id
+16. Fix in setstructproc() so that ->required is cleared if min fields set to 2.
+--. Pub Ed: new API services
+	Expand
+	exclude by attributes (find/rep)
+	get version number
+	Fixes to file_getdefpath() to return correct paths for tags, udics
+	1.0.1.1 add clear buttons to clear default folders
+	
+###TO CHECK/DO for 2.0.2
+A. How to deal with selection adjustment when switching to main view with selected records hidden
+
+2.0.2 fixes
+1. In setuparchive() in impexp.c, now flags error if archive has no font info
+2. After changing record structure, forces redisplay
+3. Format management changes
+	aa. required subhead is formatted as last permissible heading level in all formatting ops
+		[this fixes problem with bad export using heading level 15 tags]
+	a. change match() in sort.c to handle cross-ref sorting when index has min fields & some empty
+		[also change to ensure that if records match there's final test for diff numbers of fields]
+	b. changes in rec_uniquelevel to deal correctly with suppression and collapsing
+	c. changes in form_getprec() & form_skip() to use new info from rec_uniquelevel to suppress & collapse
+	d. changes in form_buildentry() to deal with required subhead padding
+	e. change in form_measurelines() to use with FO_NEWLEVEL to produce only level shifts
+	f. introduce locatormark in form_buildentry() to deal with crossref indentation when formatting as subhead
+	g. change in form_buildentry() to better identify field to label if no page refs
+	h. redo all L_SPECIAL handling so that special indent triggered when level tagged as maxfields-2
+	i. change in form_buildentry() to prevent level shift padding for fields below runon level
+	j. change stlproc() in formset.c to strip last subhead level from collapse && runon menus (could never be used)
+5. change sethtabitems()/gethtabitems() to show effect of higher level suppression on lower headings
+6. Commands now appropriately disabled for main view when separate record view window is open
+7. checkfixes()forces resort & other fixes after opening older file.
+8. Added Ctrl-Shift-. as additional label clear shortcut to deal with Vista bug on Ctrl-Shift-0.
+9. str_flip() now doesn't transpose subhead suffix if trigger words follow punctuation
+10. change in mod_gettestring()to disard bad characters from edit window when forming xstring
+11. parent window for all warnings/errors is now g_hwframe (not GetActiveWindow())
+	allows MessageBox() to work properly under all circumstances (e.g., during splash)
+12. Update check now closes Cindex if update accepted.
+13. use hook procedure for rebar control to prevent cursor override for rich edit control
+14. mnotify() in modify.c now destroys selection that contains only newline
+15. In Check References, verify and page check values are remembered
+16. In analchars() in sort.c change handling of parens to deal with text after closing paren
+	(uses new routine skipparen()).
+17. in textcomp() and residuecomp() in sort.c change use of MATCH_IGNORECASE to permit case-insense sorting
+	of alpha residues (using case only when no letter difference)
+18. Changes to custom tag sets were saved in file without extension, so file saved was not file opened.
+19. Treated old DOS indexes as too new to open
+20. Fix search_verify() to use hidedelete, not sort_setfilter(); fix verproc() in toolset.c to tuse sort_setfilter()
+21. New management of MDI activation to ensure separate record window always on top of it smain window
+22. In errors.c, all MessageBox() owners set to NULL
+23. Better display of error message when a sought record will be invisible
+24. New colored selection highlighting; fullnavigation in main view with new-style entry window
+25. Now clears heading font sizes loaded from old style sheets
+26. in doeditkey() in modify.c, change call to EM_REPLACESEL for typed character to WM_CHAR, to cover hangover of wrong char on subsequent typing
+
+2.0.2.1
+1. Fix verify so that when looking up source entry to determine X/XA it counts only exact matches up to xref
+2. change doeditkey() in modify.c so that we don't disable EN_CHANGE notification for WM_CHAR during autocompletion (crashable bug from 2.0.2)
+
+2.0.3
+1. Fix window sizing so that on intial opening height of mdi child window never exceeds height of mdi client window
+2. Fix str_flip() so that smart flip handles symbol font specially when appending transposed elements
+3. Crashable bug in setting view depth: mc_hidebelow() addressed container window rather than view window
+4. In buildentry() in draftstuff.c change crossref detection to use levelbreak vs. elipsis only when there's real crossref
+5. multiple cleanups in modify.c so that track entries works more smoothly (doesn't lose context on pgup)
+6. fix search_findbycontent() to treat special last subheading as a heading at the right level
+7. fix match()in sort.c to handle sorting of special last field 
+8. change is_setstruct() in indexset.c to better handle changes (inc resort) following switch in required field state
+9. alter handling of toolbar buttons so that focus change drives enable/disable
+10. in taginit() remove code for appending default extension to filename -- redundant, and caused crash from api call
+11. in form_buildentry() wasn't handling locatormark properly in computing tpos return value
+
+2.0.4
+1. Fix handling of collapselevel for required field (rec_uniquelevel()) 
+2. Fix display of open/save icons when no index is active??
+3. in form_buildentry, put check for run-on subheading before emitting subhead prefix text
+4. in form_buildentry, call to buildrefs(), if lastlevel <0 set param to hlevel rather than 0.
+5. In ldokey() in viewset.c don't act on ESC if record window open.
+
+2.0.4.1
+1. *** FIX in form_buildentry, call to buildrefs(), if lastlevel <0 set param to hlevel rather than 0.
+
+2.0.5
+1. FIX in form_buildentry, call to buildrefs(), if lastlevel <0 set param to hlevel-1 rather than 0.
+	Fix placecrossrefs() to get correct subheading placement 
+2. In mc_import() fix unknown import file type to be I_AUTO; opens .txt files as PLAINTEXT
+3. Fix min/max record size check in setstructproc() in indexset.c.
+
+
+BIG STUFF FOR FUTURE
+1. Embedding
+2. Recovery of entries from formatted index (cinvert)
+
+---------------------------------
+Windows-specific changes
+	-- changes to tagset (consolidate special and extras)
+		[NB fix help stuff]
+	-- no longer support text only with line breaks
+	-- 'modified' bullet comes after displayed record number
+	-- new character map for unicode
+	-- 'Text Only' file is now 'Plain Text' [no longer with line breaks]
+	-- 'Symbols..." changed to 'Character Map...'
+	Ctrl ] and Ctrl [ for increment/decrement
+	-- new clean management of styled strings
+	-- keyboard macros now work
+	-- keyboard shortcuts for play macro Ctrl+Alt replaces Alt
+	-- groups now contained within index file
+	-- new filename extensions
+	-- squeeze now really does invalidate groups (dims menu)
+	-- big changes in overall file management
+	-- default sort for record export formats changed ?
+	-- fixed horizontal scrolling out of bounds
+	-- now plain text import assumes txt extension, & tab-delimites
+	-- sky7 import
+	--** fixed long-standing bug in printing contents of text window -- never ends
+
+*check* \nnn encoding character in tagged text write for pub ed fprintf()
+		also PubEd  special font handling
+*check* api
+check ldochar in viewset.c -- need to make unicode chars?
+
+To fix:
+	make editable user dictionaries [List View vs List box]?
+	can we do variable size text per heading (as on mac)
+	check autocomplete
+	Fix %S vs %s in error/warning strings [check groups]
+	api ... things like add record (how to recognize format)
+	embed abbrev handling in window that allows closing of set
+---------------------------------
+3.0.1 fixes
+Crash in managing hot keys text
+-----------
+3.0.2 fixes
+Writing RTF -- didn't handle groups and alpha headers correctly
+Font change at start of field disabled label display in formatted output
+Converted style sheet had wrong version and size info in format params headre
+XML reading
+	bad or too many records gave continuous error messages -- didn't abort
+	didn't protect literal {}\~ as special characters
+	could carry text attributes across field boundaries

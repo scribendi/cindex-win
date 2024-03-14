@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Altering references with patterns</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Patterns, altering references" />
+	<PARAM NAME="Keyword" VALUE="Alter references, multi-part" />
+</OBJECT>
+		<h2>Altering references with patterns</h2>
+		<p>When you use <b>Alter References</b> (Tools menu) to adjust page references, Cindex normally changes the first number (or range) that falls within the range you specify. If records contain multi-part page references you will probably want to restrict the alterations to a particular segment. You do this by using a pattern to direct Cindex to skip to the segment you want to alter.</p>
+		<p>In the <b>Scope</b> box, specify the pattern in the <b>Matching Pattern</b> box. This pattern should describe the initial segment of each reference that should be skipped before an adjustment is made, as in the following examples:</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top" bgcolor="white">
+				<td width="16">
+					<p>•</p>
+				</td>
+				<td>
+					<p>To deal only with  with references to volumes for 1988 in the following compound references:</p>
+					<blockquote>
+					  <p>1987: Jun 555; 1988: Oct 1032; 1989: Jan 22</p>
+					</blockquote>
+					<p>define a pattern that identifies the 1988 volume:</p>
+					<blockquote>
+						<p>1988:[^1-9]*</p>
+					</blockquote>
+				</td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="16">
+					<p>•</p>
+				</td>
+				<td>
+					<p>To alter only the page number (the last element) in the following compound references:</p>
+					<blockquote>
+						<p>1988(3)55, 1988(4)66, 1988(5)72, 1988(4)60-63</p>
+					</blockquote>
+					<p>use this pattern to exclude all components of the reference up to the closing parenthesis:</p>
+					<blockquote>
+						<p>.*\)</p>
+					</blockquote>
+				</td>
+			</tr>
+		</table>
+<hr />
+		<b>See also </b><br />
+		<a href="Patterns_defining.htm">Defining patterns</a><br />
+		<a href="Patterns_sample.htm">
+			Sample patterns
+	</a>
+	</BODY>
+</HTML>

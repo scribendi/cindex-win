@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Exporting index records</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<sup><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="UTF-8, exporting records" />
+	<PARAM NAME="Keyword" VALUE="Unicode, exporting records" />
+	<PARAM NAME="Keyword" VALUE="Export, index records" />
+	<PARAM NAME="Keyword" VALUE="Record(s), exporting" />
+	<PARAM NAME="Keyword" VALUE="Delimited records" />
+	<PARAM NAME="Keyword" VALUE="Delimited records, exporting" />
+	<PARAM NAME="Keyword" VALUE="Database" />
+	<PARAM NAME="Keyword" VALUE="Database, exporting records for" />
+			</OBJECT></sup>
+		<h2>Exporting index records</h2>
+		<p>Cindex can save documents that contain just the contents of index records (without information about the style or layout of the index).</p>
+		<p>To save index records, choose <b>Save As…</b> from the File menu, then from the <b>Save as type</b> pop-up menu select one of the following types of unformatted document:</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+		  <tr valign="top">
+		    <td bgcolor="white"><p>Cindex&nbsp;XML records</p></td>
+		    <td bgcolor="white"><p>Cindex can save records in an <a href="Import_xml.htm">XML document</a>. This is a plain text document, suitable for interchange with other indexing software. The XML document also includes information about fonts and styles used in entries.</p></td>
+	      </tr>
+			<tr valign="top">
+				<td bgcolor="white" width="124">
+					<p>Cindex Archive</p>
+				</td>
+				<td bgcolor="white">
+					<p>A Cindex <a href="Import_archive.htm">archive</a> is a document that contains all the index records (including information about fonts and styles used in entries). Because an archive cannot represent all the characters that might be used in an index, this format is deprecated except for interchange with earlier versions of Cindex.</p>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td bgcolor="white" width="124">
+					<p>Tab-delimited text</p>
+				</td>
+				<td bgcolor="white">
+					<p>Cindex can save the text of index records (the contents of the record fields, including the locator field) in a form that is widely used by database management programs. In this form all the fields of an index record lie on a single line, each  separated from the next by a ‘tab’ character. When imported into a database program, each field in the index record will occupy a different field in the database. The saved document contains only  plain text; Cindex saves no information about fonts or styles. Cindex does not export text in {&nbsp;} used to control sorting, nor does it export any of the characters {&nbsp;} &lt;&nbsp;&gt; ~ \ unless they have been used literally in records.</p>
+					<p>Cindex  by default  uses UTF-8 (Unicode) character encoding. You can change the encoding to the Windows character set via Options&hellip; when the Save panel is displayed.</p></td>
+			</tr>
+		</table>
+<p>Cindex normally saves all of the index that is accessible in the current view (generally all records, or a group). Cindex does not save empty records, and it normally does not save the text of deleted records. To modify this behavior, click Options in the Save panel before you save the records.</p>
+		<hr />
+		<b>See also </b><br />
+<a href="Export_optionsxml.htm">Options for saving XML records<br />
+Options for saving archives</a><br />
+		<a href="Export_optionsdelimited.htm">Options for saving delimited records</a>
+	</BODY>
+</HTML>

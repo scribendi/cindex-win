@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Conditional (Boolean) searches</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Finding records, Boolean search">
+				<PARAM NAME="Keyword" VALUE="Boolean search">
+				<PARAM NAME="Keyword" VALUE="Conditional search">
+				<PARAM NAME="Keyword" VALUE="Search, Boolean">
+				<PARAM NAME="Keyword" VALUE="Search, conditional">
+	</OBJECT>
+		<h2>Conditional (Boolean) searches</h2>
+		<p>Cindex lets you look for combinations of words or phrases, e.g., the occurrence of the word “university” <i>and</i> the word “finance” in the same record; it can also find an occurrence of a particular word or phrase without some other word or phrase, e.g., a reference to “Warsaw Pact” and no reference to “Soviet Union.”</p>
+		<p>The first step in finding such records is to form a simple statement of the conditions, e.g., find university <i>and</i> finance, or find Warsaw Pact <i>and not</i> Soviet Union, or find cars <i>or</i> automobiles. When you do this it becomes clear that to make a conditional search you need to be able to represent the entities <i>and</i>, <i>or</i> and <i>not</i>. Cindex provides these entities (known as conditional or Boolean operators) for you to use in specifying conditions that a record must meet before it can be displayed.</p>
+		<p>In the <b>Find</b> panel, configure your search as follows:</p>
+		<ul>
+			<li type="disc">To find records that do not contain specified text, check <b>Not</b>, immediately to the left of the search text box.
+			<li type="disc">To find records that contain the specified text and/or some other text, select <i>and</i> or <i>or</i> from the pop-up menu to the far right of the text. Cindex will extend the window so that you can specify a second word or phrase to search for (and other attributes to be associated with it, such as a style or a whole word, etc.) By choosing <i>and</i> or <i>or</i> you can extend the window repeatedly for up to four search sequences.
+		</ul>
+		<p>A search expression that contains several components might be interpreted in a number of ways. For example, a search for</p>
+		<blockquote>
+			<p>NATO <i>and not</i> Warsaw Pact <i>or</i> China <i>or</i> Japan</p>
+		</blockquote>
+		<p>could mean “find a record that refers to Nato and not to the Warsaw pact, or a record that refers to China or a record that refers to Japan,” or it could mean “find a record that refers to Nato and does not refer to the Warsaw Pact or to China or to Japan.”</p>
+		<p>Cindex interprets the expression in the first way, as a result of following these simple rules:</p>
+		<ul>
+			<li type="disc"><i>not</i> applies only to the component immediately following, because it takes precedence over the other operators
+			<li type="disc">Cindex then groups components connected by <i>and</i> because <i>and</i> has a higher precedence than <i>or</i>.
+		</ul>
+		<hr>
+		<b>See also </b><br>
+		<a href="Usingfind.htm">
+		Using the Find panel
+	</a>
+	</BODY>
+</HTML>

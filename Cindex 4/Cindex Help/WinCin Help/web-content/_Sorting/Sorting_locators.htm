@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Sorting locators</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Sorting, locators">
+	<PARAM NAME="Keyword" VALUE="Locators, sorting">
+	<PARAM NAME="Keyword" VALUE="Page references, sorting">
+	</OBJECT>
+		<h2>Sorting locators</h2>
+		<p>Use the <b>Sort</b> panel (Tools menu) to specify how Cindex should sort locators.</p>
+		<p>Settings in the Locators tab specify the how locators should be sorted.</p>
+		<p>Cindex evaluates page references under the following conditions:</p>
+		<ul>
+			<li type="disc">When a single entry has multiple references, and these have to be ordered when the formatted index is displayed or printed.
+			<li type="disc">When entries are ordered alphabetically, but are identical at all levels of heading that are being evaluated.
+			<li type="disc">When you want entries ordered by page reference.
+		</ul>
+		<p>You can specify how Cindex should recognize locators (or parts of them) comprised of letters (as Roman numerals, spelled out months, or plain text), and what precedence it should assign to different classes of components. Through the <b>Type Precedence</b> list you specify whether or not Cindex will recognize a locator of a particular class, and (if it does recognize it) what precedence it should have. Cindex recognizes only segments corresponding to the classes that are checked with + marks. To check or uncheck a member of the list, double-click it. Cindex uses the order in which recognized classes appear in the list to determine the precedence of the components they represent. To change the precedence of a class drag it in the list.</p>
+		<p>If your locators have multiple parts, Cindex can ignore specified components and can evaluate the others in any order you choose. Use the <b>Segment Order</b> list to specify this. Cindex evaluates only reference segments associated with checked items in the list. Double-click an item to make Cindex evaluate (or ignore) the corresponding segment of a reference. The order in which the checked items appear in the list is the order in which Cindex evaluates their corresponding segments. Drag items to achieve the order you want.</p>
+		<p>Sometimes a text style (bold, italic, underline) is used to distinguish different types of references to the same page. Use the <b>Style Precedence</b> list to set the precedence of different text styles. Cindex uses the setting when the text style is the only attribute that distinguishes two page references (or the least significant parts of multi-part references).</p>
+		<p>If Cindex needs to use the value of a locator when positioning a record in the index (it generally does this only when positioning otherwise identical records), and the locator field contains more than one page reference, Cindex normally uses the lowest-valued one. To make Cindex use the highest-valued locator, uncheck <b>Ascending Order</b>. To make Cindex used the first locator, regardless of its value, uncheck <b>Examine All</b>.</p>
+		<p>When index entries contain bi-directional text (e.g., English and Arabic), the reading order of locators normally follows that of the script immediately preceding the locators. To force left-to-right reading order of locators, regardless of script, check <strong>Force left-right reading order</strong>.</p>
+		<hr>
+		<b>See also </b><br>
+		<a href="../base/Pageref_structure.htm">
+		Specifying the structure of page references</a><br>
+		<a href="../base/Pageref_components.htm">
+		Components of page references</a><br>
+		<a href="Sorting_fields.htm">
+		Sorting record fields</a><br>
+		<a href="Sorting_alphabetizing.htm">Alphabetizing entries</a>
+	</BODY>
+</HTML>

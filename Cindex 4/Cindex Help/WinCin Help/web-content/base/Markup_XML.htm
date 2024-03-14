@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>XML Markup tags</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Document markup, XML" />
+	<PARAM NAME="Keyword" VALUE="Markup tags" />
+	<PARAM NAME="Keyword" VALUE="XML" />
+	<PARAM NAME="Keyword" VALUE="XML, export formatted index" />
+	<PARAM NAME="Keyword" VALUE="XML, forbidden characters" />
+	<PARAM NAME="Keyword" VALUE="&amp;, in XML," />
+	<PARAM NAME="Keyword" VALUE="< >, in XML," />
+	<PARAM NAME="Keyword" VALUE="Tagged text documents, XML tags" />
+</OBJECT>
+		<h2>XML markup tags</h2>
+		<p>Choose Markup Tags&hellip;  from the Tools menu to view and edit sets of tags that Cindex uses to mark-up formatted documents. Click the XML tab, then choose the tag set from the pop-up menu.</p>
+		<p>If you are defining your own tags, note the following:</p>
+<ul>
+  <li>Each opening tag must have a matching closing tag. You specify only the opening tag; Cindex automatically generates the  closing one.  </li>
+          <li>A tag name may not contain any of these characters: &lt; &gt; &amp; ' &quot;</li>
+</ul>
+		<table border="0" cellspacing="0" cellpadding="4">
+<tr valign="top" bgcolor="white">
+				<td width="94">
+					<p>Structure Elements</p>
+				</td>
+				<td>
+					<p>These identify the different structural elements of an index. Cindex  provides a tag to denote the index document (Index),  a tag to denote an alphabetical group of records (Group), and a tag to denote the title to  a group of records (Heading). Additional tags identify  different levels of heading, and (optionally) the body text of an entry,    page references, and  cross-references.</p>
+					<p>Check <em>Identify Level with Attribute</em> to make Cindex identify the main heading/subheading level with a numerical attribute.</p>
+                <p>Check N<em>est Subheadings</em> to make Cindex nest subheadings hierarchically under headings.</p>
+                    <p>Check T<em>ag Individual References</em> to make Cindex apply the page reference tag or the cross-reference tag  to each reference separately, rather than to the group of references in an entry.</p>
+                <p>Check <em>Suppress Reference Leader &amp; Trailer</em> to make Cindex suppress  the leading and trailing punctuation that it would normally place before and after page references and cross-references.</p></td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="94">
+					<p>Other Elements</p>
+				</td>
+				<td>
+					<p>Style tags identify type styles, such as italic and boldface. Cindex will embed style tags in the document where the index contains styled text.</p>
+                    <p>Font tags are used to denote changes of font. The first tag in the set denotes the default font in which the index is displayed in the main document window. Subsequent tags are used to identify any other fonts used in the index.</p>
+                <p>When Cindex emits a tag to identify a font, it can emit the unadorned tag, or can add an attribute that identifies the font, either numerically, or by name. To make Cindex add the identifying attribute click ID (for numerical identifier) or Name (for the name of the font).</p></td>
+			</tr>
+		</table>
+<p><b>See also </b><br />
+		<a href="Export_taggedtext.htm">
+		Tagged text documents</a><br />
+  <a href="Markup.htm">SGML markup tags</a><br />
+		<a href="Export_formatted.htm">
+		Saving formatted indexes
+	    </a></p>
+</BODY>
+</HTML>

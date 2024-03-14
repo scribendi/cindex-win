@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=windows-1252" />
+<TITLE>Pattern character sets</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="&ndash;, in pattern character set" />
+<PARAM NAME="Keyword" VALUE="&amp;, in pattern character sets" />
+<PARAM NAME="Keyword" VALUE="Patterns, character sets" />
+<PARAM NAME="Keyword" VALUE="Unicode, character sets" />
+<PARAM NAME="Keyword" VALUE="Character class, in patterns" /></OBJECT>
+		<h2>Character sets in patterns</h2>
+		<p>Cindex can  match a character that is a member of a set. Sets can represent scripts, such as Hebrew, or Greek, or they  can represent character properties, such as symbols, or numbers.</p>
+		<p>To specify a character that is a member of a set, type the set name between [: :], for example [:hebrew:], for a Hebrew character. To specify a character that<em> is no</em>t a member of the set, place a ^ immediately after the opening [, thus: [^:hebrew:].</p>
+		<p> Cindex recognizes many script sets, such as [:arabic:], [:devanagari:], [:cyrillic:], [:greek:], [:han:], [:hangul:], [:hebrew:], [:katakana:], [:latin:]. Cindex recognizes additional <a href="http://www.unicode.org/charts/#scripts">Unicode scripts</a>.</p>
+<p>To specify a character that has a certain property (e.g., letter, or symbol) use a set  from the following table.</p>
+<table cellspacing="0" cellpadding="0">
+  <col width="142">
+  <col width="102">
+  <col width="528">
+  <tr>
+    <td><strong>Set Name</strong></td>
+    <td><strong>Abbrev</strong></td>
+    <td><strong>Description</strong></td>
+  </tr>
+  <tr>
+    <td width="142">[:ascii:]</td>
+    <td width="102"></td>
+    <td width="528">An ASCII character</td>
+  </tr>
+  <tr>
+    <td>[:letter:]</td>
+    <td>[:l:]</td>
+    <td>Any letter (any language)</td>
+  </tr>
+  <tr>
+    <td>[:lowercase letter:]</td>
+    <td>[:ll:]</td>
+    <td>A lowercase letter that has an uppercase counterpart</td>
+  </tr>
+  <tr>
+    <td>[:uppercase letter:]</td>
+    <td>[:lu:]</td>
+    <td>An uppercase letter that has a lowercase counterpart</td>
+  </tr>
+  <tr>
+    <td>[:mark:]</td>
+    <td>[:m:]</td>
+    <td>A diacritical mark or character that is combined with a letter</td>
+  </tr>
+  <tr>
+    <td>[:separator:]</td>
+    <td>[:z:]</td>
+    <td>A whitespace or invisible separator</td>
+  </tr>
+  <tr>
+    <td>[:symbol:]</td>
+    <td>[:s:]</td>
+    <td>Any symbol, including, math, currency, dingbats, etc.</td>
+  </tr>
+  <tr>
+    <td>[:math symbol:]</td>
+    <td>[:sm:]</td>
+    <td>Any math symbol</td>
+  </tr>
+  <tr>
+    <td>[:currency symbol:]</td>
+    <td>[:sc:]</td>
+    <td>Any currency symbol</td>
+  </tr>
+  <tr>
+    <td>[:other symbol:]</td>
+    <td>[:so:]</td>
+    <td>Other symbol (none of the above)</td>
+  </tr>
+  <tr>
+    <td>[:number:]</td>
+    <td>[:n:]</td>
+    <td>Any numeric character in any script</td>
+  </tr>
+  <tr>
+    <td>[:decimal digit number:]</td>
+    <td>[:nd:]</td>
+    <td>Digits 0 through 9</td>
+  </tr>
+  <tr>
+    <td>[:punctuation:]</td>
+    <td>[:p:]</td>
+    <td>Any punctuation character</td>
+  </tr>
+  <tr>
+    <td>[:dash punctuation:]</td>
+    <td>[:pd:]</td>
+    <td>Any kind of hyphen or dash</td>
+  </tr>
+  <tr>
+    <td>[:open punctuation:]</td>
+    <td>[:ps:]</td>
+    <td>Any kind of opening bracket</td>
+  </tr>
+  <tr>
+    <td>[:close punctuation:]</td>
+    <td>[:pe:]</td>
+    <td>Any kind of closing bracket</td>
+  </tr>
+  <tr>
+    <td>[:initial punctuation:]</td>
+    <td>[:pi:]</td>
+    <td>Any kind of opening quote</td>
+  </tr>
+  <tr>
+    <td>[:final punctuation:]</td>
+    <td>[:pf:]</td>
+    <td>Any kind of closing quote</td>
+  </tr>
+  <tr>
+    <td>[:connector punctuation:]</td>
+    <td>[:pc:]</td>
+    <td>Any character  that connects words</td>
+  </tr>
+  <tr>
+    <td>[:other punctuation:]</td>
+    <td>[:po:]</td>
+    <td>Any punctuation not in the above sets</td>
+  </tr>
+  <tr>
+    <td>[:private use:]</td>
+    <td>[:co:]</td>
+    <td>Special characters (e.g., Apple logo)</td>
+  </tr>
+</table>
+<p>You can form new sets by combining existing sets.</p>
+<ul>
+  <li>To make a set that is the union of other sets, just concatenate them:<br>
+  [:letter:][:symbol:] (or [:l:][:s:]) is the set of all letters and all symbols.</li>
+  <li>To make a set that is the difference of two sets, connect them with -<br>
+  [:letter:]-[:latin:] is the set of all letters that come from scripts other than latin.</li>
+  <li>To make a set that is the intersection of two sets (the set of characters common to both), connect them with &amp; :<br>
+  [:letter:]&amp;[^:han:] is the set of all letters that are not Han.</li>
+</ul>
+<p>&nbsp;</p>
+<hr />
+		<b>See also </b><br />
+		<a href="Patterns_defining.htm">Defining patterns</a><br />
+		<a href="Patterns_replacing.htm">Replacing text that matches a pattern</a>
+</BODY>
+</HTML>

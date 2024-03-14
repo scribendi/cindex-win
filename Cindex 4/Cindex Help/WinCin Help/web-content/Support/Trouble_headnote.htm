@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Adding a head note</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Head note" />
+	<PARAM NAME="Keyword" VALUE="FAQ, head note" />
+</OBJECT>
+		<h2>Adding a head note</h2>
+		<p>The following notes explain how to add a head note to an index. </p>
+		<table width="100%" border="0" cellspacing="0" cellpadding="7" bgcolor="#eeeeee">
+			<tr valign="top" bgcolor="#eeeeee">
+				<td bgcolor="#eeeeee" width="98%">
+					<p>You create one or more index entries that contain the text of the note, then you make Cindex place these at the head of the index. First, ensure that your sort is set to letter-by-letter or word-by-word alphabetizing. Create an index entry (or entries) that contains the text of your introductory note. Each entry will contain information that forces its placement at the beginning of your index. If you want empty lines to follow the note, you will need to create entries with hidden text that you force into position after the note. For example, if you wanted the introduction to your index to look like this:</p>
+					<blockquote>
+						<p>Index entries reference volume, then page.<br />
+								For full information, please see individual entries in the index at the end of each volume.<br />
+							<br />
+								Abacus, 12:8<br />
+								Abracadabra, 6:7<br />
+								. . . .<br />
+						</p>
+					</blockquote>
+					<p>You would make a series of separate entries that in draft view looked like this (record numbers in blue are merely for illustration; do not type them in records):</p>
+					<blockquote>
+								<p><font color="#0000ee">1</font> { a}&lt;Index entries reference volume, then page.&gt;<br />
+									<font color="#0000ee">2</font> { b}&lt;For full information, please see individual entries in the index at the end of each volume.&gt;<br />
+									<font color="#0000ee">3</font> { c}&lt; &gt;</p>
+							</blockquote>
+							<p>The contents of the braces in records #1 and #2 in the example—a leading space followed by a letter: { a} — force the sort of your introductory material, but will not appear on screen or in a print. The angle brackets (&lt; &gt;) enclosing your text will allow it to appear normally, but will ensure that it does not affect the sort. Since Cindex does not print or display completely blank lines or entries, to make it display an apparently blank entry you must use the angle brackets enclosing a space (as in record #3 in the example).</p>
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<p><b>See also<br />
+			</b><a href="tech_contactinfo.htm">Customer Support</a></p>
+	</BODY>
+</HTML>

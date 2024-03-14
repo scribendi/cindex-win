@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Sorting record fields</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Record fields, sort order">
+	<PARAM NAME="Keyword" VALUE="Subheadings, sorting">
+	<PARAM NAME="Keyword" VALUE="Sorting, subheadings">
+	<PARAM NAME="Keyword" VALUE="Sorting, page number order">
+	<PARAM NAME="Keyword" VALUE="Page number sort">
+</OBJECT>
+		<h2>Sorting record fields</h2>
+		<p>Use the Sort panel (Tools menu) to specify the order in which Cindex should evaluate record fields when sorting entries.</p>
+		<p>Setting in the Fields tab control which fields are evaluated and in what order.</p>
+		<p>The order in which Cindex evaluates fields is determined by the list displayed under Field Order. The items in this list show, from top to bottom, the order in which Cindex will evaluate fields when sorting records. Cindex attends to fields that have a + beside them, and ignores fields without +. To change the order of a field, drag its item to the position you want it to occupy. To make Cindex ignore a field, double-click it to remove the +; to make Cindex attend to a field that is currently ignored, double-click it to restore the +.</p>
+		<p>To make Cindex sort entries by page reference, then by heading level, drag the item for the locator field to the top of the list. When you sort entries by order of page references, Cindex places all records that contain empty locator fields at the beginning of the index, and places records that contain cross-references at the end of the index (in alphabetical order of reference).</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>The toolbar in the main index window contains items that allow you quickly to switch between an alphabetical sort and a page-number sort.</p>
+				</td>
+			</tr>
+		</table>
+		<p>Certain kinds of indexes require entries alphabetized on all levels of heading except the lowest (at whatever level this happens to be), which is ordered by page reference. To make Cindex sort entries in this way, specify a conventional Field Order, and check <b>Ignore Lowest Subheading</b>.</p>
+		<hr>
+		<b>See also </b><br>
+		<a href="Sorting_alphabetizing.htm">
+		Alphabetizing entries</a><br>
+		<a href="Sorting_locators.htm">
+		Sorting locators
+	</a>
+	</BODY>
+</HTML>

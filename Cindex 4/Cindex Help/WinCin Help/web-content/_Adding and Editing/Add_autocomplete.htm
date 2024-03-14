@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Completing headings automatically</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<PARAM NAME="Keyword" VALUE="Auto-completion" />
+			<PARAM NAME="Keyword" VALUE="Prediction" />
+			<PARAM NAME="Keyword" VALUE="New records" />
+			<PARAM NAME="Keyword" VALUE="New records, auto-completion" />
+			<PARAM NAME="Keyword" VALUE="Headings, auto-completion" />
+		</OBJECT>
+		<h2>Completing headings automatically</h2>
+		<P>You can set Cindex so that when you type the beginning of a new heading or cross-reference that matches a heading already in the index, Cindex will automatically display and highlight a completed version of the full heading. This feature, called Auto-Completion, is disabled by default. To turn it on, choose <B>Preferences...</B> from the Edit menu, then click the <a href="../base/Prefs_edit.htm">Editing</a> tab. Check <B>Auto-Complete Entries</B>.</P>
+		<p>As you begin typing the text of a heading in a new record, Cindex will look for any existing record whose heading begins with the text you have typed. If Cindex finds a match, it will append and highlight the text to complete the heading you are typing.</p>
+		<p>If the appended text is what you would have typed, you can accept it and open a new field by hitting <SMALL>RETURN</SMALL>, or you can accept it and move to the next field by hitting <SMALL>TAB</SMALL>. If you want to append text, hit the right-arrow key. If the supplied text is not what you want, continue typing. As you type, Cindex will automatically search for a record that has a matching heading, and will continually supply you with the first heading (if any) that matches exactly what you have typed. As soon as you type a character that would make the current record no longer match an existing one, Cindex will remove any highlighted text it has automatically appended.</p>
+		<p>Cindex can automatically complete subheadings at any level, as long as the main heading and any preceding levels of subheadings match an existing record in the index.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>If your index is sorted using letter-by-letter or word-by-word <a href="../_Sorting/Sorting_alphabetizing.htm">alphabetizing</a>, Cindex will not attempt to complete an entry until you have typed enough of it to specify where the entry would appear in the index. For example, if you begin an entry with a quotation mark (which is ignored in letter-by-letter and word-by-word alphabetizing), Cindex will wait until you have typed further characters before looking for a matching entry. For this reason you may find it most convenient to use Simple alphabetizing while adding entries to the index.</p>
+				</td>
+			</tr>
+		</table>When you have enabled auto-completion, Cindex makes two other options available.<ul>
+			<li type="disc">To make Cindex complete entries that match existing ones, regardless of letter case and type style, check <b>Ignore Style &amp; Case</b>. (If you have checked Ignore Style &amp; Case, and Cindex completes an entry from a source that does not match in style and case, it automatically adjusts the style and case of the text you have typed.)
+			</li><li type="disc">If you wish, Cindex will display in the main view (behind the record-entry window) the entry it is using as the source of text to complete the heading you are typing. To enable this display, check <b>Track Source</b>. (Cindex will display the source entry only if it would be visible in the view you are working with.)
+		</li></ul>
+		<hr />
+		<p><b>See also </b><br />
+			<a href="../base/Prefs_edit.htm">
+			Preferences for editing records</a><br />
+			<a href="Add_hotkeys.htm">
+			Using hot keys<br />
+			</a><a href="Add_usingabbreviations.htm">Using abbreviations</a></p>
+	</BODY>
+</HTML>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Using the special last subheading field</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Troubleshooting, sorting">
+	<PARAM NAME="Keyword" VALUE="FAQ, sorting">
+	<param name="Keyword" value="Notes in records">
+	<param name="Keyword" value="Comments in records">
+	<param name="Keyword" value="URLs">
+	<param name="Keyword" value="Web addresses in records">
+	<param name="Keyword" value="Subheadings, special last">
+	<param name="Keyword" value="Record fields, special last">
+	<param name="Keyword" value="Special subheading">
+</OBJECT>
+		<h2>Using the special last subheading field</h2>
+		<p>Here are answers to some frequently-asked questions about using the special last subheading to hold notes, comments or other text.</p>
+		<table width="100%" border="0" cellspacing="0" cellpadding="7" bgcolor="#eeeeee">
+			<tr valign="top" bgcolor="#eeeeee">
+				<td bgcolor="#eeeeee" width="98%">
+					<p><b>When I check 'Subheading Preceding Locator is Required' in Record Structure (Document menu) Cindex always formats this subheading with a large indent. How can I change this?</b> Cindex always treats the special last subheading as though it were at the lowest level permitted in the index. For example, if your Record Structure settings permitted up to four levels of subheading, Cindex would format the last subheading as if it were at level four, regardless of how many levels where contained in individual records. To force a particular indentation on the last subheading:</p>
+					<blockquote>
+						<p>• Choose Style and Layout from the Document menu.<br>
+							• In the Indentation box, choose Special Last from the drop-down list.<br>
+							• On the Last Indent Tab set the Lead and Runover indents.</p>
+					</blockquote>
+					<p><b>My last subheading is used to store a URL. How can I display this instead of a page reference?</b> To hide any references in the locator field:</p>
+					<blockquote>
+						<p>• Choose Cross-References from the Document menu, then check Suppress All References.<br>
+							• Choose Page References from the Document menu, then check Suppress All References.</p>
+					</blockquote>
+					<p>To display the contents of the last text field run-on from the heading above it:</p>
+					<blockquote>
+						<p>• Choose Style and Layout from the Document menu, then in the Style box click Run-on from.<br>
+							• Choose from the drop-down list the level of heading below which you want headings to be run-on. (To change the punctuation Cindex inserts before the run-on heading, choose Headings from the Document menu and set trailing punctuation for the level of heading <i>before</i> the one to be run-on.)</p>
+					</blockquote>
+					<p><b>How can I hide the special last subheading text in the formatted index?</b> To make Cindex behave as if the last field did not exist, and associate its page references and cross-references with the heading level above it:</p>
+					<blockquote>
+						<p>• Choose Style and Layout from the Document menu.<br>
+							• In the Indentation box check Collapse Headings below, then choose the last item from the popup menu to the right. (Cindex always treats the special last subheading as though it were at the lowest level permitted in the index.)</p>
+					</blockquote>
+					<p>To suppress the display of text in the lowest level subheading field, and also suppress its associated page references and cross-references:</p>
+					<blockquote>
+						<p>• Choose Headings from the Document menu.<br>
+							• Choose from the popup menu the settings for the lowest level heading.<br>
+							• Check Suppress.</p>
+					</blockquote>
+					<p><b>How can I hide all records that contain text in the last field?</b> To completely suppress the display of records that contain any text in the lowest level subheading field:</p>
+					<blockquote>
+						<p>• Find all records that have text in the last subheading field: choose Find from the Edit menu, enter ? as search text, choose the name of the special subheading from the field popup menu, check Pattern, then click Find All.<br>
+							
+							• Select all records in the temporary group, then choose Labeled (Edit menu) to apply a label to the group (use a label you have not used for another purpose)<br>
+							• Choose <a href="../_Views/Viewsubsets.htm">Hide by Attribute…</a> from the View menu, then hide records that carry the required label.</p></blockquote>
+				</td>
+			</tr>
+		</table>
+		<hr>
+		<p><b>See also<br>
+			</b><a href="tech_contactinfo.htm">Customer Support</a></p>
+	</BODY>
+</HTML>

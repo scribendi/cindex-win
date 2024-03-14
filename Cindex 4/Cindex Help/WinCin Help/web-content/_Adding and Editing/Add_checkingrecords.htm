@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Checking records</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Entries, checking" />
+	<PARAM NAME="Keyword" VALUE="Errors" />
+	<PARAM NAME="Keyword" VALUE="Quotation marks, mismatched" />
+	<PARAM NAME="Keyword" VALUE="Parentheses, mismatched" />
+	<PARAM NAME="Keyword" VALUE="Errors, checking" />
+	<PARAM NAME="Keyword" VALUE="Record(s), checking" />
+</OBJECT>
+		<h2>Checking records</h2>
+		<p>As you store each record Cindex checks for certain typographical errors. It automatically removes any leading or trailing spaces in any field, and removes excess blank fields. If you have used parentheses or square brackets or quotation marks to enclose any part of a heading or any part of a page reference, Cindex checks for matching pairs. If it finds a mismatch, it will warn you with a beep and will highlight the field that contains the mismatched elements. If you really do want to leave the mismatched characters in a field, Cindex will accept the record when you make a second attempt to save it.</p>
+		<p>If you have enclosed text in &lt; &gt; or { } —special characters that Cindex uses to <a href="../_Sorting/Sorting_override.htm">control the sorting of entries</a>—Cindex checks that these occur in matched pairs in a field. If Cindex detects a mismatch, it will beep and highlight the field that contains the mismatched elements. If you make a another attempt to enter the record without having first corrected the error, Cindex will display an explicit warning message.</p>
+		<p>Cindex allows you to <a href="../base/Record Structure.htm">impose restrictions</a> on the contents of individual fields of records—for example, you can stipulate that the locator field must contain only numerals. If you have imposed some restriction on the contents of a field, Cindex will warn you with a beep (and will highlight the offending field) if you try to save a record that contains forbidden characters or character sequences.</p>
+		<p>When first installed, Cindex allows you to add records that contain empty locator fields (if a record has an empty locator field, this usually means that you forgot to enter a reference). Cindex also allows you to enter a range of page numbers in which the second might be lower than the first (e.g., 95-93). You can <a href="../base/Prefs_edit.htm">set Cindex</a> to warn you about (or forbid) the entry of a record that has an empty locator field or a malformed range of page numbers.</p>
+		<p>Cindex can check that each page reference you enter falls <a href="../base/Pageref_limits.htm">within specified limits</a>. You can specify a value that no reference may exceed, and you can specify the greatest permitted span in a range of references.</p>
+		<p>You can <a href="../base/Prefs_edit.htm">set Cindex</a> to warn you if any cross-reference you enter lacks a target&mdash;that is, no record in the index begins with the text of the cross-reference.</p>
+<hr />
+		<p><b>See also </b><br />
+		  <a href="../base/Prefs_edit.htm">
+	      Preferences for editing records<br>
+		  </a><a href="../base/Pageref_count.htm">Checking page references<br>
+		  </a><a href="../base/Crossref_verify.htm">Verifying cross-references </a></p>
+</BODY>
+</HTML>

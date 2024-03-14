@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Defining patterns</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Parentheses, in patterns" />
+	<PARAM NAME="Keyword" VALUE="?, in patterns" />
+	<PARAM NAME="Keyword" VALUE="\, in patterns" />
+	<PARAM NAME="Keyword" VALUE="Backslash \, in patterns" />
+<PARAM NAME="Keyword" VALUE="&ndash;, in patterns" />
+<PARAM NAME="Keyword" VALUE="*, in patterns" />
+	<PARAM NAME="Keyword" VALUE="^" />
+	<PARAM NAME="Keyword" VALUE="^, in patterns" />
+	<PARAM NAME="Keyword" VALUE="+, in patterns" />
+	<PARAM NAME="Keyword" VALUE="., in patterns" />
+	<PARAM NAME="Keyword" VALUE="Period ." />
+	<PARAM NAME="Keyword" VALUE="Period ., in patterns" />
+	<PARAM NAME="Keyword" VALUE="( ), in patterns" />
+	<PARAM NAME="Keyword" VALUE="$" />
+	<PARAM NAME="Keyword" VALUE="$, in patterns" />
+	<PARAM NAME="Keyword" VALUE="Square brackets [ ]" />
+	<PARAM NAME="Keyword" VALUE="Square brackets [ ], in patterns" />
+	<PARAM NAME="Keyword" VALUE="[ ]" />
+	<PARAM NAME="Keyword" VALUE="[ ], in patterns" />
+	<PARAM NAME="Keyword" VALUE="{ }" />
+	<PARAM NAME="Keyword" VALUE="{ }, in patterns" />
+	<PARAM NAME="Keyword" VALUE="Brackets [ ]" />
+	<PARAM NAME="Keyword" VALUE="Brackets [ ], in patterns" />
+	<PARAM NAME="Keyword" VALUE="Braces { }, in patterns" />
+	<PARAM NAME="Keyword" VALUE="Patterns" />
+	<PARAM NAME="Keyword" VALUE="Regular expressions" />
+	<PARAM NAME="Keyword" VALUE="Patterns, special characters in" />
+	<PARAM NAME="Keyword" VALUE="Special characters, in patterns" />
+	<param name="Keyword" value="Vertical bar |, in patterns" />
+	<param name="Keyword" value="Bar |, in patterns" />
+	<param name="Keyword" value="|, in patterns" />
+	</OBJECT>
+		<h2>Defining patterns</h2>
+		<p>A pattern describes a set of characters that meets some general specification, such as “any numeral at the beginning of a line followed by the letter X,” or “any word beginning with an uppercase letter and ending in ‘ing’,” or “any four-digit number beginning with 19 and enclosed in parentheses.”</p>
+<p>You can use patterns with <b>Find…</b> or <b>Replace…</b>to describes a class of characters, words or phrases that Cindex should look for (or replace) in the index. You can also use patterns to control what text is acceptable in record fields.</p>
+		<p>Cindex provides a set of ready-made patterns via the contextual menu displayed when you right-click the Find box.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+		  <tr valign="top">
+		    <td bgcolor="#FFFF00"><p><strong>For users of Cindex version 2 and earlier:</strong> The syntax of patterns used by Cindex 3 and later is changed and extended, and permits more powerful searches. Please review this section carefully.</p></td>
+	      </tr>
+</table>
+		<p>For the most part patterns consist of ordinary characters for which Cindex searches. The power of patterns derives from their capacity to represent classes of characters:</p>
+		<table border="0" cellspacing="0" cellpadding="4" bgcolor="white">
+			<tr valign="top" bgcolor="white">
+				<td width="26">.</td>
+				<td>When you use . in a pattern Cindex will find a match to any character. For example c.t will find any sequence of 3 characters beginning with c and ending with t.</td>
+			</tr>
+			<tr valign="top">
+			  <td bgcolor="#FFFFFF">[:&nbsp;:]</td>
+			  <td bgcolor="#FFFFFF"><p>Within [: :] you specify a character  from a set, e.g., [:letter:] (or its abbreviation [:l:]). Cindex can     match characters from  many  sets, such as <em>currency symbols</em>, <em>diacritical marks</em>, and also those that represent scripts, e.g., <em>greek</em>, or<em> hebrew</em>. See  <a href="Patterns_sets.htm"> Character sets</a>.</p></td>
+		  </tr>
+			<tr valign="top" bgcolor="white">
+				<td width="26">[&nbsp;]</td>
+				<td><p>If you enclose elements of a pattern in square brackets, Cindex will  match a character that corresponds to any one of the elements in the brackets. For example, 198[567] will find 1985, 1986, or 1987.You may include character ranges, e.g., [0-9a-z], or class designators, e.g., [0-9[:l:]]. To match a character <em>not</em> in the group set ^ as the first character. To include a ] in a group, it must be the first character (after any ^).</p></td>
+			</tr>
+			<tr valign="top">
+			  <td bgcolor="#FFFFFF"><p>(&nbsp;)<a id="subpatterns" name="subpatterns"></a></p></td>
+			  <td bgcolor="#FFFFFF"><p>You can group parts of patterns by enclosing them in parentheses (&nbsp;). Such groups are called subpatterns or a 'capture groups'. Subpatterns have two important properties: </p>
+                <ul>
+                  <li>
+                    <p> When finding a match to the whole pattern Cindex keeps track of the text matched by any subpattern, and allows you to use that text as part of what must be matched by a later part of the pattern.</p>
+                  </li>
+                  <li>
+                    <p>Cindex also allows the special operators * ? + to be applied to subpatterns (see  below).</p>
+                  </li>
+                </ul>
+                <p>You can define and use up to nine subpatterns in a single pattern.</p>
+                <p>Cindex numbers subpatterns implicitly from left to right, by their order of appearance in the pattern. To refer to a subpattern, use \ followed by a numeral in the range 1-9. For example, \1 denotes the text matched by the first subpattern.</p>
+                <p>You can nest subpatterns, i.e., you can include one subpattern inside another. When you do this the outer patterns have lower numbers.</p>
+              <p>Parentheses have no special significance if they appear within [&nbsp;].</p></td>
+		  </tr>
+			<tr valign="top" bgcolor="white">
+				<td width="26">
+					<p>*</p>
+				</td>
+				<td>
+					<p>The * stands for zero or more occurrences the preceding matched element. This  can be a character matched by a set enclosed in [&nbsp;], e.g., [0-9]*, or a character from a set, e.g., [:l:], or a subpattern, e.g. cat(s)*. You can refer to a previously defined subpattern with an expression of the form \<em>N</em>*, where <em>N</em> is a digit in the range 1&#150;9. This means &ldquo;any number of occurrences (including none) of what was matched by subpattern <em>N</em>.&quot;</p>
+              <p>The * has no special significance if it is the first character in a pattern or if it appears in a set of characters contained within [&nbsp;].</p></td>
+			</tr>
+			<tr valign="top" bgcolor="#FFFFFF">
+			  <td><p>?</p></td>
+			  <td><p>The ? stands for zero or one occurrence the preceding matched element. This  element can be a character matched by a set enclosed in [ ], or one from a character set, such as [:l:], or a subpattern.</p>
+			    <p>The ? has an additional special role when it follows * or + or ? or a number in braces (see below). It is used to ensure that the matched text is the <em>shortest</em> sequence that satisfies the pattern.</p>
+              <p>The ? has no special significance if it is the first character in a pattern or if it appears in a set of characters contained within [&nbsp;].</p></td>
+		  </tr>
+			<tr valign="top" bgcolor="#FFFFFF">
+			  <td><p>+</p></td>
+			  <td><p>The + stands for one or more occurrences of the preceding matched element. This element can be a character matched by a set enclosed in [&nbsp;], or one from a character set, such as [:l:], or a subpattern.</p>
+              <p>The + has no special significance if it is the first character in a pattern or if it appears in a set of characters contained within [&nbsp;].</p></td>
+		  </tr>
+			<tr valign="top" bgcolor="#FFFFFF">
+			  <td><p>{<em>N</em>}</p></td>
+			  <td><p>The number <em>N</em> in braces represents the number of occurrences of the preceding element to be matched. This  can be a character matched by a set enclosed in [&nbsp;]. For example, to find any 5-digit number search for [0-9]{5}.</p></td>
+		  </tr>
+			<tr valign="top" bgcolor="#FFFFFF">
+			  <td><p>|</p></td>
+			  <td><p>The | separates alternative patterns to match. dog|cat will match &quot;cat&quot; or &quot;dog&quot;.  You can specify multiple alternative matches (e.g., cat|dog|canary|snake). The | causes everything to its left (as far as a preceding |) to be treated as one pattern to match, and eveyrthing to its right (as far as a succeeding |) as an alternative pattern to match.</p>
+              <p>The | has no special significance if it is the first character in a pattern or if it appears in a set of characters contained within [&nbsp;].</p></td>
+		  </tr>
+			<tr valign="top" bgcolor="white">
+				<td width="26">
+					<p>\</p>
+				</td>
+				<td>
+					<p>The backslash has two functions:</p>
+                    <p>When \ is placed immediately before any of the special characters described in this table (e.g., \+), the pair of characters  is equivalent to the special character alone. The \ simply causes the following character to lose any special significance it might otherwise have in a pattern. For example, to search for any sequence of characters enclosed in square brackets (that is, square brackets are a literal part of the sequence) use \[.*\]. </p>
+                    <p>To use a backslash as a literal character in a pattern, place another backslash immediately before it.</p>
+                    <p>The \ functions quite differently in a pattern when it is placed immediately before a digit in the range 1 through 9. Here it refers to the text that matches an earlier-defined subpattern (see (&nbsp;) above).</p>
+                <p>The \ has no special significance when it appears as part of a set of characters contained within [ ].</p></td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="26">
+					<p>^</p>
+				</td>
+				<td>
+					<p>If the caret (circumflex) is the first character in a pattern, Cindex will find a match to the remainder of the pattern only if the match can be made at the start of a field.</p>
+					<p>If the caret is the first character of a set enclosed in brackets [&nbsp;] Cindex searches for characters that are not in the remainder of the set.</p>
+				</td>
+			</tr>
+			<tr valign="top" bgcolor="white">
+				<td width="26">
+					<p>$</p>
+				</td>
+				<td>
+					<p>If $ is the last character in a pattern, Cindex will find a match to the rest of the pattern only if the match can be made at the end of a field.</p>
+				</td>
+			</tr>
+		</table>
+<p>Any characters other than those above are treated as ordinary characters when they are part of a pattern.</p>
+		<p>The full syntax of pattern-matching conforms to that used for so-called <em>Regular Expressions</em>, and provides more capabilities than are summarized above. Many tutorials are available on using Regular Expressions to match patterns (e.g., <a href="http://www.regular-expressions.info/quickstart.html">http://www.regular-expressions.info/quickstart.html</a>).</p>
+<hr />
+		<b>See also </b><br />
+		<a href="Patterns_replacing.htm">
+		Replacing text that matches a pattern</a><br />
+		<a href="Patterns_sample.htm">
+		Sample patterns</a><br />
+		<a href="Patterns_alterref.htm">
+		Altering references with patterns</a><br />
+		<a href="../base/Record Structure.htm">
+		Specifying the structure of records
+	</a>
+	</BODY>
+</HTML>

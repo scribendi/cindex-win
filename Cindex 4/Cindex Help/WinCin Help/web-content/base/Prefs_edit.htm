@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+
+	<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Editing Preferences</TITLE>
+</HEAD>
+
+	<body bgcolor="#FFFFFF" text="#000000">
+		<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<param name="Keyword" value="Preferences" />
+			<param name="Keyword" value="Settings" />
+			<param name="Keyword" value="Preferences, adding/editing records" />
+			<param name="Keyword" value="Settings, adding/editing records" />
+			<param name="Keyword" value="Editing records, settings" />
+			<param name="Keyword" value="Adding records, settings" />
+			<param name="Keyword" value="Spaces" />
+			<param name="Keyword" value="Spaces, removing extra" />
+			<param name="Keyword" value="Page ranges, automatically completing" />
+			<param name="Keyword" value="Missing locators" />
+<param name="Keyword" value="Missing cross-references" />
+<param name="Keyword" value="Cross-references, missing" />
+</object>
+		<h2>Settings for adding and editing records</h2>
+		<p>Cindex offers a variety of ways to customize its behavior when you are adding and editing records. To make any of the settings discussed below, choose <b>Preferences...</b> from the Edit menu, then click the <b>Editing</b> tab.</p>
+		<p>General</p>
+        <ul>
+          <li>When you add or edit a record Cindex normally opens a panel at the foot of the main view. If you prefer to work in a separate window when adding and editing records, check <b>Use Separate Window</b>.
+          </li>
+          <li>A draft view is often the best to work with when you add and edit records, because each record is always visible individually. To make Cindex switch to a draft view when you add or edit a record, check <b>Switch to Draft View</b>. If the original view was formatted, Cindex will revert to it when you finish editing. If you want Cindex to retain the fully formatted view while you add or edit records, uncheck Switch to Draft View.</li>
+          <li>You can set Cindex so that it automatically removes superfluous spaces whenever more than one separates words. If you check <b>Remove Extra Spaces</b>, Cindex will remove extra spaces no matter how they the are inserted into records.</li>
+          <li>When exchanging ('flipping') the contents of two record fields, Cindex can make a literal exchange, or can do it intelligently, adjusting leader case and moving articles and prepositions as appropriate to the content of the fields. To enable this intelligent exchange, check <b><a href="../_Adding and Editing/Add_manipulatingfields.htm">Smart Flip</a></b>.</li>
+          <li>Cindex can generate the second part of a page range automatically when you type the character that connects the two parts of a range. For example, if a dash is the connecting character, and you typed 55- Cindex would complete the reference as 55-56 (you can, of course, then edit the number as required). Cindex does this only if the <em>last</em> recognized component of the <em>last</em> page reference in the locator field is a number in Arabic numerals. To enable this, check Complete Page Ranges.</li>
+    </ul>
+        <p>Adding Records</p>
+        <ul>
+          <li>When you add records, Cindex normally displays the most recently-added records in record-number order. To make it show a new record immediately in its sorted position, check <b>Track New Entries</b>.
+          </li>
+          <li>To make Cindex automatically re-use the locator (page reference) from the record you last-entered, check <b>Carry Locators Forward</b>.
+          </li>
+          <li>To make Cindex use an existing heading in the index to complete (if it can) a heading you are typing, check <b>Auto-Complete Entries</b>. By default, Cindex completes headings only if what you type matches exactly (in letter case and style) the text of an existing heading. To permit Cindex to complete headings that differ in letter case or style, check <b>Ignore Style &amp; Case</b>.
+        If you want Cindex to display the existing entry from which it is taking a heading to use for completing a new one,  <b>Track Source</b>.</li>
+        </ul>
+        <p>Editing Records</p>
+        <ul>
+          <li>You can set Cindex so that when you change a heading, it will automatically make the same change to all immediately succeeding records that shared the original heading. To enable this <a href="../_Adding and Editing/Add_propagating.htm">automatic propagation</a> of changes to succeeding records, check <b>Propagate Changes</b>. Your setting determines how Cindex behaves when you open a record for editing. Your setting establishes the default state of the Propagate button in record window’s toolbar (Cindex sets the button to the default state whenever a new record is placed in the window). You can engage or disengage propagation on a record-by-record basis.</li>
+          <li>As you edit successive records in a series, Cindex adjusts the display in the main view to show your progress through the records. When you finish editing, Cindex normally leaves the display showing the last record you worked on. To make Cindex restore the display to show the first record you worked on, check <b>Return to Entry Point</b>.</li>
+          <li>When you add or change a label, Cindex  by default does not mark the record  as 'modified' (i.e., it does not update the date stamp and user identifier). To specify that a label change is considered a modification,   check <strong>Label Sets Change Flag</strong>.</li>
+         <li>Under <strong>Paste and Drop Text</strong> you can specify how Cindex deals with style and font information when pasting or dropping text that originates externally (e.g., from a PDF document). Choose whether Cindex accepts styles and fonts, styles only, or just plain text. The default is <em>Styles Only</em>. You can <a href="../_Adding and Editing/Add_editingentries.htm">override</a> the preference setting when actually pasting or dropping text.</li></ul>
+        <p>Other</p>
+        <ul>
+         
+          <li>Set <b>Bad Locator</b> to establish what Cindex will do when a locator field is empty, contains a malformed locator (e.g., a range of pages such as 89-67), or one that falls outside an <a href="Pageref_limits.htm">allowable range.</a> For <b>Warn</b>, Cindex will accept the record when you make a second attempt to save it; for <b>Forbid</b> Cindex will not save the record until you correct the error.<br>
+            Set <strong>Bad Cross-Ref</strong> to determine how Cindex will behave when you enter in the locator field a cross-reference  that has no valid target.</li>
+          <li>Cindex can check that the contents of each field of a new record match a <a href="../base/Record Structure.htm">template</a> you have specified. Set <b>Mismatch to Template </b>to establish what will do if the contents of a field do not match its template. For <b>Warn</b>, Cindex will accept the record when you make a second attempt to save it. For <b>Forbid</b>, Cindex will not save the record until the field conforms to the template.</li>
+          <li>If you close the window from the File menu, or by clicking the close box, Cindex behaves according to your setting of <b>On Closing Window</b> (always saves changes, asks you about saving changes, or always discards changes).
+          These settings do not apply when you  complete editing with a keystroke: hitting <small>CONTROL RETURN </small>(or <small>ENTER</small> on the keypad) always saves the edits; hitting <small>ESC</small> always discards them. </li>
+        </ul>
+        <hr />
+		<p><b>See also</b><br />
+			<a href="Prefs_gen.htm">General preferences</a><br />
+			<a href="Prefs_view.htm">View Preferences</a><br />
+			<a href="Prefs_export.htm">Export preferences</a></p>
+	</body>
+
+</HTML>

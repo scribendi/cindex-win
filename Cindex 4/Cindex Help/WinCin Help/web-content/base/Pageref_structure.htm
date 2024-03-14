@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Page reference structure</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<PARAM NAME="Keyword" VALUE="Page references, connecting range" />
+<PARAM NAME="Keyword" VALUE="Dash, connecting page range" />
+<PARAM NAME="Keyword" VALUE="Hyphen, connecting page range" />
+<PARAM NAME="Keyword" VALUE="-" />
+<PARAM NAME="Keyword" VALUE="-, connecting page range" />
+		<PARAM NAME="Keyword" VALUE="Page references, multiple in record" />
+			<PARAM NAME="Keyword" VALUE="Page references, identifying" />
+		</OBJECT>
+		<h2>Specifying the structure of page references</h2>
+		<P>To specify how Cindex will identify distinct page references, and ranges of references, choose <B>Reference Syntax...</B> from the Document menu. The relevant settings are under <B>Page References</B>.</P>
+		<p>Cindex normally assumes that if several page references are in a single record, each will be separated from the next by a comma. Cindex also uses the comma when it concatenates references from several otherwise identical records. You can use a different separating character, but you must tell Cindex what that character is. Specify that character at <b>Separator</b>.</p>
+		<p>You will often indicate an inclusive range of pages (e.g., 155–158) by joining the references with a hyphen. Cindex needs to know how you denote an inclusive range, so that it can conflate or abbreviate references properly when it formats the index, and can adjust them properly when required. Specify the separating character at <b>Connector</b>. You can use any single ASCII character such as $ or @ that has no special meaning for Cindex. When Cindex produces the formatted index it will <a href="../_Style and Layout/_Format_pagerefranges.htm">translate the connecting character</a> into whatever character or sequence of characters you wish to have displayed and printed.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>If you set Reference Syntax when no index is open for work, the settings become the default ones that Cindex uses for new indexes when you create them.</p>
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<p><b>See also</b><br />
+		  <a href="Pageref_components.htm">Locator components<br />
+		  </a><a href="../_Adding and Editing/Add_enterpagerefs.htm">Entering page references in records</a><br />
+		  <a href="../base/Record Structure.htm">Setting record structure</a><br />
+		  <a href="Crossref_structure.htm">Specifying the structure of cross-references<br />
+	      </a><a href="Pageref_components.htm"><br />
+	      </a></p>
+</BODY>
+</HTML>

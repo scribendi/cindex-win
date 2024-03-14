@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{05dbbbde-b868-4f90-89a1-b2e0f05580b1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9cce54c0-f6be-4787-9cc4-fdf536d7cb2e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c7b38185-59f5-4b89-923a-de04d27db57d}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Web Files">
+      <UniqueIdentifier>{ff890657-c35a-4528-b6f8-ce61311e3625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CPP">
+      <UniqueIdentifier>{f09b3978-bb7d-49fa-95a8-bfd3042a81f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pch">
+      <UniqueIdentifier>{844295fa-2154-4e7b-bba3-b7670804c647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Master headers">
+      <UniqueIdentifier>{38eb452f-162c-46a2-82ba-d069b7467004}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="abbrev.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xpresswriter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apiservice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="attributedstrings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cglobal.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="collate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commands.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="containerset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dde.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draftstuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="errors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="export.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="files.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="findset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formattedexport.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formstuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="group.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="httpservice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="indesign.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="index.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="indexset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="keytool.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="locales.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="macros.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="modify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="print.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rcontainerset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recole.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="records.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="refs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regex.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="registry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reole.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="replaceset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rtfwriter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="search.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="searchset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sort.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sortset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spellset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tagstuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="text.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textwriter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toolset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="translate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="typestuff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="v3handler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="viewset.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlparser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlwriter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.c">
+      <Filter>Source Files\pch</Filter>
+    </ClCompile>
+    <ClCompile Include="mfile.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tagwriter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="import.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="json.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imwriter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hspell.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="spell.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abbrev.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cglobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cindexAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="containerset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dde.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="draftstuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="errors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="files.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="findset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="formset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="formstuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="group.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="indesign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="index.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="indexset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="keytool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="modify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rcontainerset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="recole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="records.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="refs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="regex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="replaceset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rtfwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="search.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sortset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="spellset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdhdr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="strings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tagstuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="textwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="toolset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="translate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="typestuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="viewset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xpresswriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hspell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="locales.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="v3handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="collate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="attributedstrings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="formattedexport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cintypes.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="formatparams.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="groupparams.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="headparams.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="indexparams.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="referenceparams.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="sortparams.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="fontmap.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="printformat.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="stringtypes.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="osdependencies.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="recordparams.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="v2headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tagwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="httpservice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="indexdocument.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+    <ClInclude Include="import.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imwriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="searchparams.h">
+      <Filter>Header Files\Master headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource.hm">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="abbrev.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="archive.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="arrow.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cindex.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dosindex.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="group.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="index.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mdic.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="modtools.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="nodrop.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="record.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="screen.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="screen_pub.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="style.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tags.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="text.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="toolbar_main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="toolbar_rec.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tpl.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="udic.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="viewtool_read.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="2.0 fixes.txt" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="index_old.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="style_old.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="tpl_old.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="xmlrecords.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="cindex1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cindex.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="apiservice.h">
+      <Filter>Header Files</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="cindex.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="bitmap3.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32propagate_on.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32braces.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32brackets.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32fullflip.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32halfflip.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32fliphoriz.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32defaultfont.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32bold.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32ital.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32uline.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32prevrecord.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32nextrecord.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32enter_copy.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32revert.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32newrecord.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32label.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32delete.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32allrecords.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32fullformat.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32draftformat.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32indented.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32runin.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32alphasort.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32pagesort.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32nosort.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32bold_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32italic_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32uline_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32defaultfont_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32fullflip_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32revert_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32halfflip_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32braces_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32brackets_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32enter_copy_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32fliphoriz_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32nextrecord_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32prevrecord_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="32propagate_on_off.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

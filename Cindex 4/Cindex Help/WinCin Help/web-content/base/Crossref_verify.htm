@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Verifying cross-references</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<h2><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Cross-references, verifying" />
+				<PARAM NAME="Keyword" VALUE="Verifying cross-references" />
+			</OBJECT></h2>
+		<h2>Verifying cross-references</h2>
+		<p>Verifying cross-references is available as part  of a comprehensive check via <b>Check Index&hellip;</b>  (Tools menu).</p>
+		<p> Open the panel, click the References tab, then check <b>Verify Cross-References</b>.</p>
+		<p>Cindex normally accepts a shortened form of the main entry as a legitimate cross-reference. To insist that Cindex find an exact match (including accent and letter case) between a cross-reference and its target entry check Require Exact Matches. When you insist on exact matches, Cindex requires only that the <em>text</em> of the cross-reference matches that of the target; styles and fonts are ignored.</p>
+<p>Cindex can flag cross-references made to fewer than a certain number of entries. (Cindex must always find at least one target of a cross-reference, otherwise it flags a reference as missing.) Set Require at least <em>n</em> matches to the minimum number of target entries Cindex must find for each cross-reference.</p>
+		<p>If Cindex finds  errors it  displays them in the check results. Each entry in the list identifies the source record, the intended target, and the nature of the error, which can be one or more of:		</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+		  <tr valign="top">
+		    <td bgcolor="white">missing target</td>
+		    <td width="1051" bgcolor="white">The cross-reference points to a heading that is not in the index, or to a heading that lacks a locator.</td>
+	      </tr>
+			<tr valign="top">
+				<td bgcolor="white" width="121">inexact match				</td>
+				<td bgcolor="white">The cross-reference and its target differ in letter case or accent.				</td>
+			</tr>
+			<tr valign="top">
+				<td bgcolor="white" width="121">circular or open				</td>
+				<td bgcolor="white">The cross-reference  points to another cross-reference.				</td>
+			</tr>
+			<tr valign="top">
+				<td bgcolor="white" width="121">too few targets				</td>
+				<td bgcolor="white">The cross-reference  points to a heading with fewer than the stipulated minimum number of subentries.</td>
+			</tr>
+			<tr valign="top">
+				<td bgcolor="white" width="121">wrong type				</td>
+				<td bgcolor="white">A <i>See</i> cross-reference  should have been a <i>See also</i> cross-reference (or <em>vice-versa</em>). This indicator can accompany any of the others.				</td>
+			</tr>
+		</table>
+<p>Click any item in the list to bring its record into view in the main document window; double-click the item (or hit <small>RETURN</small>) to open a window in which to edit its record.</p>
+		<hr />
+		<b>See also<br />
+		</b><a href="Crossref_structure.htm">Identifying cross-references</a><br />
+		</a><a href="Crossref_convert.htm">Converting cross-references to fully qualified entries</a><br>
+		</b><a href="Pageref_count.htm">Checking page references</a><br />
+	</BODY>
+</HTML>

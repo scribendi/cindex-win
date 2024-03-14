@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cindex", "Cindex.vcxproj", "{C49575A0-033E-4791-AF42-BA58D7E56FC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B7DAA00A-BE91-4B17-BE70-E122C5868AB5}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Publisher|Any CPU = Debug Publisher|Any CPU
+		Debug Publisher|Win32 = Debug Publisher|Win32
+		Debug Publisher|x64 = Debug Publisher|x64
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Demo|Any CPU = Demo|Any CPU
+		Demo|Win32 = Demo|Win32
+		Demo|x64 = Demo|x64
+		Publisher|Any CPU = Publisher|Any CPU
+		Publisher|Win32 = Publisher|Win32
+		Publisher|x64 = Publisher|x64
+		Release|Any CPU = Release|Any CPU
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Student|Any CPU = Student|Any CPU
+		Student|Win32 = Student|Win32
+		Student|x64 = Student|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug Publisher|Any CPU.ActiveCfg = Debug Publisher|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug Publisher|Win32.ActiveCfg = Debug Publisher|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug Publisher|Win32.Build.0 = Debug Publisher|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug Publisher|x64.ActiveCfg = Debug Publisher|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug Publisher|x64.Build.0 = Debug Publisher|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug|Win32.Build.0 = Debug|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug|x64.ActiveCfg = Debug|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Debug|x64.Build.0 = Debug|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Demo|Any CPU.ActiveCfg = Demo|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Demo|Win32.ActiveCfg = Demo|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Demo|Win32.Build.0 = Demo|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Demo|x64.ActiveCfg = Demo|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Demo|x64.Build.0 = Demo|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Publisher|Any CPU.ActiveCfg = Publisher|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Publisher|Win32.ActiveCfg = Publisher|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Publisher|Win32.Build.0 = Publisher|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Publisher|x64.ActiveCfg = Publisher|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Publisher|x64.Build.0 = Publisher|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Release|Win32.ActiveCfg = Release|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Release|Win32.Build.0 = Release|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Release|x64.ActiveCfg = Release|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Release|x64.Build.0 = Release|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Student|Any CPU.ActiveCfg = Student|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Student|Win32.ActiveCfg = Student|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Student|Win32.Build.0 = Student|Win32
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Student|x64.ActiveCfg = Student|x64
+		{C49575A0-033E-4791-AF42-BA58D7E56FC8}.Student|x64.Build.0 = Student|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {659D6116-3E65-447F-A521-3504C202A52B}
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

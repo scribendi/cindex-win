@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Grouping Entries</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<PARAM NAME="Keyword" VALUE="Alphabetical groups" />
+			<PARAM NAME="Keyword" VALUE="Alphabetical groups, formatted index" />
+			<PARAM NAME="Keyword" VALUE="Headings, to alphabetical groups" />
+			<PARAM NAME="Keyword" VALUE="Numbers" />
+			<PARAM NAME="Keyword" VALUE="Numbers, grouping entries under" />
+			<PARAM NAME="Keyword" VALUE="Symbols, grouping entries under" />
+			<PARAM NAME="Keyword" VALUE="Grouping entries in formatted index" />
+			<PARAM NAME="Keyword" VALUE="Fonts, in header to alphabetical group" />
+			<PARAM NAME="Keyword" VALUE="Text styles, in header to alphabetical group" />
+			<PARAM NAME="Keyword" VALUE="Style (text), in header to alphabetical group" />
+			<PARAM NAME="Keyword" VALUE="%, in title to group of headings" />
+		</OBJECT>
+		<h2>Grouping entries</h2>
+		<P>When it displays or prints a fully-formatted index, Cindex can set-off different alphabetical groups of entries by printing a title above the group (typically the letter of the alphabet under which entries in the group fall). To specify how Cindex should group entries, and what text it should display above a group, choose <B>Grouping Entries…</B> from the Document menu.</P>
+		<P>At <B> Text</B> enter any title text you want to have displayed above the group (if you supply no text, Cindex displays no title).  Use the character %, on its own or as part of a longer text sequence, to stand for the leading letter of the group of headings. When Cindex displays the title it will replace the % with the appropriate letter or symbol.</P>
+<P>Cindex always treats each letter of the alphabet as belonging to a distinct group, but lets you  choose how it  groups  entries beginning with numbers of symbols. Use the <B>Grouping Method</B> drop-down list the method you want it to use:</P>
+<table border="0" cellspacing="0" cellpadding="4">
+  <tr valign="top">
+    <td width="157" bgcolor="#FFFFFF"><p>[@] [#] [$]&#x2026; [1] [2] [3]&#x2026;</p></td>
+    <td width="412" bgcolor="#FFFFFF"><p>each leading symbol or numeral forms a distinct group</p></td>
+  </tr>
+  <tr valign="top">
+    <td bgcolor="#FFFFFF"><p>[@#$&#x2026;] [1] [2] [3]&#x2026;</p></td>
+    <td bgcolor="#FFFFFF"><p>all leading symbols form one group; each numeral forms a distinct group</p></td>
+  </tr>
+  <tr valign="top">
+    <td bgcolor="#FFFFFF"><p>[@] [#] [$]&#x2026; [123&#x2026;]</p></td>
+    <td bgcolor="#FFFFFF"><p>each leading symbol forms a distinct group; all numerals form one group</p></td>
+  </tr>
+  <tr valign="top">
+    <td bgcolor="#FFFFFF"><p>[@#$&#x2026; 123&#x2026;]</p></td>
+    <td bgcolor="#FFFFFF"><p>all leading symbols and numerals form a single group</p></td>
+  </tr>
+  <tr valign="top">
+    <td bgcolor="#FFFFFF"><p>[@#$&#x2026;] [123&#x2026;]</p></td>
+    <td bgcolor="#FFFFFF"><p>all leading symbols form one group; all numerals form one group</p></td>
+  </tr>
+</table>
+<p>Enter at  All Numbers Title, etc., the text to be displayed at the head of entries that are grouped generically under numbers, or symbols, or numbers and symbols. </p>
+		<p>Cindex prints each title in the font chosen from the <B>Font</B> drop-down list and in the style set through <B>Style...</B> The first item in the <b>Font</b> list <B>&lt;</B><I>default</I><B>&gt;</B> represents the standard font in which the index is displayed.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+	  <tr valign="top">
+				<td>
+					<p>If you make settings when no index is open for work, the settings become the default ones that Cindex uses for new indexes when you create them.</p>
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<b>
+		
+		See also 
+	</b><br />
+		<a href="Format_styleandlayout.htm">Setting index style and layout</a><br />
+		<a href="_Format_entryspacing.htm">Entry spacing</a><br />
+		<a href="../base/StyleSheet.htm">
+		Style sheets
+	</a>
+	</BODY>
+</HTML>

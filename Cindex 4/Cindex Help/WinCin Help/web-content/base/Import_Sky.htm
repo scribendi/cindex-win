@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Importing records from Sky Index</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<sup><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Sky Index" />
+				<PARAM NAME="Keyword" VALUE="Sky Index, importing records" />
+				<PARAM NAME="Keyword" VALUE="strikout text, Sky Index" />
+				<PARAM NAME="Keyword" VALUE="Importing records, Sky Index" />
+			</OBJECT></sup>
+<h2>Importing records from SKY Index</h2>
+		<p>Cindex can import records in  the tab-delimited format used by SKY Index 7 and SKY Index 8, or the comma-delimited quoted format used by SKY Index 6.</p>
+<p>To import records into an existing index, choose Import from the File menu. Cindex assumes that documents with the filename extension '.txtsky8', '.sky7' or '.txtsky7' contain records from SKY Index. Cindex assumes that  documents from Sky Index 6 have the filename extension '.txt' (Cindex identfies the document as coming from SKY Index when it opens it).</p>
+		<p>As Cindex imports records it captures bold, italic, underline, small caps, subscript and superscript styles (for SKY Index 7 it translates any strikeout text style to small caps). Cindex also translates the following attributes:</p>
+        <ul>
+          <li>	    Text to be ignored in sorting entries is enclosed in &lt;&nbsp;&gt;.
+</li>
+          <li> Text to be used in sorting entries but to be hidden in a formatted display is enclosed in {&nbsp;}.
+</li>
+          <li>'Note' text is enclosed in &lt;{&nbsp;}&gt;.</li>
+</ul>
+<p>For records imported from SKY Index 8, Cindex adopts any fonts used in the index. For   SKY Index versions 7 and 6, records may use up to three alternative fonts (two for SKY 6), but the exported document contains no information about what these fonts are. If the  records use alternative fonts, Cindex assumes the SKY Index default assignments:</p>
+		<ul>
+		  <li>Alternative Font 1: Symbol
+</li>
+		  <li>Alternative Font 2: Courier New
+</li>
+		  <li>Alternative Font 3: Times New Roman</li>
+</ul>
+<p>Characters in Alternative Font 1 (Symbol) are converted to their Unicode equivalents.</p>
+<hr />
+		<b>See also</b><br />
+		<a href="Import_records.htm">
+Importing records</a><br />
+	<a href="Import_errors.htm">Import errors</a><a href="Import_delimited.htm"><br />
+Importing records from delimited text</a><br />
+	</BODY>
+</HTML>

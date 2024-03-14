@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Cross-reference structure</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<h2><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Cross-references, identifying" />
+				<PARAM NAME="Keyword" VALUE="Cross-references, syntax" />
+				<PARAM NAME="Keyword" VALUE="Cross-references, general" />
+			</OBJECT></h2>
+		<h2>Specifying the structure of cross-references</h2>
+		<p>To identify cross-references and organize them correctly, Cindex has to know not only what word will begin a cross-reference (e.g., <i>See</i>), but also what words might make up the remainder of the introductory phrase (e.g., <i>also</i> or <i>under</i>). To manage cross-references properly Cindex also has to know how they are punctuated. If you place several cross-references in a single record, Cindex needs to know how to distinguish them, so that it can check them and format them properly.</p>
+		<p>To specify how Cindex will identify distinct page references, and ranges of references, choose <b>Reference Syntax...</b> from the Document menu. The relevant settings are under <b>Cross References</b>.</p>
+		<p>To specify the words that can begin the introductory phrase, type them at <b>Lead</b>. You may enter text in upper- or lowercase letters—Cindex ignores letter case when searching for these words. The first word in the list must be the word that begins any cross-reference, but subsequent words in the list may appear in any order. The list Cindex uses initially lets it recognize cross-references that begin with <i>see</i> and continue with <i>also</i> or <i>under</i>, or <i>also under</i>.</p>
+		<p>To specify the character that will separate one cross-reference from the next, when more than one cross-reference is made from a heading, enter that character at <b>Separator</b>.</p>
+		<p>To specify words that introduce general cross-references of the form “<i>See</i> individual drugs” or “<i>See also</i> specific treaties,” enter the appropriate words at <b>General</b>. When Cindex is installed this list contains the words ‘individual’ and ‘specific’. Cindex uses these words when:</p>
+		<ul>
+			<li type="disc">sorting multiple cross-references to the same heading; those that begin with a general term are normally placed at the end of the series.
+			
+			
+			</li><li type="disc">verifying cross-references; Cindex does not look for a target entry for any cross-reference that begins with a general term.
+		
+		
+		</li></ul>
+		<p>To permit Cindex to recognize and format cross-references entered in records as subheadings, uncheck <b>Recognize Cross-References in Locator Field Only</b>. The full range of cross-reference management options is not available when cross-references are placed in subheadings.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>If you set Reference Syntax when no index is open for work, the settings become the default ones that Cindex uses for new indexes when you create them.</p>
+				</td>
+			</tr>
+		</table>
+		<hr />
+		<b>See also</b><br />
+		<a href="../_Adding and Editing/Add_entercrossrefs.htm">Entering cross-references in records<br />
+		</a><a href="../base/Record Structure.htm">Setting record structure</a><br />
+		<a href="Pageref_structure.htm">
+		Specifying the structure of page references
+	</a>
+	</BODY>
+</HTML>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Entering page references</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Page references, entering in records">
+	<PARAM NAME="Keyword" VALUE="Page references, completing ranges">
+	<PARAM NAME="Keyword" VALUE="Page references, auto increment/decrement">
+</OBJECT>
+		<h2>Entering page references in records</h2>
+		<p>Remember these points when entering page references in records:</p>
+		<ul>
+			<li type="disc">Always used a <a href="../base/Pageref_structure.htm">designated character</a> to separate multiple references when you put more than one in a record.<li type="disc">To find or adjust page references, Cindex needs to know what character denotes an inclusive range (e.g., 55-57). Cindex normally recognizes a reference to an inclusive range of page references by the appearance of a hyphen between the numbers, but you can use <a href="../base/Pageref_structure.htm">another character </a>if you wish. When Cindex displays entries in the fully formatted view it can translate this separating character to some other character or sequence of characters.<li type="disc">Cindex will work fluently with compound locators that consist of multiple components, including dates, roman numerals and letters. If you use compound locators do ensure that the character you use to separate distinct references (the default character is a comma) does not appear within a reference.
+			<li type="disc">Always enter a full page reference when you put it in a record (e.g., 103-106, not 103-6). When Cindex formats entries, it can display the reference in any way you want, but if you abbreviate references some of Cindex’s more advanced capabilities (e.g., adjusting references to reflect changes in pagination) might not be available to you.
+			<li type="disc">When you put several page references in one locator field, you need not place them in ascending order. Cindex will sort them when it displays the formatted entries.
+		</ul>
+		<p>Cindex provides several ways to help ensure  reliable entry and editing of page numbers:</p>
+        <ul>
+          <li>
+            <p>You can set Cindex so that the locator field of each new record starts with the same page references as the last-entered record. To do this, choose Preferences&hellip; from the Edit menu, then under the Editing tab, check &quot;Carry Locators Forward.&quot;</p>
+          </li>
+          <li>
+            <p>You can  increment or decrement page numbers with single keystrokes. To increment the page number, use Ctrl ]. To decrement the page number use Ctrl [. (The text cursor need not be at the position of the locator.) This action affects only the <em>last</em> component of the <em>last</em> page reference in the locator field. If the last recognized component is not a number in Arabic numerals (e.g., it consists of Roman numerals or is an alphabetic suffix), the operation does nothing.</p>
+          </li>
+          <li>
+            <p>Cindex can generate the second part of a page range automatically when you type the character that connects the two parts of a range. For example, if a dash is the connecting character, and you entered 55- Cindex would complete the reference as 55-56; if the first page reference were vol1:55, typing the - would complete the reference as vol1:55-vol1:56. (You can, of course, then edit the number as required.) Cindex completes the range only if the <em>last</em> recognized component of the <em>last</em> page reference in the locator field is a number in Arabic numerals. To enable this capability, choose  Preferences from the Edit menu, and under the Editing tab check &quot;Complete Page Ranges.&quot;</p>
+          </li>
+        </ul>
+<hr>
+		<b>See also </b><br>
+		<a href="Add_entercrossrefs.htm">Entering cross-references in records</a><br>
+		<a href="../base/Pageref_limits.htm">Checking page references</a><br>
+		<a href="../_Style and Layout/Format_pagereferences.htm">Formatting page references
+	</a>
+	</BODY>
+</HTML>

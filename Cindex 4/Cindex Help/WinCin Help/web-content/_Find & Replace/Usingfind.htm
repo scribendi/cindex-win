@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Using the Find panel</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Finding, text">
+	<PARAM NAME="Keyword" VALUE="Date, record modified">
+	<PARAM NAME="Keyword" VALUE="Search, for specified text">
+	<PARAM NAME="Keyword" VALUE="Search, user identifier">
+	<PARAM NAME="Keyword" VALUE="User Identifier, finding records">
+</OBJECT>
+		<h2>Using the Find panel</h2>
+		<p>Use the <b>Find</b> panel (Edit menu) to search among records for words or phrases, or to find records that meet more complex search criteria.</p>
+		<p>To find records that contain a word or phrase, type the phrase beside the <b>Not</b> check box, then click <b>Find. </b>Cindex will highlight the first record that contains the specified text. Click <b>Find Again</b> to continue the search. You can open any highlighted record and work on it, then continue the search.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+			<tr valign="top">
+				<td>
+					<p>Once you have set up and found the first occurrence of a target entry, you need not leave the Find panel open while searching for subsequent occurrences. You can choose <b>Find Again</b> from the <b>Edit</b> menu.</p>
+				</td>
+			</tr>
+		</table>
+		<p>To find all records that contain the word or phrase, click <b>Find All</b>. Cindex will form a “<a href="../base/Groups.htm">group</a>” of the records that contain the text, and will display the group in the main window, as though it contained the only records in the index.</p>
+		<ul>
+			<li type="disc">To find records that <i>do not</i> contain the specified text, check <b>Not</b>. 
+			<li type="disc">To find text set in particular styles or fonts click <a href="Find_stylesandfonts.htm"><b>Attributes</b></a>.
+			<li type="disc">To search only among particular levels of heading, choose from the popup menu under Not.<br>
+					If you choose a particular heading level, and do not specify search text, Cindex will find records in which the specified heading is empty.<br>
+				
+				If you choose <b>Locator</b>, Cindex normally treats the text as a locator specification, rather than plain text (the item Evaluate References is automatically checked). For more information see <a href="Find_locators.htm">Searching for Locators</a>.</ul>
+		<ul>
+			<li type="disc">To make Cindex accept only matches to whole words, check <b>Whole Word</b>.
+			<li type="disc">To make Cindex accept only case-sensitive matches, check <b>Case</b>.
+			<li type="disc">To make Cindex treat the search text as a <a href="../base/Patterns_defining.htm">pattern</a> to be matched, construct the pattern in the text box and check <b>Pattern</b>.<li type="disc">To search among a subset of displayed records specify the <a href="../base/Scope.htm"><b>Scope</b></a> of the search.
+			<li type="disc">To confine the search to records that have one or more <a href="Find_attributes.htm">special attributes</a> check the relevant attributes in the box <b>Only Among</b>.
+			<li>To limit the search to records created or modified between certain dates, enter the range of dates. (To find records changed on a particular day, enter that day'sdate at From, and enter the <em>next</em> day's date at To.) Cindex will warn you if it cannot understand a date you provide.
+			<li type="disc">To confine the search to records made or modified by a particular user, enter the user's identifying initials at <b>UserID</b>.
+		</ul>
+		<hr>
+		<b>See also </b><br>
+		<a href="../base/Scope.htm">Specifying the scope of a command</a><br>
+		<a href="Find_conditional.htm">
+		Conditional searches</a><br>
+		<a href="../base/Patterns_defining.htm">
+		Defining patterns</a><br>
+		<a href="Find_locators.htm">
+		Searching for locators</a><br>
+		<a href="Find_stylesandfonts.htm">Finding text styles and fonts</a>
+	</BODY>
+</HTML>

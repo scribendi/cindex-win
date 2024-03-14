@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Specifying the scope of a command</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+			<param name="Keyword" value="Command scope">
+			<param name="Keyword" value="Scope of commands">
+		</object>
+		<h2>Specifying the scope of a command</h2>
+		<p>When you initiate some global action on the index (for example replacing text, or checking spelling), Cindex generally acts on all records accessible in the current view. For example, if the view is set to show only a group of records, the action affects only records that group. Certain actions can be undertaken only when the view shows all records.</p>
+		<p>You can restrict the scope of many actions to a subset of the records accessible in the current view:</p>
+		<ul>
+			<li type="disc">To permit the operation on all records accessible in the current view, click All Records in View.
+			<li type="disc">To confine the operation to records you have selected, click Selected Records (this is dimmed if no records are selected).
+			<li type="disc">To confine the operation to a range of records in the view, specify the starting and ending records in From and To. You can specify a range of headings by entering leading text, e.g., Abr through Doc. You can also specify a range of record numbers (e.g., 55 through 79) within which Cindex should confine the operation. If you want to look among specified headings, you need only provide as much of the beginning text as will identify a record uniquely. You can specify leading text from a subheading by appending a semicolon to the heading text then adding subheading text. If you want to specify a heading that begins with digits, place a \ before the first digit; Cindex will otherwise interpret leading digits as a record number.<br>
+				<br>
+				If you omit the first part of the range Cindex will start at the first record in the view and stop at the record at the end of the range. If you omit the second part of the range, Cindex will start at the specified record and continue until it reaches the last record in the view.
+			<li type="disc">When you use Find or Replace, you can confine the operation to records last modified on a particular date or between specified dates. Type the starting and ending dates in the boxes labeled From and To.<br>
+				<br>
+				Cindex interprets dates in whatever form is standard in the country you are working in (e.g., month, day, year or day, month, year) and can accept dates in a wide variety of forms (e.g., Jan 1 96, 1/1/96, 1 January 96, January 1 1996). If you omit the year Cindex assumes the current year. If you omit the month, Cindex assumes the current month.  If you specify a date but no time, Cindex assumes the time to 00:00. You can use simple English expressions as shortcuts, for example: 'today' ;  'tomorrow'. If you omit a starting date, Cindex assumes January 1, 1970; if you omit an ending date, Cindex assumes a date far in the future.
+		</ul>
+		<hr>
+		<b>See also </b><br>
+		<a href="../_Find & Replace/Usingfind.htm">
+		Finding records that contain specified text or attributes</a><br>
+		<a href="../_Find & Replace/Usingreplace.htm">
+		Replacing text and attributes in records</a><br>
+		<a href="../_Spelling/Usingspelling.htm">
+		Checking Spelling</a><br>
+		<a href="../base/Index Information.htm">
+		Getting information about indexes
+	</a>
+	</BODY>
+</HTML>

@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Working with archives</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<sup><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Archive" />
+				<PARAM NAME="Keyword" VALUE="Archive, saving" />
+				<PARAM NAME="Keyword" VALUE="Archive, importing" />
+			</OBJECT></sup>
+		<h2>Working with index archives</h2>
+		<p>An index archive is a compact copy of the index that contains  information about the content of entries, including fonts and styles, but no information about the document format, or about how the index entries are alphabetized. An archive can be used by both Cindex for Mac and Cindex for Windows.</p>
+		<table border="0" cellpadding="4" cellspacing="0">
+		  <tr valign="top">
+		    <td><p>In Cindex 3 and higher the archive format is deprecated, because it cannot represent all Unicode characters. You should use it only if you must share an index with someone who works with Cindex 2 or earlier (Mac or Windows). Index documents (those with the .ucdx filename extension) made by version 3 and higher are fully interchangeable betweeen Cindex for Mac  and Cindex for Windows.</p>
+            <p>The recommended format for interchange with third party indexing software is <a href="Import_xml.htm">XML records</a>. </p></td>
+	      </tr>
+</table>
+<p>To save an index as an archive, choose Save As&#x2026; from the File menu then from the File Format pop-up menu choose Cindex Archive. Cindex automatically provides the appropriate filename extension (.arc) when it saves an archive.</p>
+<p>Cindex provides two ways to use records stored in archives: you can create a new index directly from an archive, or you can import the archived records into an existing index.</p>
+		<p>To add the contents of the archive to an existing index, choose Import… from the File menu, then select the archive you want.</p>
+		<p>To create a new index from an archive, choose Open… from the File menu, then select the archive by name from the displayed list. You can also do this through the Windows Explorer by double-clicking the archive’s icon. If no index with the name of the archive exists in the folder that contains the archive, Cindex will automatically create a new one with the name of the archive and will import the records. If an index with the name of the archive already exists, Cindex will present a panel through which you should choose the name and location of the index to be created.</p>
+		<hr />
+		<b>See also </b><br />
+		<a href="Export_optionsarchive.htm">Options for saving archives</a><br />
+<a href="Import_xml.htm">Working with XML records</a><br />
+		<a href="Import_errors.htm">Import errors</a>
+	</BODY>
+</HTML>

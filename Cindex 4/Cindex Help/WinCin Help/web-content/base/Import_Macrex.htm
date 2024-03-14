@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Importing records from Macrex</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<sup><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Macrex" />
+				<PARAM NAME="Keyword" VALUE="Macrex, importing records" />
+    <PARAM NAME="Keyword" VALUE="Importing records, Macrex" />
+				<PARAM NAME="Keyword" VALUE="Code Page, Macrex import" />
+			</OBJECT></sup>
+		<h2>Importing records from Macrex</h2>
+		<p>Cindex can import records that have been saved by Macrex in its backup (.mbk) format. These records contain some information about text styles, and information about how records should be sorted.</p>
+		<p>The backup format used by Macrex does not unambiguously distinguish locators and the body of an index entry: commas can separate different levels of headings and can separate locators from headings and from each other. When Cindex imports Macrex records, it resolves this ambiguity by looking for the first number after which there are no more letters, or only letters contained in braces { }. It places this number and everything that follows it in the locator field of the Cindex record.</p>
+		<p>To import records into an existing index, choose Import from the File menu. Cindex assumes that documents with the filename extension '.mbk' contain records, and the Open panel shows all such files as readable.</p>
+		<table border="0" cellspacing="0" cellpadding="4">
+		  <tr valign="top">
+		    <td><p>When importing Macrex records, Cindex translates the special character sequences Macrex uses to represent unicode characters (for example, Y{[&quot;]} becomes &Yuml;). Cindex also translates the special  character sequences Macrex uses to designate small caps, superscript, and subscript.</p></td>
+	      </tr>
+</table>
+		<p>When you have read the records into a Cindex index, you will be able to remove some of the notations required by Macrex:</p>
+		<ul>
+			<li type="disc">Cindex automatically ignores leading numerals in a record during alphabetizing, so you can remove any braces (which Cindex will have translated to &lt; &gt;) that you have used to hide numerals from Macrex.
+			</li><li type="disc">Macrex requires cross-references entered as subheadings to have the sequence ~zzz~ (which Cindex translates to {zzz}) immediately in front of them to ensure their proper placement. You should remove the {zzz}, because they will interfere with Cindex's capacity to recognize and sort cross-references.
+			</li>
+			<li type="disc">Cindex will automatically apply a chosen style to See and See also, so you can remove any styles applied to these words.</li>
+		</ul>
+<hr />
+		<b>See also </b><br />
+		<a href="Import_records.htm">Importing records</a><a href="Import_errors.htm"><br>
+		Import errors</a><br />
+		<a href="Import_delimited.htm">Importing records from delimited text</a><br />
+	</BODY>
+</HTML>

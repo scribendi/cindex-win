@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css"> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Sorting reserved characters</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Sorting, reserved characters">
+	<PARAM NAME="Keyword" VALUE="Reserved characters, sorting">
+	<PARAM NAME="Keyword" VALUE="Special characters, sorting">
+	<PARAM NAME="Keyword" VALUE="Tilde, sorting">
+	<PARAM NAME="Keyword" VALUE="&#126;, sorting">
+	<PARAM NAME="Keyword" VALUE="Backslash \, sorting">
+	<PARAM NAME="Keyword" VALUE="\, sorting">
+	<PARAM NAME="Keyword" VALUE="{ }, sorting">
+	<PARAM NAME="Keyword" VALUE="Braces { }, sorting">
+	<PARAM NAME="Keyword" VALUE="< >, sorting">
+	<PARAM NAME="Keyword" VALUE="Angle brackets < >, sorting">
+</OBJECT>
+		<h2>Sorting reserved characters</h2>
+		<p>Because the characters \ { } &lt; &gt; and ~ have special meanings for Cindex, they are normally neither displayed in a fully formatted view nor evaluated in sorting a record.</p>
+		<p>Even if a reserved character is preceded by \ to disable its special function (for example \\) and allow Cindex to display it as a normal character, Cindex will not attend to it in letter-by-letter or word-by-word alphabetizing entries (because the special character is a punctuation mark). If you want Cindex not only to display a reserved character but also to evaluate it during sorting, you should place a ~ before it. If you enter ~\ in a record, Cindex treats \ as a literal character and sorts it by its value. The same applies to ~&lt; ~&gt; ~{ ~} and ~~.</p>
+		<hr>
+		<b>See also </b><br>
+		<a href="Sorting_alphabetizing.htm">
+		Alphabetizing entries</a><br>
+		<a href="Sorting_override.htm">Overriding automatic sorting</a><br>
+		<a href="Sorting_override1.htm">
+		Filing entries under numbers and symbols</a><br>
+		<a href="Sorting_override2.htm">Case-sensitive alphabetizing</a>
+	</BODY>
+</HTML>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Cumulating and combining indexes</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Index, combining with another" />
+	<PARAM NAME="Keyword" VALUE="Combining indexes" />
+	<PARAM NAME="Keyword" VALUE="Cumulating indexes" />
+	<PARAM NAME="Keyword" VALUE="Merging indexes" />
+</OBJECT>
+		<h2>Cumulating and combining indexes</h2>
+		<p>Locators in cumulated indexes will often need to be adapted from their forms in the component indexes. Usually you will need to do one of two things:</p>
+		<p>If only the indexes to volumes are being cumulated, you will probably need to attach some kind of volume identifier to page references from each component volume. Use <b>Replace</b> (Edit menu) to <a href="Patterns_addvolume.htm">add volume numbers</a> to the page references in the component indexes.</p>
+		<p>If the contents of volumes are being combined to make an integrated volume, pages will probably be renumbered, and you will need to adjust the page references in the index entries. Use <b>Alter References…</b> (Tools menu) to <a href="Patterns_alterref.htm">adjust page references</a> in the component indexes before adding records to the combined index .</p>
+		<p>After having made any necessary adjustments to page numbers, follow these steps to build a master index:</p>
+		<ol>
+			<li type="1">Create a new index that will contain the cumulated or combined components. Do not be concerned about the record size; Cindex will re-size the index if necessary when it adds records to it.
+			</li><li type="1">Open a component index that you want to include in the master index.
+			</li><li type="1">Select the records you want to include in the master index (choose <b>Select All</b> from the Edit menu if you want to include all records).</li><li type="1">Drag the records to the main window of the master index.<br />
+				Alternatively, copy the records (choose <b>Copy</b> from the Edit menu), activate the master index (click its main window, or choose it by name from the Window menu), then paste the records (choose Paste from the Edit menu).</li><li type="1">Repeat steps 2 through 4 for each component index.
+		</li></ol>
+		<hr />
+		<b>See also </b><br />
+		<a href="../_Adding and Editing/Add_enterpagerefs.htm">Entering page references in records</a><br />
+		<a href="../_Adding and Editing/Add_entercrossrefs.htm">Entering cross-references in records</a>
+	</BODY>
+</HTML>

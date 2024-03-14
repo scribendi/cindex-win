@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Delimited records</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<sup><OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+				<PARAM NAME="Keyword" VALUE="Unicode, importing records" />
+				<PARAM NAME="Keyword" VALUE="UTF-8" />
+				<PARAM NAME="Keyword" VALUE="UTF-8, importing records" />
+				<PARAM NAME="Keyword" VALUE="Delimited records, importing" />
+				<PARAM NAME="Keyword" VALUE="Record(s), delimited" />
+				<PARAM NAME="Keyword" VALUE="Database, importing records from" />
+			</OBJECT></sup>
+		<h2>Importing records from delimited text</h2>
+		<p>Cindex can import records that have been prepared elsewhere (for example, by a word-processing program or text editor, or database program).</p>
+		<p>To import records into an existing index, choose Import from the File menu. Cindex assumes that documents with the filename extension ‘.txt’ are potential sources of delimited records, and the Open panel shows all such files as readable.</p>
+		<p>Records must conform to a simple specification:</p>
+		<ul>
+			<li type="disc">If the document begins with the standard signature of a UTF-8 document, Cindex will recognize the Unicode character encoding. Otherwise Cindex assumes that characters are from the Windows ANSI character set.</li>
+			<li>Each record must be contained in a paragraph terminated by a carriage-return character, or a line-feed character, or a carriage-return/line-feed character pair.
+			</li>
+			<li type="disc">Each record can contain up to fifteen tab-separated fields that hold the text of headings, plus a field that contains the locator.
+			</li><li type="disc">The fields of the record must be separated from each other by a ‘tab’ character, and the locator field, which contains page references or cross-references, must be the last field.
+			</li>
+			<li type="disc">Cindex assumes that the last field in any record is the locator field, so you should ensure that any record that has no locator (page reference or cross-reference) has a blank last field (i.e., one with nothing after the last tab character). You need not include empty fields between headings and the locator field: if you import records into an index in which records have a fixed number of fields, Cindex will automatically add empty fields when necessary.</li>
+		</ul>
+		<p>If Cindex encounters any of the  characters { } &lt; &gt; ~ \ in the imported text, it places a \ before it  (e.g., { in the imported text becomes \{ in the Cindex record) to ensure that it is treated as a literal character, rather than  a special function character.</p>
+<hr />
+		<b>See also </b><br />
+		<a href="Import_records.htm">Importing records</a><br />
+		<a href="Import_errors.htm">Import errors</a><br />
+		<a href="Import_Sky.htm">Importing records from Sky Index</a> <br />
+<a href="Import_Macrex.htm">Importing records from Macrex</a><br />
+	</BODY>
+</HTML>

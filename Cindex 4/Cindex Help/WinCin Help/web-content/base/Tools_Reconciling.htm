@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "../styles/cinhelp.css" /> 
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252" />
+<TITLE>Reconciling headings</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+		<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Headings, reconciling" />
+	<PARAM NAME="Keyword" VALUE="Subheadings, removing redundant" />
+	<PARAM NAME="Keyword" VALUE="Subheadings, orphaned" />
+	<PARAM NAME="Keyword" VALUE="Fields" />
+	<PARAM NAME="Keyword" VALUE="Fields, joining" />
+	<PARAM NAME="Keyword" VALUE="Orphaned subheadings" />
+</OBJECT>
+		<h2>Reconciling headings</h2>
+		<p>Use the <b>Reconcile Headings</b> panel (Tools menu) to balance headings and subheadings in the index.</p>
+		<p>Cindex will find and if appropriate modify:</p>
+		<ul>
+			<li type="disc">records that have more levels of headings than are necessary, and in which orphaned subheadings would be better organized as modifiers of the heading above (or perhaps removed).
+			</li><li type="disc">multiple records that have different modifiers following the same heading, and which would be better arranged as records with subheadings under a single main heading.
+		</li></ul>
+		<p>To confine action to headings below a specified level, ignoring orphans and preserving subheadings at that level and above, choose the level from the <b>Check Headings Below</b> drop-down list.</p>
+		<p>Cindex normally assumes that text appearing in a heading after a comma is a modifier. If your headings contain some character other than a comma to introduce a modifying phrase (for example, a semicolon), set the appropriate character at <b>Modifying Phrases Follow</b>.</p>
+		<p>If you want Cindex only to convert redundant levels of subheading to modified headings (without examining and possibly converting modified headings into heading and subheadings) check <b>Preserve Modified Headings</b>.</p>
+		<p>If your index contains words or phrases that might follow a comma (or other introductory character you have specified with Modifying Phrases Follow) and which do not represent modified headings (for example, a forename following a surname), you should check <b>Protect Names</b>. This prevents Cindex breaking any heading if the text that follows the introductory character begins with an uppercase letter. Cindex never breaks headings where the comma occurs with a quoted phrase, or within parentheses, etc.</p>
+		<p>Choose <b>Convert Orphans to Modifying Phrases</b> to make<b> </b>Cindex convert an orphaned subheading (i.e., the only subheading at a particular level) to a phrase modifying the heading above; choose <b>Remove Orphans</b> to delete the orphan. When Cindex deletes an orphaned subheading, locators belonging to it are attached to the heading at the level above.</p>
+	</BODY>
+</HTML>
