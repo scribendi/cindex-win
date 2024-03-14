@@ -5,5 +5,5 @@ CINDEX for Windows works on any supported version of Microsoft Windows, includin
 
 ## FAQs
 
-**What kind of customer support do you provide?**
+**What kind of customer support do you provide?**  
 No customer support is provided.
